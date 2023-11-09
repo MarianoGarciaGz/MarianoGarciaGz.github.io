@@ -1,0 +1,9 @@
+:root {
+    --font-primary: "Ubuntu Mono", monospace;
+    --font-secondary: "VT323", monospace;
+    --font-tertiary: "Playfair Display", serif;
+}
+
+* {
+    font-family: var(--font-primary);
+}
