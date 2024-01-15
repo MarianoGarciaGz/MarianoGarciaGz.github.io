@@ -1,0 +1,46 @@
+@import "../../../assets/sass/colors";
+@import "../../../assets/sass/typography";
+
+.hero {
+  overflow: hidden;
+  min-height: 100vh;
+  height: fit-content;
+  &::after {
+  }
+  &-div {
+    min-height: 100vh;
+  }
+  &-title {
+    vertical-align: bottom;
+    text-align: center;
+    text-wrap: nowrap;
+    font-size: calc(3rem + 4.5vw);
+    color: var(--color-black);
+    font-family: $font-secondary;
+    line-height: 60%;
+  }
+  &-strike {
+    font-size: 0.7em;
+    text-decoration: none;
+    color: var(--color-white);
+    font-size: 34px;
+    -webkit-text-stroke: 1px var(--color-black);
+    -webkit-text-fill-color: var(--color-white);
+  }
+  &-strong {
+    color: var(--color-primary);
+  }
+  &-img {
+    filter: blur(5px);
+    transform: translateX(100px) rotate(0.01turn);
+    -webkit-transform: translateX(100px) rotate(0.01turn);
+    -moz-transform: translateX(100px) rotate(0.01turn);
+    -ms-transform: translateX(100px) rotate(0.01turn);
+    -o-transform: translateX(100px) rotate(0.01turn);
+    -webkit-filter: blur(5px);
+  }
+  &-em {
+    font-family: $font-tertiary;
+    font-size: 0.3em;
+  }
+}

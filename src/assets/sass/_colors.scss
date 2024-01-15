@@ -1,0 +1,43 @@
+/* bootstrap variables */
+$red: #ff464e;
+$indigo: #b948f1;
+$purple: #5a1dca;
+$pink: #ff4fa0;
+$yellow: #ffe600;
+$orange: #fd7e14;
+$green: #00c864;
+$blue: #0d05f2;
+$teal: #20c997;
+$cyan: #0dcaf0;
+$white: #f3f9ff;
+$gray: #e4eaf5;
+$black: #16131f;
+
+/* variables */
+$primary: $blue;
+$secondary: $orange;
+$success: $green;
+$info: $cyan;
+$warning: $yellow;
+$danger: $red;
+$light: #fafafa;
+$dark: #373737;
+
+// @import '../node_modules/bootstrap/scss/bootstrap.scss';
+// @import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css');
+
+// light theme root
+:root {
+  --color-primary: #{$primary};
+  --color-secondary: #{$secondary};
+  --color-white: #{$white};
+  --color-black: #{$black};
+  --color-gray: #{$gray};
+
+  /* card */
+  --color-card-bg: color-mix(in srgb, #ffffff 55%, #{$white});
+}
+
+// dark theme root
+@media (prefers-color-scheme: dark) {
+}

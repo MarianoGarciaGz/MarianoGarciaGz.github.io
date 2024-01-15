@@ -1,0 +1,11 @@
+@import "../../assets/sass/typography";
+@import "../../assets/sass/colors";
+
+.header {
+  background: #e4eaf550;
+  box-shadow: $component-shadow;
+  &-nav {
+    backdrop-filter: blur(10px);
+    font-family: $font-secondary;
+  }
+}

@@ -1,0 +1,78 @@
+/* shadows */
+$component-shadow-btn: 0px 0px 0px 0px rgba(29, 29, 29, 0.3) !default;
+$component-shadow-btn-hover: 0 2px 5px 1px rgba(29, 29, 29, 0.3) !default;
+$component-shadow: 0px 5px 5px 0px rgba(29, 29, 29, 0.3) !default;
+$component-shadow-hover: 0px 7px 7px 1px rgba(29, 29, 29, 0.5) !default;
+
+/* border */
+$border: 1rem;
+$border-btn: 0px;
+
+/* transitions */
+$transition-soft: 1s;
+$transition-fast: 250ms;
+
+/* document reset */
+
+html {
+  scroll-padding-top: 74px;
+}
+
+body {
+  font-family: $font-primary;
+  color: var(--color-black);
+}
+
+main {
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-black);
+  font-family: $font-secondary;
+}
+
+a,
+button {
+  color: inherit;
+  text-decoration: none;
+}
+
+del {
+  opacity: 0.8;
+}
+.btn {
+  border-radius: $border-btn;
+  box-shadow: $component-shadow-btn;
+
+  &:hover {
+    box-shadow: $component-shadow-btn-hover;
+  }
+
+  &-primary {
+    background: var(--color-primary);
+  }
+}
+
+.card {
+  font-family: $font-primary;
+  background: var(--color-card-bg);
+  color: var(--color-black);
+  transition: $transition-fast;
+  border-style: none;
+  border-radius: $border;
+  padding: 0px;
+  box-shadow: $component-shadow;
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: $component-shadow-hover;
+  }
+}
+
+.bg-gray {
+  background: var(--color-gray);
+}
