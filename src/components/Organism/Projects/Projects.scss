@@ -1,0 +1,26 @@
+.projects {
+  position: relative;
+  background: var(--color-gray);
+
+  &::after {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background: var(--color-white);
+    mask-image: url(../../../assets/img/svg/triangle.svg);
+    -webkit-mask-image: url(../../../assets/img/svg/triangle.svg);
+    top: 0;
+  }
+}
+
+.swiper-button-prev {
+  color: var(--color-primary);
+}
+
+.swiper-button-next {
+  color: var(--color-primary);
+}
+
+.swiper-slide {
+}

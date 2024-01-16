@@ -65,9 +65,9 @@ const Header = () => {
             <i className="header-i bi bi-list"></i>
           </button>
           <div className="nav-collapse collapse navbar-collapse" id="navbarNav">
-            <ul className="nav-ul navbar-nav text-center ms-auto">
+            <ul className="header-ul navbar-nav text-center ms-auto">
               {menu.map(({ id, href, title }) => (
-                <li key={id} className="nav-li nav-item">
+                <li key={id} className="header-li nav-item">
                   <a href={href} className="header-a nav-link fs-4">
                     {title}
                   </a>

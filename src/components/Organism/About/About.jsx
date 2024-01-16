@@ -2,11 +2,11 @@ import React from "react";
 import "./About.scss";
 import draw from "@img/draw.png";
 import H2 from "@components/Atoms/H2/H2";
-// import H2 from "../../Atoms/H2.jsx/H2";
+import Section from "@layout/Section/Section";
 
 const About = () => {
   return (
-    <>
+    <Section container="xxl" name="about">
       <H2>About</H2>
       <div className="row">
         <div className="col-12 col-md-6 align-self-center">
@@ -34,7 +34,7 @@ const About = () => {
           <img className="about-img" src={draw} alt="" />
         </div>
       </div>
-    </>
+    </Section>
   );
 };
 

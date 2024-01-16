@@ -2,10 +2,13 @@
 @import "../../assets/sass/colors";
 
 .header {
-  background: #e4eaf550;
   box-shadow: $component-shadow;
+  color: var(--color-dark);
+  backdrop-filter: blur(10px);
   &-nav {
-    backdrop-filter: blur(10px);
     font-family: $font-secondary;
+  }
+  &-a {
+    color: var(--color-black);
   }
 }

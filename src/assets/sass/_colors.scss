@@ -33,11 +33,15 @@ $dark: #373737;
   --color-white: #{$white};
   --color-black: #{$black};
   --color-gray: #{$gray};
-
-  /* card */
-  --color-card-bg: color-mix(in srgb, #ffffff 55%, #{$white});
 }
 
 // dark theme root
 @media (prefers-color-scheme: dark) {
+  :root {
+    --color-primary: #{$cyan};
+    --color-secondary: #{$secondary};
+    --color-white: #{$black};
+    --color-black: #{$white};
+    --color-gray: color-mix(in srgb, #{$black} 95%, #{$gray});
+  }
 }
