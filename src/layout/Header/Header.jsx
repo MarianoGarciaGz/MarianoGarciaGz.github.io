@@ -10,6 +10,7 @@ const Header = () => {
       <header
         className="header container-fluid fixed-top"
         data-aos="fade-down"
+        data-aos-duration="1000"
         data-aos-delay="1500"
       >
         <nav className="header-nav nav navbar navbar-expand-md p-0">
