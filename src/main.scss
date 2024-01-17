@@ -4,5 +4,8 @@
 @import "./assets/sass/reset";
 @import "./assets/sass/variables";
 
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+/* Bootstrap */
+
 /* components */
 @import "./layout/Header/Header.scss";

@@ -4,7 +4,7 @@ import "./CardProjects.scss";
 const CardProject = (props) => {
   const { title, info, img, time, link } = props;
   return (
-    <div className="pcard card h-100">
+    <div className="pcard card rounded-3 border-0 h-100">
       <img
         src={img}
         className="pcard-img card-img-top rounded-3 rounded-bottom"

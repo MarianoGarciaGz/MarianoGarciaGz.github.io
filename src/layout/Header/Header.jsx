@@ -18,37 +18,52 @@ const Header = () => {
             <span className="header-span me-4 fs-1">@MarianoGarciaGz</span>
             <ul className="hero__list list-inline m-0 d-none d-md-flex">
               <li className="list-inline-item">
-                <a href="https://www.facebook.com/marianogargz">
+                <a
+                  className="header-a"
+                  href="https://www.facebook.com/marianogargz"
+                >
                   <i className="hero__bi bi bi-github"></i>
                 </a>
               </li>
               <li className="list-inline-item">
-                <a href="https://www.facebook.com/marianogargz">
+                <a
+                  className="header-a"
+                  href="https://www.facebook.com/marianogargz"
+                >
                   <i className="hero__bi bi bi-facebook"></i>
                 </a>
               </li>
               <li className="list-inline-item">
-                <a href="https://twitter.com/marianogarciagz">
+                <a
+                  className="header-a"
+                  href="https://twitter.com/marianogarciagz"
+                >
                   <i className="hero__bi bi bi-twitter"></i>
                 </a>
               </li>
               <li className="list-inline-item">
-                <a href="https://www.instagram.com/marianogarciagz/">
+                <a
+                  className="header-a"
+                  href="https://www.instagram.com/marianogarciagz/"
+                >
                   <i className="hero__bi bi bi-instagram"></i>
                 </a>
               </li>
               <li className="list-inline-item">
-                <a href="https://www.linkedin.com/marianogarciagz/">
+                <a
+                  className="header-a"
+                  href="https://www.linkedin.com/marianogarciagz/"
+                >
                   <i className="hero__bi bi bi-linkedin"></i>
                 </a>
               </li>
               <li className="list-inline-item">
-                <a href="">
+                <a className="header-a" href="">
                   <i className="hero__bi bi bi-spotify"></i>
                 </a>
               </li>
               <li className="list-inline-item">
-                <a href="">
+                <a className="header-a" href="">
                   <i className="hero__bi bi bi-youtube"></i>
                 </a>
               </li>
@@ -69,44 +84,63 @@ const Header = () => {
             <ul className="header-ul navbar-nav text-center ms-auto">
               {menu.map(({ id, href, title }) => (
                 <li key={id} className="header-li nav-item">
-                  <a href={href} className="header-a nav-link fs-4">
+                  <a
+                    className="header-a"
+                    href={href}
+                    className="header-a nav-link fs-4"
+                  >
                     {title}
                   </a>
                 </li>
               ))}
               <ul className="hero__list list-inline d-md-none m-0">
                 <li className="list-inline-item ">
-                  <a href="https://www.facebook.com/marianogargz">
+                  <a
+                    className="header-a"
+                    href="https://www.facebook.com/marianogargz"
+                  >
                     <i className="hero__bi bi bi-github"></i>
                   </a>
                 </li>
                 <li className="list-inline-item">
-                  <a href="https://www.facebook.com/marianogargz">
+                  <a
+                    className="header-a"
+                    href="https://www.facebook.com/marianogargz"
+                  >
                     <i className="hero__bi bi bi-facebook"></i>
                   </a>
                 </li>
                 <li className="list-inline-item">
-                  <a href="https://twitter.com/marianogarciagz">
+                  <a
+                    className="header-a"
+                    href="https://twitter.com/marianogarciagz"
+                  >
                     <i className="hero__bi bi bi-twitter"></i>
                   </a>
                 </li>
                 <li className="list-inline-item">
-                  <a href="https://www.instagram.com/marianogarciagz/">
+                  <a
+                    className="header-a"
+                    href="https://www.instagram.com/marianogarciagz/"
+                  >
                     <i className="hero__bi bi bi-instagram"></i>
                   </a>
                 </li>
                 <li className="list-inline-item">
-                  <a href="https://www.linkedin.com/marianogarciagz/">
+                  <a
+                    className="header-a"
+                    href="https://www.linkedin.com/marianogarciagz/"
+                  >
                     <i className="hero__bi bi bi-linkedin"></i>
                   </a>
                 </li>
                 <li className="list-inline-item">
-                  <a href="">
+                  <a className="header-a" href="">
                     <i className="hero__bi bi bi-spotify"></i>
                   </a>
                 </li>
                 <li className="list-inline-item">
-                  <a href="">
+                  <a className="header-a" href="">
                     <i className="hero__bi bi bi-youtube"></i>
                   </a>
                 </li>

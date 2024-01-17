@@ -7,8 +7,8 @@ import "./Hero.scss";
 
 const Hero = () => {
   return (
-    <section className="hero d-flex container-fluid">
-      <div className="row w-100 h-75">
+    <section className="hero container-fluid">
+      <div className="row">
         <div className="col-12 col-lg-6 hero-div d-flex align-items-center">
           <h1
             className="hero-title h1 text-center text-lg-start display-1 w-100"
@@ -60,7 +60,7 @@ const Hero = () => {
             <img className="hero-front-img" src={mariano} alt="" />
           </div>
         </div>
-        <i class="bi bi-chevron-down text-center"></i>
+        <i class="hero-chevron bi bi-chevron-down text-center"></i>
       </div>
     </section>
   );
