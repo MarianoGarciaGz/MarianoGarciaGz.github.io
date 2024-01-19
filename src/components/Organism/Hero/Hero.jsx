@@ -60,9 +60,6 @@ const Hero = () => {
             <img className="hero-front-img" src={mariano} alt="" />
           </div>
         </div>
-        <a className="hero-down text-center" href="#projects">
-          <i class="bi bi-chevron-down"></i>
-        </a>
       </div>
     </section>
   );

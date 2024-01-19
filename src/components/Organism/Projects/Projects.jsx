@@ -17,7 +17,7 @@ import Section from "@layout/Section/Section";
 
 const Projects = () => {
   return (
-    <Section container="fluid" name="projects">
+    <Section container="fluid" name="projects" className="projects">
       <H2>Projects</H2>
       <Swiper
         className="mySwiper px-5 py-3"

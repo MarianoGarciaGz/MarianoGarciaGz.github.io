@@ -6,7 +6,7 @@ $component-shadow-hover: 0px 7px 7px 1px rgba(29, 29, 29, 0.5) !default;
 
 /* border */
 $border: 1rem;
-$border-btn: 0px;
+$border-btn: 0.3rem;
 
 /* transitions */
 $transition-soft: 1s;
@@ -46,6 +46,7 @@ del {
   opacity: 0.8;
 }
 .btn {
+  border-style: none;
   border-radius: $border-btn;
   box-shadow: $component-shadow-btn;
 

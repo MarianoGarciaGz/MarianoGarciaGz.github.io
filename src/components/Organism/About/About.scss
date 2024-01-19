@@ -1,6 +1,6 @@
 @import "../../../assets/sass/colors";
 
-.about {
+.About {
   position: relative;
   background: var(--color-white);
 
@@ -13,5 +13,11 @@
     mask-image: url(../../../assets/img/svg/triangle.svg);
     -webkit-mask-image: url(../../../assets/img/svg/triangle.svg);
     top: 0;
+  }
+  &-btn {
+    background: var(--color-white) !important;
+    &.orange {
+      background: var(--color-secondary) !important;
+    }
   }
 }

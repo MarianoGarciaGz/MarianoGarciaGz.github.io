@@ -6,7 +6,7 @@ import Section from "@layout/Section/Section";
 
 const About = () => {
   return (
-    <Section container="xxl" name="about">
+    <Section container="xxl" name="about" className="About">
       <H2>About</H2>
       <div className="row">
         <div className="col-12 col-md-6 align-self-center">
@@ -19,13 +19,13 @@ const About = () => {
             with users and clients.
           </p>
           <div>
-            <a className="btn btn-primary" href="">
+            <a className="About-btn btn btn-primary me-3" href="">
               {" "}
-              <i className="bi bi-github"></i>
+              <i className="bi bi-github me-2"></i>
               Github
             </a>
-            <a className="btn btn-secondary" href="">
-              <i className="bi bi-cloud-fill"></i>
+            <a className="About-btn.orange btn btn-secondary me-3" href="">
+              <i className="bi bi-cloud-fill me-2"></i>
               SoundCloud
             </a>
           </div>
