@@ -8,7 +8,7 @@ const About = () => {
   return (
     <Section container="xxl" name="about" className="About">
       <H2>About</H2>
-      <div className="row">
+      <div className="row" data-aos="fade-up">
         <div className="col-12 col-md-6 align-self-center">
           <p className="about-text lead my-5 text-center text-md-start">
             A multifaceted professional with expertise in{" "}

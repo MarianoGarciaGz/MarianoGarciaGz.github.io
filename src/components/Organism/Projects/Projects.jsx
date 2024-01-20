@@ -11,6 +11,7 @@ import Panin from "@img/projects/Panindicuaro.jpeg";
 import Lily from "@img/projects/Lily.jpeg";
 import Codesaur from "@img/projects/Codesaur.jpeg";
 import Mafer from "@img/projects/SeguridadMafer.jpeg";
+import Hz from "@img/projects/hertz.jpeg";
 
 import H2 from "@components/Atoms/H2/H2";
 import Section from "@layout/Section/Section";
@@ -21,6 +22,10 @@ const Projects = () => {
       <H2>Projects</H2>
       <Swiper
         className="mySwiper px-5 py-3"
+        data-aos="fade-up"
+        data-aos-delay="0"
+        data-aos-duration="500"
+        data-aos-once="true"
         modules={[Navigation]}
         slidesPerView={4}
         spaceBetween={16}
@@ -71,11 +76,11 @@ const Projects = () => {
         </SwiperSlide>
         <SwiperSlide className="h-100">
           <CardProject
-            title="Clinica de belleza Lily"
-            info="Aplicación web para reservación de nuevas citas para un consultorio de tratamientos de belleza con administrador de citas."
-            img={Lily}
+            title="Calculadora de Hertz"
+            info="Aplicación web para calcular los hertz de cada nota musical dado la frecuencia de referencia que se quiera tomar."
+            img={Hz}
             time="72 hrs"
-            link=""
+            link="https://marianogarciagz.github.io/tonal-hertz-calculator/"
           />
         </SwiperSlide>
       </Swiper>

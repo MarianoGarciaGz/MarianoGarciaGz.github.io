@@ -1,0 +1,53 @@
+.btn {
+  border-radius: $border-btn;
+  box-shadow: $component-shadow-btn;
+
+  &:hover {
+    box-shadow: $component-shadow-btn-hover;
+  }
+  &-outline-primary {
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+    &:hover {
+      color: var(--color-white);
+      border-color: var(--color-primary);
+      background-color: var(--color-primary);
+    }
+  }
+  &-primary {
+    border-color: var(--color-primary);
+    background: var(--color-primary);
+    &:hover {
+      color: var(--color-white);
+      border-color: var(--color-primary);
+      background-color: var(--color-primary);
+    }
+  }
+  &-secondary {
+    border-color: var(--color-secondary);
+    background: var(--color-secondary);
+    &:hover {
+      color: var(--color-white);
+      border-color: var(--color-secondary);
+      background-color: var(--color-secondary);
+    }
+  }
+}
+
+.card {
+  font-family: $font-primary;
+  color: var(--color-black);
+  transition: $transition-fast;
+  border-style: none;
+  border-radius: $border;
+  padding: 0px;
+  box-shadow: $component-shadow;
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: $component-shadow-hover;
+  }
+}
+
+.bg-gray {
+  background: var(--color-gray);
+}

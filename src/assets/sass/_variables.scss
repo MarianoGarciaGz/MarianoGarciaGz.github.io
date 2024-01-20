@@ -45,34 +45,3 @@ button {
 del {
   opacity: 0.8;
 }
-.btn {
-  border-style: none;
-  border-radius: $border-btn;
-  box-shadow: $component-shadow-btn;
-
-  &:hover {
-    box-shadow: $component-shadow-btn-hover;
-  }
-
-  &-primary {
-    background: var(--color-primary);
-  }
-}
-
-.card {
-  font-family: $font-primary;
-  color: var(--color-black);
-  transition: $transition-fast;
-  border-style: none;
-  border-radius: $border;
-  padding: 0px;
-  box-shadow: $component-shadow;
-  &:hover {
-    transform: translateY(-3px);
-    box-shadow: $component-shadow-hover;
-  }
-}
-
-.bg-gray {
-  background: var(--color-gray);
-}

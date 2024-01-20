@@ -14,10 +14,4 @@
     -webkit-mask-image: url(../../../assets/img/svg/triangle.svg);
     top: 0;
   }
-  &-btn {
-    background: var(--color-white) !important;
-    &.orange {
-      background: var(--color-secondary) !important;
-    }
-  }
 }
