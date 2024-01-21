@@ -8,8 +8,6 @@
     object-fit: contain;
     width: fit-content;
     max-height: 40%;
-    filter: grayscale(0) opacity(0.9);
-    -webkit-filter: grayscale(0) opacity(0.9);
   }
   &-p {
     opacity: 0.8;
@@ -19,7 +17,7 @@
 
 @media (prefers-color-scheme: dark) {
   .CardTech-img {
-    filter: grayscale(1) invert(0.25);
-    -webkit-filter: grayscale(1) invert(0.25);
+    filter: grayscale(0.1) invert(0.2) brightness(1.2);
+    -webkit-filter: grayscale(0.1) invert(0.2) brightness(1.2);
   }
 }
