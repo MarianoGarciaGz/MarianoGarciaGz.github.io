@@ -49,8 +49,8 @@ const Projects = () => {
       >
         <SwiperSlide className="h-100">
           <CardProject
-            title="Invitación a informe de gobierno del ayuntamiento de Panindicuaro"
-            info="Página web de invitación para el informe de gobierno del ayuntamiento de Panindicuaro con una cuenta regresiva."
+            title="Invitation to the government report of the Panindicuaro city council"
+            info="Website invitation for the government report of the Panindicuaro city council with a countdown."
             img={Panin}
             time="72 hrs"
             link="https://cspanindicuaro.github.io/"
@@ -59,7 +59,7 @@ const Projects = () => {
         <SwiperSlide className="h-100">
           <CardProject
             title="Codesaur Tech"
-            info="Página asombrosa, para una empresa increíble de desarrollo de páginas web, software y venta de productos de hardware de la mejor calidad ;)"
+            info="Amazing website for an incredible company specializing in web development, software, and the sale of top-quality hardware products ;)"
             img={Codesaur}
             time="72 hrs"
             link="https://codesaur.tech"
@@ -68,7 +68,7 @@ const Projects = () => {
         <SwiperSlide className="h-100">
           <CardProject
             title="Seguridad Mafer"
-            info="Landing page para la empresa de seguridad Seguridad Mafer, una página con buenas practicas de SEO para ser mejor posicionada en los buscadores."
+            info="Landing page for the security company Seguridad Mafer, a page with good SEO practices to enhance its search engine rankings."
             img={Mafer}
             time="72 hrs"
             link="http://www.seguridadmafer.com.mx/"
@@ -76,8 +76,8 @@ const Projects = () => {
         </SwiperSlide>
         <SwiperSlide className="h-100">
           <CardProject
-            title="Calculadora de Hertz"
-            info="Aplicación web para calcular los hertz de cada nota musical dado la frecuencia de referencia que se quiera tomar."
+            title="Hertz Calculator"
+            info="Web application to calculate the hertz of each musical note given the reference frequency you want to use."
             img={Hz}
             time="72 hrs"
             link="https://marianogarciagz.github.io/tonal-hertz-calculator/"

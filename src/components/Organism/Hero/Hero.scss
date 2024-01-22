@@ -8,15 +8,17 @@
   &::after {
   }
   &-div {
-    min-height: 100vh;
+    min-height: 25rem;
+    height: 50vh;
   }
   &-title {
     vertical-align: bottom;
+    font-size: calc(2em + 7vw);
+    text-wrap: pretty;
     text-align: center;
-    text-wrap: nowrap;
     color: var(--color-black);
     font-family: $font-secondary;
-    line-height: 60%;
+    line-height: 70%;
   }
   &-strike {
     font-size: 0.5em;
@@ -32,8 +34,6 @@
     background-image: url(../../../assets/img/svg/blob.svg);
     background-repeat: no-repeat;
     background-position: center;
-  }
-  &-front-img {
   }
   &-em {
     font-family: $font-tertiary;

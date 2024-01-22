@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import H2 from "@components/Atoms/H2/H2";
 import SocialLink from "@components/Atoms/SocialLink/SocialLink";
+import { GlobalContext } from "../../provider/Provider";
 
 const Footer = () => {
+  const { header } = useContext(GlobalContext);
+  const { menu } = header;
   return (
     <footer className="bg-gray" id="contact">
       <div className="container-xl">
@@ -55,33 +58,19 @@ const Footer = () => {
           </div>
           <div className="col-12 col-md-6">
             <h3 className="footer__h3 h3  mb-4">Sections</h3>
-            <SocialLink className="mb-2" icon="house" href="#" target="_self">
-              Home
-            </SocialLink>
-            <SocialLink
-              className="mb-2"
-              icon="cpu-fill"
-              href="#"
-              target="_self"
-            >
-              Technologies
-            </SocialLink>
-            <SocialLink
-              className="mb-2"
-              icon="journals"
-              href="#"
-              target="_self"
-            >
-              Projects
-            </SocialLink>
-            <SocialLink
-              className="mb-2"
-              icon="info-circle-fill"
-              href="#"
-              target="_self"
-            >
-              About
-            </SocialLink>
+
+            <ul className="header-ul navbar-nav text-center ms-auto">
+              {menu.map(({ id, href, title, icon }) => (
+                <SocialLink
+                  className="mb-2 text-start"
+                  href={href}
+                  target="_self"
+                  icon={icon}
+                >
+                  {title}
+                </SocialLink>
+              ))}
+            </ul>
           </div>
           <div className="col-12 mt-5 mb-2">
             <p className="text-center">

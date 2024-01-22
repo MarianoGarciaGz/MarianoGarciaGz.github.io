@@ -7,7 +7,7 @@ const CardTech = (props) => {
     <div
       className="col"
       data-aos="fade-up"
-      data-aos-delay={`${number * 100}`}
+      data-aos-delay={`${number * 50}`}
       data-aos-duration="500"
       data-aos-once="true"
     >

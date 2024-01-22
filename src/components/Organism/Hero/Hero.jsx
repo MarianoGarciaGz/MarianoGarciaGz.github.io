@@ -1,24 +1,22 @@
 import React from "react";
-import blob from "@img/svg/blob.svg";
-import img from "@img/hero.jpeg";
 import mariano from "@img/mariano.png";
 
 import "./Hero.scss";
 
 const Hero = () => {
   return (
-    <section className="hero container-fluid">
-      <div className="row">
+    <section className="hero container-fluid d-flex align-items-center">
+      <div className="row mx-auto">
         <div className="col-12 col-lg-6 hero-div d-flex align-items-center">
           <h1
-            className="hero-title h1 text-center text-lg-start display-1 w-100"
+            className="hero-title h1 text-center text-lg-start display-1 mx-auto mx-lg-0"
             data-aos="fade-right"
             data-aos-duration="500"
             data-aos-once="true"
           >
             Front-end{" "}
             <strike
-              className="hero-strike"
+              className="hero-strike lh-lg"
               data-aos="fade-up"
               data-aos-delay="300"
               data-aos-once="true"
@@ -46,18 +44,23 @@ const Hero = () => {
           </h1>
         </div>
         <div
-          className="col-12 col-lg-6 align-self-center hero-back-img"
+          className="col-12 col-lg-6 hero-back-img d-flex align-items-center"
           data-aos="fade-left"
           data-aos-delay="0"
           data-aos-once="true"
         >
           <div
+            className=""
             data-aos="fade-down"
             data-aos-delay="500"
             data-aos-duration="500"
             data-aos-once="true"
           >
-            <img className="hero-front-img" src={mariano} alt="" />
+            <img
+              className="hero-front-img align-self-center"
+              src={mariano}
+              alt=""
+            />
           </div>
         </div>
       </div>

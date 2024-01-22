@@ -4,11 +4,11 @@ import { createContext } from "react";
 const data = {
   header: {
     menu: [
-      { id: 1, title: "Home", href: "#" },
-      { id: 2, title: "Technologies", href: "#technologies" },
-      { id: 3, title: "Projects", href: "#projects" },
-      { id: 4, title: "About", href: "#about" },
-      { id: 5, title: "Contact", href: "#contact" },
+      { id: 1, title: "Home", href: "#", icon: "house" },
+      { id: 2, title: "Technologies", href: "#technologies", icon: "cpu-fill" },
+      { id: 3, title: "Projects", href: "#projects", icon: "journals" },
+      { id: 4, title: "About", href: "#about", icon: "info-circle-fill" },
+      { id: 5, title: "Contact", href: "#contact", icon: "person-circle" },
     ],
   },
   about: {
