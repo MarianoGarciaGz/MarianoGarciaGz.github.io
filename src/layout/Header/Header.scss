@@ -5,6 +5,15 @@
   box-shadow: $component-shadow;
   color: var(--color-black);
   backdrop-filter: blur(10px);
+  &-btn {
+    border-style: none;
+    &:focus {
+      box-shadow: none;
+    }
+  }
+  &-i {
+    color: var(--color-black);
+  }
   &-nav {
     font-family: $font-secondary;
   }

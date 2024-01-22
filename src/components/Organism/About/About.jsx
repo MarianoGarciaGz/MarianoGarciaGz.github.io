@@ -19,12 +19,15 @@ const About = () => {
             with users and clients.
           </p>
           <div>
-            <a className="About-btn btn btn-primary me-3" href="">
+            <a className="About-btn btn btn-primary me-3 mb-2 mb-sm-0" href="">
               {" "}
               <i className="bi bi-github me-2"></i>
               Github
             </a>
-            <a className="About-btn.orange btn btn-secondary me-3" href="">
+            <a
+              className="About-btn.orange btn btn-secondary me-3 mb-2 mb-sm-0"
+              href=""
+            >
               <i className="bi bi-cloud-fill me-2"></i>
               SoundCloud
             </a>

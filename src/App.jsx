@@ -7,8 +7,6 @@ import About from "@components/Organism/About/About";
 import Projects from "@components/Organism/Projects/Projects";
 import Technologies from "@components/Organism/Technologies/Technologies";
 
-import Section from "@layout/Section/Section";
-
 const App = () => {
   return (
     <>

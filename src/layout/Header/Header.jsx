@@ -58,7 +58,7 @@ const Header = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <i className="header-i bi bi-list"></i>
+            <i className="header-i bi bi-list fs-1"></i>
           </button>
           <div className="nav-collapse collapse navbar-collapse" id="navbarNav">
             <ul className="header-ul navbar-nav text-center ms-auto">

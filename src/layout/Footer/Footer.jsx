@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="container-xl">
         <H2>Contact</H2>
         <div className="row">
-          <div className="col-12 col-md-6">
+          <div className="col-12 col-md-6 mb-4 mb-md-0">
             <h3 className="footer__h3 h3 mb-4">@MarianoGarciaGz</h3>
             <SocialLink
               className="mb-2"
