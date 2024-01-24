@@ -7,13 +7,13 @@ const Hero = () => {
   return (
     <section className="hero container-fluid d-flex align-items-center">
       <div className="row mx-auto">
-        <div className="col-12 col-lg-6 hero-div d-flex align-items-center">
-          <h1
-            className="hero-title h1 text-center text-lg-start display-1 mx-auto mx-lg-0"
-            data-aos="fade-right"
-            data-aos-duration="500"
-            data-aos-once="true"
-          >
+        <div
+          className="col-12 col-lg-6 hero-div d-flex align-items-center"
+          data-aos="fade-right"
+          data-aos-duration="500"
+          data-aos-once="true"
+        >
+          <h1 className="hero-title h1 text-center text-lg-start display-1 mx-auto mx-lg-0">
             Front-end{" "}
             <strike
               className="hero-strike lh-lg"

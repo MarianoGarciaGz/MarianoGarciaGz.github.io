@@ -2,7 +2,6 @@
 @import "../../assets/sass/colors";
 
 .header {
-  box-shadow: $component-shadow;
   color: var(--color-black);
   backdrop-filter: blur(10px);
   &-btn {

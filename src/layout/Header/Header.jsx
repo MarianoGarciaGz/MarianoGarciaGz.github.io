@@ -10,9 +10,9 @@ const Header = () => {
     <>
       <header
         className="header container-fluid fixed-top"
-        data-aos="fade-down"
+        data-aos="fade-left"
         data-aos-duration="1000"
-        data-aos-delay="1500"
+        data-aos-delay="500"
       >
         <nav className="header-nav nav navbar navbar-expand-md p-0">
           <div className="d-flex align-items-center ">

@@ -19,6 +19,11 @@
     color: var(--color-black);
     font-family: $font-secondary;
     line-height: 70%;
+    transform: translateY(2rem);
+    -webkit-transform: translateY(2rem);
+    -moz-transform: translateY(2rem);
+    -ms-transform: translateY(2rem);
+    -o-transform: translateY(2rem);
   }
   &-strike {
     font-size: 0.5em;

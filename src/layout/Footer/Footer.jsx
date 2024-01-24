@@ -62,6 +62,7 @@ const Footer = () => {
             <ul className="header-ul navbar-nav text-center ms-auto">
               {menu.map(({ id, href, title, icon }) => (
                 <SocialLink
+                  key={id}
                   className="mb-2 text-start fs-6"
                   href={href}
                   target="_self"
