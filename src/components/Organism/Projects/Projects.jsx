@@ -58,15 +58,6 @@ const Projects = () => {
         </SwiperSlide>
         <SwiperSlide className="h-100">
           <CardProject
-            title="Codesaur Tech"
-            info="Amazing website for an incredible company specializing in web development, software, and the sale of top-quality hardware products ;)"
-            img={Codesaur}
-            time="72 hrs"
-            link="https://codesaur.tech"
-          />
-        </SwiperSlide>
-        <SwiperSlide className="h-100">
-          <CardProject
             title="Seguridad Mafer"
             info="Landing page for the security company Seguridad Mafer, a page with good SEO practices to enhance its search engine rankings."
             img={Mafer}
