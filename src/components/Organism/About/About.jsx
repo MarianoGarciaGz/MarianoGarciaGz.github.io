@@ -19,17 +19,24 @@ const About = () => {
             with users and clients.
           </p>
           <div>
-            <a className="About-btn btn btn-primary me-3 mb-2 mb-sm-0" href="">
+            <a className="About-btn btn btn-primary me-3 mb-2 mb-sm-0" href="https://github.com/MarianoGarciaGz">
               {" "}
               <i className="bi bi-github me-2"></i>
               Github
             </a>
             <a
               className="About-btn.orange btn btn-secondary me-3 mb-2 mb-sm-0"
-              href=""
+              href="https://soundcloud.com/dowdyprogrammer"
             >
               <i className="bi bi-cloud-fill me-2"></i>
               SoundCloud
+            </a>
+            <a
+              className="About-btn btn btn-success me-3 mb-2 mb-sm-0"
+              href="https://open.spotify.com/intl-es/artist/2k5EgJml0LNzElMQpj0QOW"
+            >
+              <i className="bi bi-spotify me-2"></i>
+              Spotify
             </a>
           </div>
         </div>

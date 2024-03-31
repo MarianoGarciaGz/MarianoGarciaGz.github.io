@@ -9,7 +9,7 @@ import CardProject from "@components/Molecules/CardProject";
 
 import Panin from "@img/projects/Panindicuaro.jpeg";
 import Lily from "@img/projects/Lily.jpeg";
-import Codesaur from "@img/projects/Codesaur.jpeg";
+import Ct from "@img/projects/Codesaur.jpeg";
 import Mafer from "@img/projects/SeguridadMafer.jpeg";
 import Hz from "@img/projects/hertz.jpeg";
 
@@ -72,6 +72,15 @@ const Projects = () => {
             img={Hz}
             time="72 hrs"
             link="https://marianogarciagz.github.io/tonal-hertz-calculator/"
+          />
+        </SwiperSlide>
+        <SwiperSlide className="h-100">
+          <CardProject
+            title="Codesaur Technologies"
+            info="A landing page of my startup of web development "
+            img={Ct}
+            time="72 hrs"
+            link=""
           />
         </SwiperSlide>
       </Swiper>
