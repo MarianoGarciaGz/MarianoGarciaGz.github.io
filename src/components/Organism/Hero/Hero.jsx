@@ -14,7 +14,7 @@ const Hero = () => {
           data-aos-once="true"
         >
           <h1 className="hero-title h1 text-center text-lg-start display-1 mx-auto mx-lg-0">
-            Front-end{" "}
+            Full-stack{" "}
             <strike
               className="hero-strike lh-lg"
               data-aos="fade-up"
@@ -51,6 +51,7 @@ const Hero = () => {
         >
           <div
             className=""
+            data-aos-anchor-placement="bottom-bottom"
             data-aos="fade-down"
             data-aos-delay="500"
             data-aos-duration="500"
