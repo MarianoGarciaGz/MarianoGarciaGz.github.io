@@ -30,18 +30,4 @@ $dark: #373737;
 :root {
   --color-primary: #{$primary};
   --color-secondary: #{$secondary};
-  --color-white: #{$white};
-  --color-black: #{$black};
-  --color-gray: #{$gray};
-}
-
-// dark theme root
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-primary: #{$cyan};
-    --color-secondary: #{$secondary};
-    --color-white: #{$black};
-    --color-black: #{$white};
-    --color-gray: color-mix(in srgb, #{$black} 95%, #{$gray});
-  }
 }
