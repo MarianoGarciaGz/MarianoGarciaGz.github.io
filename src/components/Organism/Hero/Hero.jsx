@@ -18,13 +18,15 @@ const Hero = () => {
         data-aos="fade-right"
         data-aos-duration="500"
         data-aos-once="true"
+        data-aos-delay="1000"
+
       >
         <h1 className="hero__title h1 text-center align-self-center display-1">
           Full-stack{" "}
           <strike
             className="hero__strike lh-lg"
             data-aos="fade-up"
-            data-aos-delay="300"
+            data-aos-delay="1500"
             data-aos-once="true"
             data-aos-anchor-placement="bottom-bottom"
           >
@@ -34,7 +36,7 @@ const Hero = () => {
           <em
             className="hero__em"
             data-aos="zoom-out-right"
-            data-aos-delay="500"
+            data-aos-delay="1700"
             data-aos-once="true"
           >
             &
@@ -42,7 +44,7 @@ const Hero = () => {
           <strong
             className="hero__strong"
             data-aos="zoom-in"
-            data-aos-delay="500"
+            data-aos-delay="1900"
             data-aos-once="true"
           >
             music producer
@@ -52,7 +54,10 @@ const Hero = () => {
 
       {/* Mariano photo */}
       <div className="hero__photo hero__photo--mariano d-flex justify-content-center align-items-center vh-100 z-2">
-        <img className="hero__img-front w-50 p-5" src={mariano} alt="mariano" />
+        <img className="hero__img-front w-50 p-5" src={mariano} alt="mariano" data-aos="fade-up"
+          data-aos-delay="300"
+          data-aos-once="true"
+          data-aos-anchor-placement="bottom-bottom" />
       </div>
     </section>
   );
