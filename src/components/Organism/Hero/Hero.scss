@@ -1,54 +1,59 @@
-@import "../../../assets/sass/colors";
-@import "../../../assets/sass/typography";
+@import '../../../assets/sass/colors';
+@import '../../../assets/sass/typography';
 
 .hero {
-  overflow: hidden;
-  min-height: 100vh;
-  height: fit-content;
-  &::after {
-  }
-  &-div {
-    min-height: 25rem;
-    height: 50vh;
-  }
-  &-title {
+  max-height: 100vh;
+  position: relative;
+
+  /* Text */
+  &__title {
     vertical-align: bottom;
-    font-size: calc(2em + 7vw);
+    font-size: calc(7em + 7vw);
     text-wrap: pretty;
     text-align: center;
     color: var(--color-black);
     font-family: $font-secondary;
     line-height: 70%;
-    transform: translateY(2rem);
-    -webkit-transform: translateY(2rem);
-    -moz-transform: translateY(2rem);
-    -ms-transform: translateY(2rem);
-    -o-transform: translateY(2rem);
   }
-  &-strike {
+  &__strike {
     font-size: 0.5em;
     text-decoration: none;
     color: var(--color-white);
     -webkit-text-stroke: 1px var(--color-black);
     -webkit-text-fill-color: var(--color-white);
   }
-  &-strong {
-    color: var(--color-primary);
-  }
-  &-back-img {
-    background-image: url(../../../assets/img/svg/blob.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  &-em {
+  &__em {
     font-family: $font-tertiary;
     font-size: 0.3em;
   }
-  &-down {
-    transform: translateY(-3rem);
-    -webkit-transform: translateY(-3rem);
-    -moz-transform: translateY(-3rem);
-    -ms-transform: translateY(-3rem);
-    -o-transform: translateY(-3rem);
+  &__strong {
+    color: var(--color-primary);
+  }
+  &__img-front {
+    min-width: 500px;
+    z-index: 2;
+    mix-blend-mode: overlay;
+    // mix-blend-mode: soft-light;
+    // mix-blend-mode: multiply;
+  }
+  &__img-ball {
+    min-width: 500px;
+    z-index: 0;
+  }
+  &__photo {
+    &--mariano {
+      z-index: 2;
+    }
+    &--ball {
+      z-index: 0;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+    }
+  }
+  &__text-container {
+    z-index: 1;
   }
 }
