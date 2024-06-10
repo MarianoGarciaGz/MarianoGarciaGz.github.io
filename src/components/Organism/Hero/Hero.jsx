@@ -51,6 +51,13 @@ const Hero = () => {
           </strong>
         </h1>
       </div>
+      {/* Mariano photo */}
+      <div className="hero__text-container position-absolute d-flex w-100 h-100 justify-content-center align-items-center z-3 opacity-50">
+        <img className="hero__img-frontsoft w-50 p-5" src={mariano} alt="mariano" data-aos="fade-up"
+          data-aos-delay="300"
+          data-aos-once="true"
+          data-aos-anchor-placement="bottom-bottom" />
+      </div>
 
       {/* Mariano photo */}
       <div className="hero__photo hero__photo--mariano d-flex justify-content-center align-items-center vh-100 z-2">

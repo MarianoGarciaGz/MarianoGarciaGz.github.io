@@ -32,9 +32,24 @@
   &__img-front {
     min-width: 500px;
     z-index: 2;
-    mix-blend-mode: overlay;
-    // mix-blend-mode: soft-light;
+    filter: brightness(1.2) contrast(1.2);
+    // mix-blend-mode: difference;
+    mix-blend-mode: luminosity;
+    //mix-blend-mode: overlay;
+    //mix-blend-mode: soft-light;
+    //mix-blend-mode: multiply;
+    -webkit-filter: brightness(1.2) contrast(1.2);
+  }
+  &__img-frontsoft {
+    min-width: 500px;
+    z-index: 3;
+    opacity: 0;
+    mix-blend-mode: luminosity;
+    // mix-blend-mode: overlay;
     // mix-blend-mode: multiply;
+    &:hover {
+      opacity: 1;
+    }
   }
   &__img-ball {
     min-width: 500px;
@@ -43,6 +58,9 @@
   &__photo {
     &--mariano {
       z-index: 2;
+    }
+    &--marianosoft {
+      z-index: 3;
     }
     &--ball {
       z-index: 0;
