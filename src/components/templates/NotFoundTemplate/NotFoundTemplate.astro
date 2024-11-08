@@ -1,0 +1,23 @@
+---
+import './NotFoundTemplate.scss'
+---
+
+<section class='404'>
+    <div class='404__container container d-flex justify-content-center align-items-center vh-100'>
+        <div class='d-block text-center'>
+            <span class='404__span display-6'>Error 404</span>
+            <div class='d-flex'>
+                <h1 class='404__title display-4 me-3'>Página no encontrada</h1>
+                <span class='display-4 fw-bold'>:(</span>
+            </div>
+            <p class='NotFound-p lead d-block'>
+                Esta página no existe, regresa al{' '}
+                <a
+                    href={'/'}
+                    class='fw-bold'>
+                    Inicio
+                </a>
+            </p>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,158 @@
+.pattern-paper {
+  z-index: -100;
+  opacity: 0.125;
+  background-color: var(--bs-body-bg);
+  background-image: linear-gradient(
+      to bottom,
+      var(--bs-body-bg) 0%,
+      transparent 20%,
+      transparent 66%,
+      var(--bs-body-bg) 100%
+    ),
+    linear-gradient(
+      347deg,
+      var(--bs-body-bg) 20%,
+      transparent 33%,
+      transparent 66%,
+      var(--bs-body-bg) 80%
+    ),
+    linear-gradient($gray-500 2px, transparent 2px),
+    linear-gradient(90deg, $gray-500 2px, transparent 2px),
+    linear-gradient($gray-500 1px, transparent 1px),
+    linear-gradient(90deg, $gray-500 1px, transparent 1px);
+  background-size: 100% 100vh, 100% 100vh, 100px 100px, 100px 100px, 20px 20px,
+    20px 20px;
+  background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  -webkit-transform: translateY(-5rem);
+  -moz-transform: translateY(-5rem);
+  -ms-transform: translateY(-5rem);
+  -o-transform: translateY(-5rem);
+  transform: translateY(-5rem);
+}
+.pattern-wavy {
+  z-index: -100;
+  opacity: 0.25;
+  background-color: var(--bs-body-bg);
+  background-image: linear-gradient(
+      to bottom,
+      var(--bs-body-bg) 0%,
+      transparent 20%,
+      transparent 66%,
+      var(--bs-body-bg) 100%
+    ),
+    linear-gradient(
+      10deg,
+      var(--bs-body-bg) 20%,
+      transparent 33%,
+      var(--bs-body-bg) 80%
+    ),
+    repeating-radial-gradient(circle at 0 0, transparent 0, #1f93ff 15px),
+    repeating-linear-gradient(#2cffe3, #3a00a536);
+  position: absolute;
+  width: 100%;
+  height: 130vh;
+  overflow: hidden;
+  -webkit-transform: translateY(-5rem);
+  -moz-transform: translateY(-5rem);
+  -ms-transform: translateY(-5rem);
+  -o-transform: translateY(-5rem);
+  transform: translateY(-5rem);
+}
+
+.pattern-cosaur {
+  z-index: -100;
+  opacity: 0.1;
+  background-image: url('/assets/images/logo/logo-primary.svg');
+  background-repeat: space space;
+  background-size: 4rem, 4rem;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  -webkit-transform: translateY(-5rem);
+  -moz-transform: translateY(-5rem);
+  -ms-transform: translateY(-5rem);
+  -o-transform: translateY(-5rem);
+  transform: translateY(-5rem);
+}
+
+[data-bs-theme='killjoy'] {
+  .pattern-gradient {
+    background-image: linear-gradient(#15ff00, #8b00fd);
+  }
+}
+
+.pattern-gradient {
+  overflow: hidden;
+  --speed: 20s;
+  // --easing: cubic-bezier(0.2, 0.8, 0.8, 0.2);
+  --easing: ease-in-out;
+  opacity: 1;
+  z-index: -100;
+  width: calc(80vw - 12rem);
+  // min-width: 50vh;
+  // max-width: 50vh;
+  height: calc(80vh - 12rem);
+  // min-height: 50vw;
+  max-height: 50vw;
+  background-image: linear-gradient(#00aeff, #fd00fd);
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  -webkit-animation: rotate var(--speed) var(--easing) alternate infinite;
+  animation: rotate var(--speed) var(--easing) alternate infinite;
+  -webkit-border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  -moz-border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  -ms-border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  -o-border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-filter: hue-rotate(50deg) blur(calc(28rem)) saturate(2);
+    filter: hue-rotate(50deg) blur(calc(28rem)) saturate(2);
+    -webkit-transform: rotate(0deg) scale(0.7, 1) translateX(0rem)
+      translateY(0rem);
+    -moz-transform: rotate(0deg) scale(0.7, 1) translateX(0rem) translateY(0rem);
+    -ms-transform: rotate(0deg) scale(0.7, 1) translateX(0rem) translateY(0rem);
+    -o-transform: rotate(0deg) scale(0.7, 1) translateX(0rem) translateY(0rem);
+    transform: rotate(0deg) scale(0.7, 1) translateX(0rem) translateY(0rem);
+  }
+  50% {
+    -webkit-filter: hue-rotate(0deg) blur(calc(28rem)) saturate(2);
+    filter: hue-rotate(0deg) blur(calc(28rem)) saturate(2);
+    -webkit-transform: rotate(180deg) scale(0.2, 0.9)
+      translateX(10rem translateY(0rem)) translateY(30rem);
+    -moz-transform: rotate(180deg) scale(0.2, 0.9)
+      translateX(10rem translateY(0rem)) translateY(30rem);
+    -ms-transform: rotate(180deg) scale(0.2, 0.9)
+      translateX(10rem translateY(0rem)) translateY(30rem);
+    -o-transform: rotate(180deg) scale(0.2, 0.9)
+      translateX(10rem translateY(0rem)) translateY(30rem);
+    transform: rotate(180deg) scale(0.2, 0.9) translateX(10rem translateY(0rem))
+      translateY(30rem);
+  }
+  100% {
+    -webkit-filter: hue-rotate(-40deg) blur(calc(28rem)) saturate(2);
+    filter: hue-rotate(-14deg) blur(calc(28rem)) saturate(2);
+    -webkit-transform: rotate(360deg) scale(1, 1) translateX(0rem)
+      translateY(10rem);
+    -moz-transform: rotate(360deg) scale(1, 1) translateX(0rem)
+      translateY(10rem);
+    -ms-transform: rotate(360deg) scale(1, 1) translateX(0rem) translateY(10rem);
+    -o-transform: rotate(360deg) scale(1, 1) translateX(0rem) translateY(10rem);
+    transform: rotate(360deg) scale(1, 1) translateX(0rem) translateY(10rem);
+  }
+}

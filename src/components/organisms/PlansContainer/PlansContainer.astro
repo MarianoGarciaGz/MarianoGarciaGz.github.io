@@ -1,0 +1,52 @@
+---
+import PlansSwiper from './PlansSwiper'
+
+const plans = [
+    {
+        name: 'Classic',
+        price: 'MX$ 2299.99',
+        originalPrice: 'MX$ 3299.99',
+        discount: '30%',
+        description: 'Pequeño plan para que el cliente pueda conocer tu negocio.',
+    },
+    {
+        name: 'Premium',
+        price: 'MX$ 7399.99',
+        originalPrice: 'MX$ 9799.99',
+        discount: '25%',
+        description: 'Un plan para negocios en crecimiento.',
+    },
+    {
+        name: 'Personalizado',
+        price: 'MX$ ...',
+        originalPrice: 'MX$ ...',
+        discount: '...%',
+        description: 'Para empresas que necesitan una presencia sólida en línea.',
+    },
+]
+---
+
+<section class='container-lg py-5'>
+    <div data-aos='fade-down'>
+        <h2 class='h2 display-3 text-center'>Precios</h2>
+        <div class='col-lg-10 mx-auto mb-5'>
+            <p class='lead text-center'>
+                En Codesaur Technologies, nos esforzamos por ofrecer servicios de calidad a precios accesibles y
+                competitivos. Nuestro enfoque se centra en proporcionar soluciones digitales eficientes y efectivas.
+            </p>
+        </div>
+
+        <PlansSwiper
+            plans={plans}
+            client:load
+        />
+
+        <div class='text-center'>
+            <a
+                class='btn btn-lg btn-primary mx-2'
+                href='/#projects'
+                >Ver trabajos</a
+            >
+        </div>
+    </div>
+</section>

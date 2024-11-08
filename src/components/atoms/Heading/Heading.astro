@@ -1,0 +1,16 @@
+---
+type HeadingLevels = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6'
+
+interface Props {
+  level: 1 | 2 | 3 | 4 | 5 | 6
+  className?: string
+}
+
+const { level, className = '' }: Props = Astro.props
+
+const Tag: HeadingLevels = `h${level}` as HeadingLevels
+---
+
+<Tag class={`${className}`}>
+  <slot />
+</Tag>

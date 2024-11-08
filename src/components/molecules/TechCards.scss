@@ -1,0 +1,10 @@
+.tech-card {
+  height: auto;
+  font-size: 0.8em;
+
+  &__img {
+    object-fit: contain;
+    width: fit-content;
+    max-height: 40%;
+  }
+}

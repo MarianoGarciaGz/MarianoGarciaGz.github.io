@@ -1,0 +1,52 @@
+---
+import WorksSlider from '@src/components/organisms/WorksSlider/WorksSlider.astro'
+import InfoSection from '@src/components/organisms/InfoSection/InfoSection.astro'
+import Heading from '@src/components/atoms/Heading/Heading.astro'
+import { info } from '@src/config/settings.json'
+---
+
+<div class='pattern-paper'></div>
+<div class='container-md'>
+    <InfoSection
+        title='Nosotros'
+        level='1'
+        img='/assets/images/dinos/mobile.png'>
+        <p>
+            {info.aboutUs}
+        </p>
+    </InfoSection>
+    <div class='row'>
+        <div class='col-md-9'>
+            <InfoSection
+                title='Misión'
+                level='2'
+                img='/assets/images/dinos/stonks.png'
+                isReversed='true'>
+                <p>
+                    {info.mission}
+                </p>
+            </InfoSection>
+            <InfoSection
+                title='Visión'
+                img='/assets/images/dinos/Dino-box.png'
+                level='2'
+                isReversed='true'>
+                <p>
+                    {info.vision}
+                </p>
+            </InfoSection>
+        </div>
+        <div class='col-md-3 align-content-center'>
+            <section
+                class='values'
+                id='values'>
+                <div class='container-md text-center'>
+                    <Heading level={2}>Valores</Heading>
+                    <ul class='p-0'>
+                        {info.values.map((value) => <li class=' text-capitalize'>{value}</li>)}
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>

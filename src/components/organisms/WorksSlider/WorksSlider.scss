@@ -1,0 +1,52 @@
+.projects {
+  position: relative;
+  background-color: $primary;
+  background-image: linear-gradient(
+      0deg,
+      var(--bs-body-bg) 0%,
+      var(--bs-body-bg) 2%,
+      rgba(0, 0, 0, 0) 2%,
+      rgba(0, 0, 0, 0) 98%,
+      var(--bs-body-bg) 98%,
+      var(--bs-body-bg) 100%
+    ),
+    linear-gradient(
+      0deg,
+      rgba(16, 16, 16, 0.05) 0%,
+      rgba(0, 0, 0, 0) 50%,
+      rgba(16, 16, 16, 0.05) 100%
+    );
+  -webkit-transition: background-color 500ms;
+  -moz-transition: background-color 500ms;
+  -ms-transition: background-color 500ms;
+  -o-transition: background-color 500ms;
+  transition: background-color 500ms;
+}
+
+.project {
+  &__img {
+    object-position: top;
+    object-fit: cover;
+    aspect-ratio: 16/9;
+  }
+}
+
+[data-bs-theme='dark'] {
+  .projects {
+    background-image: linear-gradient(
+        0deg,
+        var(--bs-body-bg) 0%,
+        var(--bs-body-bg) 2%,
+        rgba(0, 0, 0, 0) 2%,
+        rgba(0, 0, 0, 0) 98%,
+        var(--bs-body-bg) 98%,
+        var(--bs-body-bg) 100%
+      ),
+      linear-gradient(
+        0deg,
+        rgba(16, 16, 16, 0.5) 0%,
+        rgba(0, 0, 0, 0.2) 50%,
+        rgba(16, 16, 16, 0.5) 100%
+      );
+  }
+}

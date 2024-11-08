@@ -1,0 +1,13 @@
+/* killjoy-theme.scss */
+[data-bs-theme='killjoy'] {
+  --bs-body-color: #ffffff;
+  --bs-body-color-rgb: #{to-rgb($white)};
+  --bs-body-bg: #776b00;
+  --bs-primary: $green;
+  .btn-primary {
+    --bs-btn-bg: var(--bs-green);
+    --bs-btn-border-color: $green;
+  }
+  --bs-primary-rgb: #{to-rgb($green)};
+  --bs-body-color-rgb: #{to-rgb($white)};
+}

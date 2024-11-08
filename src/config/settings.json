@@ -1,0 +1,93 @@
+{
+  "info": {
+    "name": "MarianoGarciaGz",
+    "activity": "Desarrollador Fullstack",
+    "description": "",
+    "slogan": "",
+    "aboutUs": "",
+    "mission": "",
+    "vision": "",
+    "values": [
+      "puntualidad",
+      "⁠respeto",
+      "⁠honestidad",
+      "⁠orientación",
+      "⁠calidad",
+      "⁠responsabilidad"
+    ],
+    "url": "https://marianogarciagz.github.io/",
+    "defaultImage": "/assets/images/default-og-image.png",
+    "defaultKeywords": ["web", "servicios", "digitales"],
+    "author": "Mariano García",
+    "twitterHandle": "@marianogarciagz"
+  },
+  "social": {
+    "facebook": "https://facebook.com/marianogarciagz",
+    "linkedin": "https://linkedin.com/marianogarciagz",
+    "instagram": "https://instagram.com/marianogarciagz",
+    "twitter": "https://youtube.com/@marianogarciagz",
+    "youtube": "https://youtube.com/@marianogarciagz",
+    "whatsapp": "https://wa.me/524361063128"
+  },
+  "contact": {
+    "phones": "524361063128",
+    "phonesFormatted": "(+52) 436 106 3128",
+    "email": "marianogarciagz@gmail.com"
+  },
+  "pages": {
+    "inicio": {
+      "path": "/",
+      "title": "",
+      "description": "",
+      "url": "https://marianogarciagz.github.io/",
+      "image": "",
+      "keywords": ["inicio"],
+      "author": ""
+    },
+    "precios": {
+      "path": "/prices",
+      "title": "Precios",
+      "description": "",
+      "url": "https://marianogarciagz.github.io/",
+      "image": "",
+      "keywords": ["precios"],
+      "author": ""
+    },
+    "nosotros": {
+      "path": "/about",
+      "title": "Acerca de nosotros",
+      "description": "",
+      "url": "https://marianogarciagz.github.io/",
+      "image": "",
+      "keywords": ["nosotros"],
+      "author": ""
+    },
+    "contacto": {
+      "path": "/contact",
+      "title": "Contáctanos",
+      "description": "",
+      "url": "https://marianogarciagz.github.io/",
+      "image": "",
+      "keywords": ["contacto"],
+      "author": ""
+    },
+    "blog": {
+      "path": "/blog",
+      "title": "Blog",
+      "description": "",
+      "url": "https://marianogarciagz.github.io/",
+      "image": "",
+      "keywords": ["blog"],
+      "author": ""
+    },
+    "error": {
+      "path": "/404",
+      "title": "Esta página no existe",
+      "description": "",
+      "url": "https://marianogarciagz.github.io/",
+      "image": "",
+      "keywords": ["", "", ""],
+      "author": ""
+    }
+  }
+}

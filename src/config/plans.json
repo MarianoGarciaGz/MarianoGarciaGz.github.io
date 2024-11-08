@@ -1,0 +1,124 @@
+{
+  "plans": [
+    {
+      "feature": "Alta disponibilidad",
+      "basic": "check2-all",
+      "complete": "check2-all",
+      "custom": "check2-all"
+    },
+    {
+      "feature": "Diseño responsivo",
+      "basic": "check2-all",
+      "complete": "check2-all",
+      "custom": "check2-all"
+    },
+    {
+      "feature": "Optimización SEO",
+      "basic": "check2-all",
+      "complete": "check2-all",
+      "custom": "check2-all"
+    },
+    {
+      "feature": "Soporte técnico",
+      "basic": "check2-all",
+      "complete": "check2-all",
+      "custom": "check2-all"
+    },
+    {
+      "feature": "Contenido visual atractivo",
+      "basic": "check2-all",
+      "complete": "check2-all",
+      "custom": "check2-all"
+    },
+    {
+      "feature": "Velocidad de carga optimizada",
+      "basic": "check2-all",
+      "complete": "check2-all",
+      "custom": "check2-all"
+    },
+    {
+      "feature": "Optimización de imágenes",
+      "basic": "check2-all",
+      "complete": "check2-all",
+      "custom": "check2-all"
+    },
+    {
+      "feature": "Dominio y Hosting",
+      "basic": "check2-all",
+      "complete": "check2-all",
+      "custom": "three-dots"
+    },
+    {
+      "feature": "Seguridad (SSL)",
+      "basic": "check2-all",
+      "complete": "check2-all",
+      "custom": "three-dots"
+    },
+    {
+      "feature": "Integración con redes sociales",
+      "basic": "check2-all",
+      "complete": "check2-all",
+      "custom": "three-dots"
+    },
+    {
+      "feature": "Backup y restauración automática",
+      "basic": "check2-all",
+      "complete": "check2-all",
+      "custom": "three-dots"
+    },
+    {
+      "feature": "Botones de mensajería",
+      "basic": "check2-all",
+      "complete": "check2-all",
+      "custom": "three-dots"
+    },
+    {
+      "feature": "Galería de imágenes y videos",
+      "basic": "check2",
+      "complete": "check2-all",
+      "custom": "three-dots"
+    },
+    {
+      "feature": "Actualización de contenido",
+      "basic": "check2",
+      "complete": "check2-all",
+      "custom": "three-dots"
+    },
+    {
+      "feature": "Sistema de gestión de contenido (CMS)",
+      "basic": "x-lg",
+      "complete": "check2-all",
+      "custom": "three-dots"
+    },
+    {
+      "feature": "Blog",
+      "basic": "x-lg",
+      "complete": "check2-all",
+      "custom": "three-dots"
+    },
+    {
+      "feature": "Procesos de pago integrados",
+      "basic": "x-lg",
+      "complete": "check2-all",
+      "custom": "three-dots"
+    },
+    {
+      "feature": "Funciones personalizadas",
+      "basic": "x-lg",
+      "complete": "check2",
+      "custom": "three-dots"
+    },
+    {
+      "feature": "Soporte multilenguaje",
+      "basic": "x-lg",
+      "complete": "x-lg",
+      "custom": "three-dots"
+    },
+    {
+      "feature": "Módulo de ecommerce",
+      "basic": "x-lg",
+      "complete": "three-dots",
+      "custom": "three-dots"
+    }
+  ]
+}

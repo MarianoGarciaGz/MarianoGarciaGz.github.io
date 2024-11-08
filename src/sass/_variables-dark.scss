@@ -1,0 +1,5 @@
+[data-bs-theme='dark'] {
+  color-scheme: dark;
+  --bs-body-color: var(--bs-white);
+  --bs-body-color-rgb: #{to-rgb($white)};
+}

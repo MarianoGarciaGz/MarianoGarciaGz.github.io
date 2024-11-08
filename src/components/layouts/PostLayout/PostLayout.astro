@@ -1,0 +1,54 @@
+---
+import '@src/sass/globals.scss'
+import type { CollectionEntry } from 'astro:content'
+import PostHero from '@src/components/organisms/PostHero/PostHero.astro'
+import Header from '@src/components/organisms/Header/Header.astro'
+import Footer from '@src/components/organisms/Footer/Footer.astro'
+import StickyBtn from '@src/components/organisms/StickyBtn/StickyBtn.astro'
+import Aside from '@src/components/organisms/Aside/Aside.astro'
+import Head from '@src/components/atoms/Head/Head.astro'
+import Scripts from '@src/components/atoms/Scripts/Scripts.astro'
+
+type Props = CollectionEntry<'blog'>['data']
+
+const { title, description, date, image, author, category, keywords }: Props = Astro.props
+---
+
+<!doctype html>
+<html lang='es'>
+  <Head
+    postTitle={title}
+postImage={image}
+postAuthor={author}    
+postKeywords={keywords}
+postDescription={description}
+  />
+  <body>
+    <StickyBtn />
+    <Header />
+    <div>
+      <PostHero
+        title={title}
+        image={image}
+        date={date}
+        author={author}
+        category={category}
+      />
+      <div class='divider-sm'></div>
+      <div class='container-lg'>
+        <div class='row'>
+          <div class='col-12 col-md-8'>
+            <div class='markdown'>
+              <slot />
+            </div>
+          </div>
+          <div class='col-12 col-md-4'>
+            <Aside />
+          </div>
+        </div>
+      </div>
+    </div>
+    <Footer />
+    <Scripts />
+  </body>
+</html>

@@ -1,0 +1,108 @@
+---
+import { getCollection } from 'astro:content'
+import FormattedDate from '@src/components/FormattedDate.astro'
+import Heading from '@src/components/atoms/Heading/Heading.astro'
+import Aside from '@src/components/organisms/Aside/Aside.astro'
+import '@github/relative-time-element/relative-time'
+import '@github/relative-time-element'
+
+import './BlogTemplate.scss'
+
+// Obtén los posts de forma asíncrona
+const posts = (await getCollection('blog')).sort((a, b) => {
+  const dateA = new Date(a.data.date).getTime()
+  const dateB = new Date(b.data.date).getTime()
+  return dateB - dateA
+})
+
+const recentPosts = posts.slice(0, 3)
+---
+
+<section class='hero-blog container-lg py-5'>
+  <div class='hero-blog__overlay rounded-5 position-relative card shadow'>
+    <!-- Este div es el overlay del fondo con filtro -->
+    <div
+      class='hero-blog__background'
+      style="background-image: url('/assets/images/post/bienvenida/banner.jpg');">
+    </div>
+
+    <!-- Contenido de la card -->
+    <div class='p-5 text-white position-relative col-12'>
+      <h1 class=''>
+        Domina el mundo digital: Artículos, consejos y estrategias de diseño
+        web, desarrollo, SEO para tu negocio online
+      </h1>
+      <p class='d-none d-md-flex'>
+        Bienvenido a nuestro blog, donde los dinosaurios de Cosaur te guían en
+        tu aventura digital. Desde trucos para optimizar tu página web hasta
+        consejos de SEO para aumentar tu visibilidad, aquí encontrarás todo lo
+        que necesitas para dominar el mundo online. ¿Estás listo para llevar tu
+        negocio a la era digital con el poder de gigantes? ¡Sigue leyendo y
+        conviértete en una bestia en la web!
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class='container-lg'>
+  <div class='row g-4'>
+    <div class='col-12 col-md-8'>
+      <h2>Posts</h2>
+      <hr />
+      <ul class='p-0 row'>
+        {
+          posts.map((post) => (
+            <li class='mb-4 col-12 col-xxl-6'>
+              <article
+                style=''
+                class='card shadow-sm rounded-4 border-1 p-4'>
+                <a
+                  class='text-body text-decoration-none'
+                  href={`/blog/${post.slug}/`}>
+                  <img
+                    class='post-card__img w-100 rounded-3'
+                    src={post.data.image}
+                    style='aspect-ratio: 16/9; object-fit: cover;'
+                    alt={post.data.title}
+                    loading='lazy'
+                  />
+                  <div class='card-body p-0 pt-4'>
+                    <Heading level={3}>{post.data.title}</Heading>
+                    <p
+                      style='
+                       display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+                      
+                      '
+                      class=''>
+                      {post.data.description}
+                    </p>
+                    <small class='date'>
+                      <date datetime={`${new Date(`${post.data.date}`)}`}>
+                        {new Date(post.data.date).toLocaleDateString('es-MX', {
+                          year: 'numeric',
+                          month: 'short',
+                          day: '2-digit',
+                          hour: '2-digit',
+                          minute: 'numeric',
+                        })}
+                      </date>
+                      {/* <FormattedDate date={post.data.pubDate} /> */}
+                    </small>
+                  </div>
+                </a>
+              </article>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+
+    <div class='col-md-4'>
+      <Aside />
+    </div>
+  </div>
+</section>

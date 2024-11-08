@@ -1,0 +1,104 @@
+---
+import FooterSocial from '@src/components/atoms/FooterSocial/FooterSocial.astro'
+import './Footer.scss'
+import Heading from '@src/components/atoms/Heading/Heading.astro'
+import settings from '@src/config/settings.json'
+
+const socialLinks = settings.social
+const { name } = settings.info
+const { phones, phonesFormatted, email } = settings.contact
+
+// Extrae los paths de cada página
+const pageLinks = Object.entries(settings.pages).map(([key, value]) => ({
+  name: key,
+  path: value.path,
+}))
+---
+
+<footer
+  class='footer bg-body rounded-top-5 position-absolute w-100'
+  id='contact'>
+  <div class='divider-md'></div>
+  <div class='container-sm'>
+    <Heading
+      level={2}
+      className='text-center'>
+      Contáctanos
+    </Heading>
+    <div class='divider-sm'></div>
+
+    <div class='row text-center text-lg-start'>
+      <div class='col-6 col-lg-4'>
+        <h3 class='Footer-h3 fs-4 text-uppercase mb-3'>Social</h3>
+        <ul class='Footer-ul list-unstyled row gy-2 lh-sm'>
+          {
+            Object.entries(socialLinks).map(([key, href]) => (
+              <li class='Footer-li'>
+                <FooterSocial
+                  class='Footer-a my-2 text-decoration-none fs-6'
+                  href={href}
+                  block='Footer'
+                  logo={key}
+                  title={key.charAt(0).toUpperCase() + key.slice(1)}
+                />
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+      <div class='col-6 col-lg-4 mb-4'>
+        <h3 class='Footer-h3 fs-4 text-uppercase mb-3'>Enlaces</h3>
+        <ul class='Footer-ul list-unstyled row gy-2 lh-sm'>
+          {
+            pageLinks
+              .filter(({ name }) => name.toLowerCase() !== 'error') // Filtra para excluir la página de error
+              .map(({ name, path }) => (
+                <li class='Footer-li'>
+                  <a
+                    href={path}
+                    class='Footer-a my-2 text-decoration-none fs-6'>
+                    {name.charAt(0).toUpperCase() + name.slice(1)}
+                  </a>
+                </li>
+              ))
+          }
+        </ul>
+      </div>
+      <div class='col-sm-12 col-lg-4 mb-3'>
+        <h3 class='Footer-h3 fs-4 text-uppercase mb-3'>Contacto</h3>
+        <address class='m-0 p-0'>
+          <ul class='Footer-ul list-unstyled row gy-2 lh-sm'>
+            <li class='Footer-li'>
+              <a
+                href={`mailto:${email}`}
+                title='Mandar mensaje al correo'
+                aria-label={`Mandar mensaje al correo electrónico ${email}`}
+                class='Footer-a my-2 text-decoration-none fs-6'>
+                <i class='bi bi-envelope-fill me-2'></i>
+                {email}
+              </a>
+            </li>
+
+            <li class='Footer-li'>
+              <a
+                href={`tel:+${phonesFormatted}`}
+                title='Llamar al número de teléfono'
+                aria-label={`Llamar al número de teléfono ${phonesFormatted}`}
+                class='Footer-a my-2 text-decoration-none fs-6'>
+                <i class='bi bi-telephone-fill me-2'></i>
+                {phonesFormatted}
+              </a>
+            </li>
+          </ul>
+        </address>
+      </div>
+      <div class='divider-sm'></div>
+
+      <div class='col-12 text-center mb-2'>
+        <p class='Footer-rights'>
+          © Todos los derechos reservados por <strong>{name}</strong>.
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>

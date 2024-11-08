@@ -1,0 +1,36 @@
+---
+import FormattedDate from '@src/components/FormattedDate.astro'
+import './PostHero.scss'
+
+const { title, date, image, author, category } = Astro.props
+---
+
+<div class='post-hero'>
+  <img
+    src={image}
+    class='post-hero__image position-absolute w-100 z-n1'
+    alt={title}
+  />
+  <div class='post-hero__overlay container-lg h-100 d-flex align-items-end'>
+    <div class=''>
+      <h1 class='post-hero__title text-body display-4'>{title}</h1>
+      <small class='me-3'>Autor: {author} </small>
+      <small class='me-3'>
+        Fecha:
+        <date datetime={`${new Date(`${date}`)}`}>
+          {
+            new Date(date).toLocaleDateString('es-MX', {
+              year: 'numeric',
+              month: 'long',
+              day: '2-digit',
+            })
+          }
+        </date>
+      </small>
+      <small class=''
+        >Categoría:
+        <strong class='badge bg-primary text-capitalize'>{category}</strong>
+      </small>
+    </div>
+  </div>
+</div>

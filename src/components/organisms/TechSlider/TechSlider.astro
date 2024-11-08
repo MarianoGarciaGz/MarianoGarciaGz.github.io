@@ -1,0 +1,214 @@
+---
+import CardTech from '@src/components/molecules/TechCards.astro'
+
+/* Importa las imágenes de las tecnologías */
+import fl from '@src/assets/img/icons/fl.png'
+import js from '@src/assets/img/icons/js.png'
+import css from '@src/assets/img/icons/css.png'
+import git from '@src/assets/img/icons/git.png'
+import html from '@src/assets/img/icons/html.png'
+import scss from '@src/assets/img/icons/scss.png'
+import figma from '@src/assets/img/icons/figma.png'
+import react from '@src/assets/img/icons/react.png'
+import vegas from '@src/assets/img/icons/vegas.png'
+import bs from '@src/assets/img/icons/bootstrap.png'
+import python from '@src/assets/img/icons/python.svg'
+import photoshop from '@src/assets/img/icons/photoshop.png'
+
+const techData = [
+  { title: 'html', img: html, content: ['SEO', 'Semantic'] },
+  {
+    title: 'css',
+    img: css,
+    content: ['Dark mode', 'Media queries', 'BEM methodology'],
+  },
+  {
+    title: 'JavaScript',
+    img: js,
+    content: ['Good practices', 'ES6 Features', 'Async/Await'],
+  },
+  {
+    title: 'Scss',
+    img: scss,
+    content: ['Dark mode', 'Suit CSS methodology', 'BEM methodology'],
+  },
+  {
+    title: 'React',
+    img: react,
+    content: [
+      'Atomic Design',
+      'State Management (Redux, Context)',
+      'React Hooks',
+    ],
+  },
+  {
+    title: 'Python',
+    img: python,
+    content: ['Data Analysis', 'Web Development with Django', 'Automation'],
+  },
+  {
+    title: 'Bootstrap',
+    img: bs,
+    content: ['Responsive Design', 'Component Library Usage'],
+  },
+  {
+    title: 'Git',
+    img: git,
+    content: [
+      'Version Control',
+      'Branching Strategies',
+      'Collaborative Workflows',
+    ],
+  },
+  {
+    title: 'Photoshop',
+    img: photoshop,
+    content: ['Photo Editing', 'Graphic Design', 'Digital Art'],
+  },
+  {
+    title: 'Figma',
+    img: figma,
+    content: ['UI/UX Design', 'Collaborative Design', 'Prototyping'],
+  },
+  {
+    title: 'Fl Studio',
+    img: fl,
+    content: ['Music production', 'Audio editing', 'Sound designs'],
+  },
+  {
+    title: 'Vegas Pro',
+    img: vegas,
+    content: ['Video Editing', 'Motion Graphics', 'Special Effects'],
+  },
+]
+
+// Dividir `techData` en dos mitades
+const half = Math.ceil(techData.length / 2)
+const techDataTop = techData.slice(0, half)
+const techDataBottom = techData.slice(half)
+---
+
+<style>
+  .slider-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+
+  .slider-track {
+    display: flex;
+    gap: 1rem;
+    animation: slide 20s linear infinite;
+  }
+
+  .slider-track.reverse {
+    animation-direction: reverse;
+  }
+
+  @keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+  .slider-item {
+    flex: 0 0 auto;
+    width: 200px; /* Ajusta el ancho de las tarjetas */
+  }
+</style>
+
+<section class='container-lg slider-container'>
+  <!-- Primer slider (ascendente) -->
+  <h2 class='text-center display-5'>Tecnologías</h2>
+  <div class='slider-track py-2'>
+    {
+      techDataTop.map((tech, index) => (
+        <div class='slider-item'>
+          <CardTech
+            title={tech.title}
+            img={tech.img}
+            number={index}>
+            <p class='tech-card__p card-text'>
+              {tech.content.map((item) => (
+                <>
+                  <i class='bi bi-arrow-return-right me-1' />
+                  {item}
+                  <br />
+                </>
+              ))}
+            </p>
+          </CardTech>
+        </div>
+      ))
+    }
+    <!-- Duplicar las tarjetas para crear un efecto de deslizamiento continuo -->
+    {
+      techDataTop.map((tech, index) => (
+        <div class='slider-item'>
+          <CardTech
+            title={tech.title}
+            img={tech.img}
+            number={index}>
+            <p class='tech-card__p card-text'>
+              {tech.content.map((item) => (
+                <>
+                  <i class='bi bi-arrow-return-right me-1' />
+                  {item}
+                  <br />
+                </>
+              ))}
+            </p>
+          </CardTech>
+        </div>
+      ))
+    }
+  </div>
+
+  <!-- Segundo slider (descendente) -->
+  <div class='slider-track py-2 reverse'>
+    {
+      techDataBottom.map((tech, index) => (
+        <div class='slider-item'>
+          <CardTech
+            title={tech.title}
+            img={tech.img}
+            number={index}>
+            <p class='tech-card__p card-text'>
+              {tech.content.map((item) => (
+                <>
+                  <i class='bi bi-arrow-return-right me-1' />
+                  {item}
+                  <br />
+                </>
+              ))}
+            </p>
+          </CardTech>
+        </div>
+      ))
+    }
+    <!-- Duplicar las tarjetas para el efecto de deslizamiento continuo -->
+    {
+      techDataBottom.map((tech, index) => (
+        <div class='slider-item'>
+          <CardTech
+            title={tech.title}
+            img={tech.img}
+            number={index}>
+            <p class='tech-card__p card-text'>
+              {tech.content.map((item) => (
+                <>
+                  <i class='bi bi-arrow-return-right me-1' />
+                  {item}
+                  <br />
+                </>
+              ))}
+            </p>
+          </CardTech>
+        </div>
+      ))
+    }
+  </div>
+</section>

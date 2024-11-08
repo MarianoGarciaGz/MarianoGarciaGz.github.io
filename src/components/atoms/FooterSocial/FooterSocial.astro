@@ -1,0 +1,12 @@
+---
+const { href, logo, title, class: className } = Astro.props
+---
+
+<a
+    target='_blank'
+    rel='noopener noreferrer'
+    href={href}
+    class={`${className} text-decoration-none`}>
+    {logo && <i class={` bi me-2 bi-${logo}`} />}
+    {title}
+</a>

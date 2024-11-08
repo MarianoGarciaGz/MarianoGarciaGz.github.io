@@ -1,0 +1,23 @@
+---
+import '@src/sass/globals.scss'
+import Header from '@src/components/organisms/Header/Header.astro'
+import Footer from '@src/components/organisms/Footer/Footer.astro'
+import StickyBtn from '@src/components/organisms/StickyBtn/StickyBtn.astro'
+import Head from '@src/components/atoms/Head/Head.astro'
+const { pageData } = Astro.props
+import Scripts from '@src/components/atoms/Scripts/Scripts.astro'
+---
+
+<!doctype html>
+<html lang='es'>
+  <Head pageData={pageData} />
+  <body>
+    <StickyBtn />
+    <Header />
+    <main>
+      <slot />
+    </main>
+    <Footer />
+    <Scripts />
+  </body>
+</html>

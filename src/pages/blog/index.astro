@@ -1,0 +1,9 @@
+---
+import MainLayout from '@src/components/layouts/MainLayout/MainLayout.astro'
+import BlogTemplate from '@src/components/templates/BlogTemplate/BlogTemplate.astro'
+import { pages } from '@src/config/settings.json'
+---
+
+<MainLayout pageData={pages.blog}>
+    <BlogTemplate />
+</MainLayout>

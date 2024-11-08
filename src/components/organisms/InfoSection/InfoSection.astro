@@ -1,0 +1,24 @@
+---
+import Heading from '@src/components/atoms/Heading/Heading.astro'
+const { title, description, img, level, isReversed } = Astro.props
+---
+
+<section class='hero align-content-center'>
+    <div
+        class={`row align-items-center justify-content-center justify-content-lg-between py-5 ${isReversed ? 'flex-row-reverse' : ''}`}>
+        <div class='hero__column-text col-12 col-lg-7'>
+            <div class=''>
+                <Heading {level}>{title}</Heading>
+                <slot />
+            </div>
+        </div>
+        <div class='hero__column-img col-6 col-md-4 col-lg-4'>
+            <img
+                src={img}
+                class='hero__img w-100'
+                alt={`${title} image`}
+                loading='eager'
+            />
+        </div>
+    </div>
+</section>

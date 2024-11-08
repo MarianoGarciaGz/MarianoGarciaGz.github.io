@@ -1,0 +1,32 @@
+.post-hero {
+  height: 50vh;
+  & * {
+  }
+
+  &__image {
+    animation: parallax linear;
+    -webkit-animation: parallax linear;
+    animation-timeline: scroll();
+    filter: brightness(0.8) blur(5px);
+    height: 50vh;
+    object-position: center;
+    object-fit: cover;
+    -webkit-mask-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, 0)
+    );
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    -webkit-filter: brightness(0.8) blur(5px);
+  }
+}
+
+@keyframes parallax {
+  to {
+    transform: translateY(150vh);
+    -webkit-transform: translateY(150vh);
+    -moz-transform: translateY(150vh);
+    -ms-transform: translateY(150vh);
+    -o-transform: translateY(150vh);
+  }
+}

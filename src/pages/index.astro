@@ -1,0 +1,10 @@
+---
+// src/pages/index.astro
+import MainLayout from '@src/components/layouts/MainLayout/MainLayout.astro'
+import HomeTemplate from '@src/components/templates/HomeTemplate/HomeTemplate.astro'
+import { pages } from '@src/config/settings.json'
+---
+
+<MainLayout pageData={pages.inicio}>
+    <HomeTemplate />
+</MainLayout>

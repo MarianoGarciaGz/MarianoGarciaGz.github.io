@@ -1,0 +1,62 @@
+---
+import Heading from '@src/components/atoms/Heading/Heading.astro'
+---
+
+<div class='featutes-grid'>
+    <div class='container-lg'>
+        <div class='d-flex'>
+            <Heading level={2}>Características</Heading>
+            <small class='badge-cute badge bg-primary h-100 d-flex'>News</small>
+        </div>
+        <div class='row g-4 align-items-stretch'>
+            <div class='col-lg-8'>
+                <div class='row g-4'>
+                    <div class='col-md-12'>
+                        <a
+                            class='text-decoration-none'
+                            href='/prices'>
+                            <div class='card shadow bg-primary border border-primary rounded-4 p-4'>
+                                <Heading level={3}>Crea tu página web</Heading>
+                                <p>Desarrolla una página web profesional y atractiva, diseñada para captar la atención de tu público.</p>
+                                <small class='text-decoration-underline'>Ver más</small>
+                            </div>
+                        </a>
+                    </div>
+                    <div class='col-md-6'>
+                        <a
+                            class='text-decoration-none'
+                            href='/blog/la-importancia-de-tener-una-pagina-web-profesional/'>
+                            <div class='card shadow bg-secondary border border-secondary rounded-4 p-4'>
+                                <Heading level={3}>Tienda virtual</Heading>
+                                <p>Establece una tienda en línea con todas las herramientas necesarias para vender productos y servicios de manera eficiente.</p>
+                                <small class='text-decoration-underline'>Ver más</small>
+                            </div>
+                        </a>
+                    </div>
+                    <div class='col-md-6'>
+                        <a
+                            class='text-decoration-none'
+                            href='/blog/la-evolución-del-diseño-web/'>
+                            <div class='card shadow bg-warning border border-warning rounded-4 p-4 text-black'>
+                                <Heading level={3}>Diseño</Heading>
+                                <p>Explora nuestras soluciones de diseño gráfico que combinan creatividad y funcionalidad para destacar tu marca.</p>
+                                <small class='text-decoration-underline'>Ver más</small>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class='col-lg-4'>
+                <a
+                    class='text-decoration-none'
+                    href='/blog'>
+                    <div class='card shadow bg-info border border-info rounded-4 p-4 h-100'>
+                        <Heading level={3}>Noticias</Heading>
+                        <p>Mantente informado con las últimas novedades y actualizaciones sobre nuestros servicios y productos.</p>
+                        <small class='text-decoration-underline'>Ver más</small>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

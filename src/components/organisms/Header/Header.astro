@@ -1,0 +1,123 @@
+<header class='header sticky-top w-100 glass'>
+  <div class='container-lg'>
+    <nav class='navbar navbar-expand-md'>
+      <a
+        class='navbar-brand'
+        href='/'
+        style='font-family: Bebas Neue !important;'
+        >@marianogarciagz</a
+      >
+
+      <!-- Toggle button for mobile view -->
+      <button
+        class='navbar-toggler'
+        type='button'
+        data-bs-toggle='collapse'
+        data-bs-target='#navbarNav'
+        aria-controls='navbarNav'
+        aria-expanded='false'
+        aria-label='Toggle navigation'>
+        <span class='navbar-toggler-icon'></span>
+      </button>
+
+      <!-- Navbar links -->
+      <div
+        class='collapse navbar-collapse'
+        id='navbarNav'>
+        <ul class='navbar-nav me-auto'>
+          <li class='nav-item'>
+            <a
+              class='nav-link'
+              href='#about'
+              >Acerca de</a
+            >
+          </li>
+          <li class='nav-item'>
+            <a
+              class='nav-link'
+              href='#projects'
+              >Proyectos</a
+            >
+          </li>
+          <li class='nav-item'>
+            <a
+              class='nav-link'
+              href='#contact'
+              >Contacto</a
+            >
+          </li>
+        </ul>
+
+        <div class='d-md-flex col-md-4 justify-content-md-end gap-2'>
+          <a
+            class='btn btn-primary px-4 d-block d-md-inline-block mb-md-0 mb-2 border-0 rounded-pill shadow-sm'
+            href='/blog'>
+            <i class='bi bi-substack'></i>
+            Blog
+          </a>
+
+          <!-- Theme Toggle Button -->
+          <button
+            class='header__btn--theme btn btn-sm btn-light px-4 dropdown-toggle d-flex align-items-center border-0 rounded-pill shadow-sm'
+            id='bd-theme'
+            type='button'
+            aria-expanded='false'
+            data-bs-toggle='dropdown'
+            aria-label='Toggle theme (dark)'>
+            <i class='bi bi-moon-stars-fill me-2'></i>
+            <span
+              class='visually-hidden'
+              id='bd-theme-text'
+              >Toggle theme</span
+            >
+          </button>
+
+          <ul
+            class='dropdown-menu dropdown-menu-end rounded-4 border-0 p-0'
+            aria-labelledby='bd-theme-text'>
+            <li>
+              <button
+                type='button'
+                class='dropdown-item d-flex align-items-center rounded-top-4 py-2'
+                data-bs-theme-value='light'
+                aria-pressed='false'>
+                <i class='bi bi-sun-fill me-3'></i>
+                Light
+              </button>
+            </li>
+            <li>
+              <button
+                type='button'
+                class='dropdown-item d-flex align-items-center py-2'
+                data-bs-theme-value='dark'
+                aria-pressed='true'>
+                <i class='bi bi-moon-stars-fill me-3'></i>
+                Dark
+              </button>
+            </li>
+            <li>
+              <button
+                type='button'
+                class='dropdown-item d-flex align-items-center py-2'
+                data-bs-theme-value='killjoy'
+                aria-pressed='false'>
+                <i class='bi bi-battery-charging me-3'></i>
+                Killjoy
+              </button>
+            </li>
+            <li>
+              <button
+                type='button'
+                class='dropdown-item d-flex align-items-center rounded-bottom-4 py-2'
+                data-bs-theme-value='auto'
+                aria-pressed='false'>
+                <i class='bi bi-circle-half me-3'></i>
+                Auto
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
