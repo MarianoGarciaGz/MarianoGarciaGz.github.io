@@ -1,6 +1,18 @@
 {
   "projects": [
     {
+      "name": "Cosaur",
+      "link": "https://www.cosaur.com",
+      "description": "Desarrollo completo de página web, diseño y despliegue en AWS Amplify.",
+      "startDate": "2023-09-12",
+      "endDate": "2023-11-01",
+      "technologies": ["HTML", "CSS", "JavaScript", "React"],
+      "image": "",
+      "client": "Cosaur",
+      "role": "Full-Stack development",
+      "color": "#20ca50"
+    },
+    {
       "name": "Seguridad Mafer",
       "link": "http://www.seguridadmafer.com.mx/",
       "description": "Desarrollo de landing page para Seguridad Mafer, página con buenas practicas de SEO para mejor posicionamiento en los buscadores.",
@@ -23,18 +35,6 @@
       "client": "Municipio de Panindicuaro",
       "role": "Back-End Developer",
       "color": "#AD2439"
-    },
-    {
-      "name": "MarianoGarciaGz",
-      "link": "https://marianogarciagz.github.io/",
-      "description": "Desarrollo de portafolio web de desarrollador Full-stack.",
-      "startDate": "2021-11-01",
-      "endDate": "2022-02-15",
-      "technologies": ["HTML", "CSS", "JavaScript", "Next.js"],
-      "image": "https://example.com/images/mariano.jpeg",
-      "client": "Mariano García",
-      "role": "Full-Stack Developer",
-      "color": "#306070"
     }
   ],
 

@@ -61,14 +61,11 @@ const ContainerCards = () => {
                     <div className='container-lg'>
                         <div className="row flex-row-reverse flex-wrap-reverse align-items-center g-5 py-5 text-white justify-content-center justify-content-md-between">
                             <div className="col-10 col-sm-8 col-md-5">
-                                <img src="/assets/images/projects/cosaur.jpg" className="d-block mx-md-auto img-fluid rounded-5" alt="Bootstrap Themes" loading="lazy" />
+                                <img src="/assets/images/projects/MarianoGarciaGz.png" className="d-block mx-md-auto img-fluid rounded-5" alt="Bootstrap Themes" loading="lazy" />
                             </div>
                             <div className="col-md-7 col-xl-6">
                                 <h2 className="display-5 lh-1 mb-3 text-center text-md-start">Proyectos finalizados</h2>
-                                <p className="text-center text-md-start">Explora en este carousel algunos de nuestros trabajos realizados. Tenemos la experiencia para llevar tu negocio al siguiente nivel y aumentar tus ventas.</p>
-                                <div className="d-flex justify-content-md-start">
-                                    <a className="btn btn-secondary px-4 mx-auto m-md-0" href='/prices'>Precios</a>
-                                </div>
+                                <p className="text-center text-md-start">Explora en este carousel algunos de mis trabajos realizados. Tengo la experiencia para desarrollar la página y aplicación que tengas en mente.</p>
                             </div>
                         </div>
                     </div>
