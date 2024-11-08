@@ -2,7 +2,8 @@
 [data-bs-theme='killjoy'] {
   --bs-body-color: #ffffff;
   --bs-body-color-rgb: #{to-rgb($white)};
-  --bs-body-bg: #776b00;
+  --bs-body-bg: var(--bs-yellow);
+  --bs-body-bg-rgb: #{to-rgb($yellow)};
   --bs-primary: $green;
   .btn-primary {
     --bs-btn-bg: var(--bs-green);
