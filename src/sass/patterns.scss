@@ -98,7 +98,7 @@
   height: calc(80vh - 12rem);
   // min-height: 50vw;
   max-height: 50vw;
-  background-image: linear-gradient(#00aeff, #fd00fd);
+  background-image: linear-gradient(#00ccff, #9800fd);
   position: absolute;
   right: 0;
   left: 0;
@@ -121,8 +121,8 @@
 
 @keyframes rotate {
   0% {
-    -webkit-filter: hue-rotate(50deg) blur(calc(28rem)) saturate(2);
-    filter: hue-rotate(50deg) blur(calc(28rem)) saturate(2);
+    -webkit-filter: hue-rotate(20deg) blur(calc(20rem)) saturate(2);
+    filter: hue-rotate(20deg) blur(calc(20rem)) saturate(2);
     -webkit-transform: rotate(0deg) scale(0.7, 1) translateX(0rem)
       translateY(0rem);
     -moz-transform: rotate(0deg) scale(0.7, 1) translateX(0rem) translateY(0rem);
@@ -131,22 +131,22 @@
     transform: rotate(0deg) scale(0.7, 1) translateX(0rem) translateY(0rem);
   }
   50% {
-    -webkit-filter: hue-rotate(0deg) blur(calc(28rem)) saturate(2);
-    filter: hue-rotate(0deg) blur(calc(28rem)) saturate(2);
+    -webkit-filter: hue-rotate(0deg) blur(calc(20rem)) saturate(1);
+    filter: hue-rotate(0deg) blur(calc(20rem)) saturate(1);
     -webkit-transform: rotate(180deg) scale(0.2, 0.9)
-      translateX(10rem translateY(0rem)) translateY(30rem);
+      translateX(10rem translateY(0rem));
     -moz-transform: rotate(180deg) scale(0.2, 0.9)
-      translateX(10rem translateY(0rem)) translateY(30rem);
+      translateX(10rem translateY(0rem));
     -ms-transform: rotate(180deg) scale(0.2, 0.9)
-      translateX(10rem translateY(0rem)) translateY(30rem);
+      translateX(10rem translateY(0rem));
     -o-transform: rotate(180deg) scale(0.2, 0.9)
-      translateX(10rem translateY(0rem)) translateY(30rem);
+      translateX(10rem translateY(0rem));
     transform: rotate(180deg) scale(0.2, 0.9) translateX(10rem translateY(0rem))
       translateY(30rem);
   }
   100% {
-    -webkit-filter: hue-rotate(-40deg) blur(calc(28rem)) saturate(2);
-    filter: hue-rotate(-14deg) blur(calc(28rem)) saturate(2);
+    -webkit-filter: hue-rotate(-360deg) blur(calc(30rem)) saturate(0.8);
+    filter: hue-rotate(-360deg) blur(calc(30rem)) saturate(0.8);
     -webkit-transform: rotate(360deg) scale(1, 1) translateX(0rem)
       translateY(10rem);
     -moz-transform: rotate(360deg) scale(1, 1) translateX(0rem)
