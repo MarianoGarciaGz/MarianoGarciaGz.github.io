@@ -15,7 +15,8 @@ pre {
 }
 
 .card {
-  //   background: $gray-800;
+  backdrop-filter: blur(15px);
+  background-color: rgba($dark, 0);
 }
 
 .divider-sm {

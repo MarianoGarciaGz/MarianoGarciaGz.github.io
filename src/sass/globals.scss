@@ -1,3 +1,4 @@
+// Fonts
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Mono:ital,wght@0,300;1,300');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
@@ -6,7 +7,6 @@
 @import '@src/sass/base';
 
 // Source mixin
-
 // Bootstrap
 @import 'bootstrap/scss/functions';
 @import 'bootstrap/scss/variables';
@@ -28,27 +28,7 @@ $h6-font-size: $font-size-base;
   --bs-tertiary-bg-rgb: 248, 249, 250;
 }
 
-.travel-card__img {
-  aspect-ratio: 16/9;
-  object-fit: cover;
-}
-
-/* post */
-
-.post__background {
-  transform: scale(1.2);
-  filter: blur(10px) brightness(0.3) saturate(2);
-}
-
-// Usage
-.custom-container {
-  @include make-container();
-}
-
 @import '@src/sass/patterns';
-
-/* components */
-// @import '@src/components/organisms/PlansTable/PlansTable.scss';
 @import '@src/components/organisms/Header/Header';
 @import '@src/components/organisms/WorksSlider/WorksSlider';
 

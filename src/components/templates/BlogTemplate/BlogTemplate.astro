@@ -18,44 +18,23 @@ const posts = (await getCollection('blog')).sort((a, b) => {
 const recentPosts = posts.slice(0, 3)
 ---
 
-<section class='hero-blog container-lg py-5'>
-  <div class='hero-blog__overlay rounded-5 position-relative card shadow'>
-    <!-- Este div es el overlay del fondo con filtro -->
-    <div
-      class='hero-blog__background'
-      style="background-image: url('/assets/images/post/bienvenida/banner.jpg');">
-    </div>
+<div class='pattern-wavy'></div>
+<div class='pattern-gradient'></div>
 
-    <!-- Contenido de la card -->
-    <div class='p-5 text-white position-relative col-12'>
-      <h1 class=''>
-        Domina el mundo digital: Artículos, consejos y estrategias de diseño
-        web, desarrollo, SEO para tu negocio online
-      </h1>
-      <p class='d-none d-md-flex'>
-        Bienvenido a nuestro blog, donde los dinosaurios de Cosaur te guían en
-        tu aventura digital. Desde trucos para optimizar tu página web hasta
-        consejos de SEO para aumentar tu visibilidad, aquí encontrarás todo lo
-        que necesitas para dominar el mundo online. ¿Estás listo para llevar tu
-        negocio a la era digital con el poder de gigantes? ¡Sigue leyendo y
-        conviértete en una bestia en la web!
-      </p>
-    </div>
-  </div>
+<section>
+  <h2 class='display-2 text-center my-5'>Blog</h2>
 </section>
 
 <section class='container-lg'>
   <div class='row g-4'>
     <div class='col-12 col-md-8'>
-      <h2>Posts</h2>
-      <hr />
       <ul class='p-0 row'>
         {
           posts.map((post) => (
             <li class='mb-4 col-12 col-xxl-6'>
               <article
                 style=''
-                class='card shadow-sm rounded-4 border-1 p-4'>
+                class='card bg-opacity-25 shadow-sm rounded-4 border-1 p-4 glass'>
                 <a
                   class='text-body text-decoration-none'
                   href={`/blog/${post.slug}/`}>
