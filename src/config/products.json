@@ -3,7 +3,7 @@
     {
       "name": "Cosaur",
       "link": "https://www.cosaur.com",
-      "description": "Desarrollo completo de página web, diseño y despliegue en AWS Amplify.",
+      "description": "Desarrollo completo del sitio web para Cosaur, una agencia especializada en creación de páginas web, con un diseño moderno, buenas prácticas de SEO y un blog integrado. El sitio fue desplegado en AWS Amplify y desarrollado con HTML, SCSS, JavaScript y Astro.",
       "startDate": "2023-09-12",
       "endDate": "2023-11-01",
       "technologies": ["HTML", "CSS", "JavaScript", "React"],
@@ -11,6 +11,18 @@
       "client": "Cosaur",
       "role": "Full-Stack development",
       "color": "#20ca50"
+    },
+    {
+      "name": "Clinica de belleza Lili",
+      "link": "",
+      "description": "Aplicación web para gestionar citas en la Clínica de Belleza Lili, con un panel de administración para operaciones CRUD y envío automático de confirmaciones por correo electrónico. Desarrollada con HTML, CSS, JavaScript, React y MongoDB.",
+      "startDate": "2023-01-15",
+      "endDate": "2023-03-30",
+      "technologies": ["HTML", "CSS", "JavaScript", "React"],
+      "image": "",
+      "client": "Clinica de belleza Lili",
+      "role": "Full-Stack development",
+      "color": "#30b0d0"
     },
     {
       "name": "Seguridad Mafer",

@@ -15,7 +15,7 @@
       "⁠calidad",
       "⁠responsabilidad"
     ],
-    "url": "https://marianogarciagz.github.io/",
+    "url": "https://marianogarciagz.github.io",
     "defaultImage": "/assets/images/default-og-image.png",
     "defaultKeywords": ["web", "servicios", "digitales"],
     "author": "Mariano García",
@@ -23,10 +23,10 @@
   },
   "social": {
     "facebook": "https://facebook.com/marianogarciagz",
-    "linkedin": "https://linkedin.com/marianogarciagz",
+    "linkedin": "https://www.linkedin.com/in/marianogarciagz",
     "instagram": "https://instagram.com/marianogarciagz",
-    "twitter": "https://youtube.com/@marianogarciagz",
     "youtube": "https://youtube.com/@marianogarciagz",
+    "github": "https://github.com/marianogarciagz",
     "whatsapp": "https://wa.me/524361063128"
   },
   "contact": {
@@ -42,24 +42,6 @@
       "url": "https://marianogarciagz.github.io/",
       "image": "",
       "keywords": ["inicio"],
-      "author": ""
-    },
-    "precios": {
-      "path": "/prices",
-      "title": "Precios",
-      "description": "",
-      "url": "https://marianogarciagz.github.io/",
-      "image": "",
-      "keywords": ["precios"],
-      "author": ""
-    },
-    "nosotros": {
-      "path": "/about",
-      "title": "Acerca de nosotros",
-      "description": "",
-      "url": "https://marianogarciagz.github.io/",
-      "image": "",
-      "keywords": ["nosotros"],
       "author": ""
     },
     "contacto": {
