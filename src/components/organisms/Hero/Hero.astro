@@ -1,5 +1,6 @@
 ---
 import './Hero.scss'
+import { contact, social } from '@src/config/settings.json'
 ---
 
 <div class='pattern-wavy'></div>
@@ -24,23 +25,33 @@ import './Hero.scss'
           </p>
           <div class='d-flex align-items-center gap-1'>
             <a
-              class='Hero-btn btn btn-warning btn-lg px-4 me-md-2'
-              href='/'>
+              class='hero__btn btn btn-warning btn-lg px-4 me-md-2 mt-1'
+              href='/path/to/cv.pdf'
+              download='CV_Mariano_Garcia.pdf'
+              aria-label='Descargar mi CV en formato PDF'>
               Descargar CV
             </a>
             <a
-              class='hero__btn btn btn-info text-white btn-lg px-4 me-md-2'
-              href='/'>
+              target='_blank'
+              rel='noopener noreferrer'
+              class='hero__btn btn btn-info text-white btn-lg px-4 me-md-2 mt-1'
+              href={`mailto:${contact.email}`}
+              aria-label='Enviar correo electrónico a Mariano García'>
               <i class='bi bi-envelope'></i>
             </a>
+
             <a
+              target='_blank'
+              rel='noopener noreferrer'
               class='hero__btn hero__btn--linkedin text-white btn btn-lg px-4 me-md-2'
-              href='/'>
+              href={social.linkedin}>
               <i class='bi bi-linkedin'></i>
             </a>
             <a
+              target='_blank'
+              rel='noopener noreferrer'
               class='hero__btn btn btn-lg btn-dark px-4 text-white'
-              href='/'>
+              href={social.github}>
               <i class='bi bi-github'></i>
             </a>
           </div>

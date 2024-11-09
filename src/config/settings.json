@@ -23,7 +23,8 @@
   },
   "social": {
     "facebook": "https://facebook.com/marianogarciagz",
-    "linkedin": "https://linkedin.com/marianogarciagz",
+    "linkedin": "https://linkedin.com/in/marianogarciagz",
+    "github": "https://github.com/marianogarciagz",
     "instagram": "https://instagram.com/marianogarciagz",
     "twitter": "https://youtube.com/@marianogarciagz",
     "youtube": "https://youtube.com/@marianogarciagz",
@@ -44,24 +45,7 @@
       "keywords": ["inicio"],
       "author": ""
     },
-    "precios": {
-      "path": "/prices",
-      "title": "Precios",
-      "description": "",
-      "url": "https://marianogarciagz.github.io/",
-      "image": "",
-      "keywords": ["precios"],
-      "author": ""
-    },
-    "nosotros": {
-      "path": "/about",
-      "title": "Acerca de nosotros",
-      "description": "",
-      "url": "https://marianogarciagz.github.io/",
-      "image": "",
-      "keywords": ["nosotros"],
-      "author": ""
-    },
+
     "contacto": {
       "path": "/contact",
       "title": "Contáctanos",
