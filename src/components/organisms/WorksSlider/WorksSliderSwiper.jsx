@@ -86,8 +86,20 @@ const ContainerCards = () => {
                                     <h3 className="fs-1 lh-1 mb-3 text-center text-md-start">{project.name}</h3>
                                     <p className="text-center text-md-start">{project.description}</p>
                                     <div className="d-flex justify-content-md-start">
-                                        <a className="btn btn-secondary px-4 mx-auto m-md-0" href={project.link} target="_blank" rel="noopener noreferrer">Ir a la página</a>
-                                    </div>
+                                        {project.link ? (
+                                            <a
+                                                className="btn btn-secondary px-4 mx-auto m-md-0"
+                                                href={project.link}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
+                                                Ir a la página
+                                            </a>
+                                        ) : (
+                                            <button className="btn btn-secondary px-4 mx-auto m-md-0" disabled>
+                                                No disponible aún
+                                            </button>
+                                        )}                                    </div>
                                 </div>
                             </div>
                         </div>
