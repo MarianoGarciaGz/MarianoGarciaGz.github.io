@@ -18,22 +18,23 @@ const posts = (await getCollection('blog')).sort((a, b) => {
 const recentPosts = posts.slice(0, 3)
 ---
 
-<section class='hero-blog container-lg py-5'>
-  <h1 class='display-1 text-center'>Blog</h1>
+<div class='pattern-wavy'></div>
+<div class='pattern-gradient'></div>
+
+<section>
+  <h2 class='display-2 text-center my-5'>Blog</h2>
 </section>
 
 <section class='container-lg'>
   <div class='row g-4'>
     <div class='col-12 col-md-8'>
-      <h2>Posts</h2>
-      <hr />
       <ul class='p-0 row'>
         {
           posts.map((post) => (
             <li class='mb-4 col-12 col-xxl-6'>
               <article
                 style=''
-                class='card shadow-sm rounded-4 border-1 p-4'>
+                class='card bg-opacity-25 shadow-sm rounded-4 border-1 p-4 glass'>
                 <a
                   class='text-body text-decoration-none'
                   href={`/blog/${post.slug}/`}>

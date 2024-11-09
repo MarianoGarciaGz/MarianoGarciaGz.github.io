@@ -1,8 +1,8 @@
 .hero {
+  min-height: 60vh;
   &__h1 {
     text-wrap: balance;
   }
-  min-height: 60vh;
   &__btn {
     &--linkedin {
       background-color: #0077ff;
