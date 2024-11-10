@@ -2,11 +2,11 @@
   "info": {
     "name": "MarianoGarciaGz",
     "activity": "Desarrollador Fullstack",
-    "description": "",
-    "slogan": "",
-    "aboutUs": "",
-    "mission": "",
-    "vision": "",
+    "description": "Desarrollador full stack con experiencia en soluciones web y aplicaciones modernas, enfocado en calidad y optimización.",
+    "slogan": "Si puedes imaginarlo, puedo programarlo.",
+    "aboutUs": "Soy un apasionado desarrollador full stack de Morelia, Michoacán, con experiencia en creación de aplicaciones web completas, desde la planificación hasta el despliegue. Me especializo en frontend y backend, con un enfoque en eficiencia, diseño intuitivo y tecnologías de vanguardia.",
+    "mission": "Proveer soluciones digitales innovadoras que impulsen la transformación y el crecimiento de negocios y proyectos personales.",
+    "vision": "Ser reconocido como un desarrollador confiable y creativo que ayuda a los clientes a alcanzar su máximo potencial digital.",
     "values": [
       "puntualidad",
       "⁠respeto",
@@ -15,9 +15,17 @@
       "⁠calidad",
       "⁠responsabilidad"
     ],
-    "url": "https://marianogarciagz.github.io/",
+    "url": "https://marianogarciagz.github.io",
     "defaultImage": "/assets/images/default-og-image.png",
-    "defaultKeywords": ["web", "servicios", "digitales"],
+    "defaultKeywords": [
+      "web",
+      "servicios",
+      "digitales",
+      "desarrollo",
+      "programación",
+      "soluciones",
+      "Morelia"
+    ],
     "author": "Mariano García",
     "twitterHandle": "@marianogarciagz"
   },
@@ -26,7 +34,6 @@
     "linkedin": "https://linkedin.com/in/marianogarciagz",
     "github": "https://github.com/marianogarciagz",
     "instagram": "https://instagram.com/marianogarciagz",
-    "twitter": "https://youtube.com/@marianogarciagz",
     "youtube": "https://youtube.com/@marianogarciagz",
     "whatsapp": "https://wa.me/524361063128"
   },
@@ -48,8 +55,8 @@
 
     "contacto": {
       "path": "/contact",
-      "title": "Contáctanos",
-      "description": "",
+      "title": "Contáctame",
+      "description": "Tarjeta de contacto de MarianoGarciaGz",
       "url": "https://marianogarciagz.github.io/",
       "image": "",
       "keywords": ["contacto"],
@@ -58,7 +65,7 @@
     "blog": {
       "path": "/blog",
       "title": "Blog",
-      "description": "",
+      "description": "Explora herramientas y recursos para tu desarrollo web. Aprende más acerca de programación y diseño web.",
       "url": "https://marianogarciagz.github.io/",
       "image": "",
       "keywords": ["blog"],
