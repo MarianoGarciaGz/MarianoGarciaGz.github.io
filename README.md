@@ -1,47 +1,52 @@
-# Astro Starter Kit: Minimal
+# Mariano García - Portafolio Web
 
-```sh
-npm create astro@latest -- --template minimal
-```
+## Descripción
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
+Este portafolio muestra proyectos de desarrollo web, aplicaciones y otros trabajos realizados en el ámbito de la tecnología. También incluye una breve introducción, detalles de experiencia profesional, enlaces de contacto y apartado de blog con posts.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Características Principales
 
-## 🚀 Project Structure
+- **Proyectos Destacados**: Una colección de proyectos de desarrollo web y aplicaciones, mostrando habilidades y experiencia en distintas tecnologías.
+- **Información Personal**: Breve biografía profesional, misión, visión y valores que definen mi trabajo.
+- **Blog Integrado**: Sección para compartir conocimientos y publicaciones sobre desarrollo y tendencias tecnológicas.
+- **Descarga de CV**: Opción para descargar el currículum en formato PDF.
+- **Contacto**: Botones directos a correo y redes sociales.
 
-Inside of your Astro project, you'll see the following folders and files:
+## Tecnologías Utilizadas
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+- **Frontend**:
+  - HTML y SCSS
+  - JavaScript (ES6+)
+  - Astro
+  - Bootstrap
+  - React para algunos componentes
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Instalación y Configuración
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/MarianoGarciaGz/MarianoGarciaGz.github.io
+   ```
+2. Instala las dependencias:
+   ```bash
+   npm i
+   ```
+3. Ejecuta el proyecto en modo de desarrollo:
+   ```bash
+   npm run dev
+   ```
+4. Prebuild para optimizar imagenes:
+   ```bash
+   npm run prebuild
+   ```
+5. Build:
+   ```bash
+   npm run build
+   ```
 
-Any static assets, like images, can be placed in the `public/` directory.
+## Contacto
 
-## 🧞 Commands
+Para cualquier consulta o colaboración, puedes contactarme a través de:
 
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- **Correo**: marianogarciagz@example.com
+- **Portafolio en Vivo**: [marianogarciagz.github.io](https://marianogarciagz.github.io)
