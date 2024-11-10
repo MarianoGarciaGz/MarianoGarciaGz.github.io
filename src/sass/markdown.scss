@@ -1,0 +1,31 @@
+.markdown {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 1.25rem;
+  }
+  img {
+    width: 100%;
+    margin-bottom: 2rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    border-radius: 1rem;
+  }
+  table,
+  th,
+  td {
+    padding: 1rem 1.25rem;
+    border: 1px solid var(--bs-primary);
+  }
+  table {
+    margin-bottom: 1rem;
+  }
+  hr {
+    margin: 3rem 0;
+  }
+}

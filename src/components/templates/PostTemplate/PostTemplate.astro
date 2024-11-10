@@ -6,6 +6,7 @@ import PostHero from '@src/components/organisms/PostHero/PostHero.astro'
 type Props = CollectionEntry<'blog'>['data']
 
 const { title, description, date, image } = Astro.props
+import './PostTemplate.scss'
 ---
 
 <MainLayout>

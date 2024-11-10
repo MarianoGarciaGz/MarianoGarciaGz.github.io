@@ -60,29 +60,3 @@ pre {
 .swiper-button-next {
   color: $secondary !important;
 }
-
-.markdown {
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin-bottom: 1rem;
-  }
-  img {
-    width: 100%;
-  }
-  table,
-  th,
-  td {
-    padding: 1rem 1.25rem;
-    border: 1px solid var(--bs-primary);
-  }
-  table {
-    margin-bottom: 1rem;
-  }
-  hr {
-    margin: 3rem 0;
-  }
-}

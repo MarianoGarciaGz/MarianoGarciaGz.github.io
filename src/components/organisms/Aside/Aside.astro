@@ -10,6 +10,7 @@ const posts = (await getCollection('blog')).sort((a, b) => {
 })
 
 const recentPosts = posts.slice(0, 3)
+import { info } from '@src/config/settings.json'
 ---
 
 <div
@@ -45,14 +46,8 @@ const recentPosts = posts.slice(0, 3)
         ))
       }
     </ul>
-    <div class='text-center'>
-      <img
-        class=''
-        style='height: 2rem;'
-        src='/assets/images/logo/logo-primary.svg'
-        alt='Cosaur logo'
-      />
-      <!-- <p class=''>{info.name}</p> -->
+    <div class='text-center fw-bold'>
+      <p class=''>{info.name}</p>
     </div>
   </div>
 </div>
