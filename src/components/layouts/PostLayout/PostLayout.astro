@@ -11,21 +11,22 @@ import Scripts from '@src/components/atoms/Scripts/Scripts.astro'
 
 type Props = CollectionEntry<'blog'>['data']
 
-const { title, description, date, image, author, category, keywords }: Props = Astro.props
+const { title, description, date, image, author, category, keywords }: Props =
+  Astro.props
 ---
 
 <!doctype html>
 <html lang='es'>
   <Head
     postTitle={title}
-postImage={image}
-postAuthor={author}    
-postKeywords={keywords}
-postDescription={description}
+    postImage={image}
+    postAuthor={author}
+    postKeywords={keywords}
+    postDescription={description}
   />
   <body>
     <StickyBtn />
-    <Header />
+    <Header fixed={true} />
     <div>
       <PostHero
         title={title}
@@ -37,12 +38,12 @@ postDescription={description}
       <div class='divider-sm'></div>
       <div class='container-lg'>
         <div class='row'>
-          <div class='col-12 col-md-8'>
+          <div class='col-12 col-md-7'>
             <div class='markdown'>
               <slot />
             </div>
           </div>
-          <div class='col-12 col-md-4'>
+          <div class='col-12 col-md-5'>
             <Aside />
           </div>
         </div>

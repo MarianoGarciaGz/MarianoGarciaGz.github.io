@@ -4,8 +4,8 @@
   }
 
   &__image {
-    animation: parallax linear;
     -webkit-animation: parallax linear;
+    animation: parallax linear;
     animation-timeline: scroll();
     filter: brightness(0.8) blur(5px);
     height: 50vh;
@@ -23,10 +23,10 @@
 
 @keyframes parallax {
   to {
-    transform: translateY(150vh);
-    -webkit-transform: translateY(150vh);
-    -moz-transform: translateY(150vh);
-    -ms-transform: translateY(150vh);
-    -o-transform: translateY(150vh);
+    -webkit-transform: translateY(100rem);
+    -moz-transform: translateY(100rem);
+    -ms-transform: translateY(100rem);
+    -o-transform: translateY(100rem);
+    transform: translateY(100rem);
   }
 }

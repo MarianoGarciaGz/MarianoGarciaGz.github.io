@@ -9,8 +9,6 @@ const posts = (await getCollection('blog')).sort((a, b) => {
   return dateB - dateA
 })
 
-import { info } from '@src/config/settings.json'
-
 const recentPosts = posts.slice(0, 3)
 import { info } from '@src/config/settings.json'
 ---
