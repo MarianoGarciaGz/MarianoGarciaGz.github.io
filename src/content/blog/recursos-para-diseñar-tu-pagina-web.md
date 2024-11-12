@@ -105,8 +105,10 @@ BGJar es otro recurso excelente para generar fondos SVG personalizados. Tiene un
 
 ### [Google Fonts](https://fonts.google.com)
 
-![](/assets/images/post/recursos-para-diseñar-tu-pagina-web/google-fonts.png)Google Fonts es una de las bibliotecas de fuentes más populares para el desarrollo web. Ofrece una amplia selección de fuentes que se pueden integrar directamente en tu página web a través de Google, optimizando el rendimiento y permitiendo una carga
+Google Fonts es una de las bibliotecas de fuentes más populares para el desarrollo web. Ofrece una amplia selección de fuentes que se pueden integrar directamente en tu página web a través de Google, optimizando el rendimiento y permitiendo una carga
 rápida de fuentes.
+
+![](/assets/images/post/recursos-para-diseñar-tu-pagina-web/google-fonts.png)
 
 ### [Fontpair](https://www.fontpair.co)
 
