@@ -1,6 +1,6 @@
 ---
 title: 'La Importancia de Tener una Página Web Profesional'
-description: 'Descubre Cosaur, donde la tecnología y la innovación se encuentran con la diversión y la creatividad. Entra en nuestra historia y conoce nuestra misión, visión, y servicios, todo con un toque de humor jurásico. ¡Prepárate para un viaje digital inolvidable!'
+description: 'Descubre la importancia de tener una página web profesional. Puntos clave de porqué deberías tener tu propia página web.'
 date: '2024-04-15'
 image: '/assets/images/post/importancia-de-tener-una-pagina-web-profesional/tienda.jpg'
 author: 'Mariano García'

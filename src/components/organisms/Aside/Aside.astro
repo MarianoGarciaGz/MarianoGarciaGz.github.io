@@ -35,8 +35,14 @@ import { info } from '@src/config/settings.json'
                   loading='lazy'
                 />
                 <div class=''>
-                  <h3 class='mb-0 fs-6'>{post.data.title}</h3>
-                  <small class='text-body-secondary'>
+                  <h3
+                    class='mb-0'
+                    style='font-size:1.2em;'>
+                    {post.data.title}
+                  </h3>
+                  <small
+                    class='text-body-secondary'
+                    style='font-size: .6rem;'>
                     <FormattedDate date={post.data.date} />
                   </small>
                 </div>

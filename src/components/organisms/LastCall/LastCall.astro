@@ -1,30 +1,60 @@
 ---
-import './LastCall.scss'
+import { getCollection } from 'astro:content'
+import FormattedDate from '@src/components/FormattedDate.astro'
+
+// Obtén los posts de forma asíncrona
+const posts = (await getCollection('blog')).sort((a, b) => {
+  const dateA = new Date(a.data.date).getTime()
+  const dateB = new Date(b.data.date).getTime()
+  return dateB - dateA
+})
+
+const recentPosts = posts.slice(0, 3)
+import { info } from '@src/config/settings.json'
 ---
 
-<section
-  class='text-center mt-5'
-  id='lastcall'>
-  <div class='container-sm'>
-    <h2 class='lastcall__h2 display-4'>¡Empieza tu éxito ahora!</h2>
-    <div class='col-lg-8 mx-auto'>
-      <p class='lastcall__p lead mb-4'>
-        Gana la confianza de tus clientes, sobresal de la competencia y llama la
-        atención de más clientes ahora mismo.
-      </p>
-      <div class='d-grid gap-2 d-sm-flex justify-content-sm-center mb-5'>
-        <a
-          class='Hero-btn btn btn-outline-secondary btn-lg px-4'
-          href='/contact'>
-          Tarjeta
-        </a>
-      </div>
-    </div>
-    <img
-      src='/assets/images/projects/MarianoGarciaGz.png'
-      class='lastcall__img rounded-top-3 mb-5 mb-md-0 shadow-lg w-100'
-      alt='Example image'
-      loading='lazy'
-    />
+<section class='container-lg'>
+  <div>
+    <h2 class='text-center display-5'>Publicaciones</h2>
+    <p class='text-center lead mb-5'>
+      Explora mis ultimas publicaciones, consejos sobre diseño, herramientas,
+      buenas prácticas y más.
+    </p>
+
+    <ul class='list-unstyled mb-3 row'>
+      {
+        recentPosts.map((post) => (
+          <li class='col-12 col-md-4'>
+            <article class=''>
+              <a
+                class='d-flex flex-lg gap-3 align-items-start align-items-lg-center py-3 text-body text-decoration-none row'
+                href={`/blog/${post.slug}/`}>
+                <img
+                  class='bd-placeholder-img'
+                  style='aspect-ratio: 16/9; object-fit: cover;'
+                  src={post.data.image}
+                  alt=''
+                  loading='lazy'
+                />
+                <div class=''>
+                  <h3 class='mb-0 fs-3'>{post.data.title}</h3>
+                  <small class='text-body-secondary'>
+                    <FormattedDate date={post.data.date} />
+                  </small>
+                  <p class=''>{post.data.description}</p>
+                </div>
+              </a>
+            </article>
+          </li>
+        ))
+      }
+    </ul>
+    <p class='text-center'>
+      <a
+        class='btn btn-primary btn-lg mx-auto rounded-pill shadow-sm'
+        href='/blog'
+        >Ver todas las publicaciones</a
+      >
+    </p>
   </div>
 </section>

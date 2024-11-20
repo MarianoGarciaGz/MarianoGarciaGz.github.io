@@ -46,7 +46,15 @@ const recentPosts = posts.slice(0, 3)
                     loading='lazy'
                   />
                   <div class='card-body p-0 pt-4'>
-                    <Heading level={3}>{post.data.title}</Heading>
+                    <h3
+                      class=''
+                      style='display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;'>
+                      {post.data.title}
+                    </h3>
                     <p
                       style='
                        display: -webkit-box;
@@ -59,18 +67,6 @@ const recentPosts = posts.slice(0, 3)
                       class=''>
                       {post.data.description}
                     </p>
-                    <small class='date'>
-                      <date datetime={`${new Date(`${post.data.date}`)}`}>
-                        {new Date(post.data.date).toLocaleDateString('es-MX', {
-                          year: 'numeric',
-                          month: 'short',
-                          day: '2-digit',
-                          hour: '2-digit',
-                          minute: 'numeric',
-                        })}
-                      </date>
-                      {/* <FormattedDate date={post.data.pubDate} /> */}
-                    </small>
                   </div>
                 </a>
               </article>

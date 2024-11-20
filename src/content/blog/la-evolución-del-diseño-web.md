@@ -1,5 +1,5 @@
 ---
-title: 'La Evolución del Diseño Web'
+title: 'La Evolución del Diseño Web | Evolución del internet'
 description: 'Explora la evolución del diseño web desde sus inicios en los años 90 hasta las innovaciones actuales. Este artículo te lleva a través de las principales transformaciones y tendencias en el diseño web, incluyendo el impacto de CSS, Flash, el diseño responsivo, y tecnologías modernas como Material Design y frameworks como React y Vue.js.'
 date: '2024-08-07'
 image: '/assets/images/post/la-evolución-del-diseño-web/banner.png'

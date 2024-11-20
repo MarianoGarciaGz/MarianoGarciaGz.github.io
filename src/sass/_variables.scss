@@ -20,19 +20,19 @@ $blue: #2025ca;
 $teal: #10db9e;
 $cyan: #00aeff;
 $white: #ffffff;
-$gray: #9e9fa1;
+$gray: #000a2c;
 $black: #030a22;
 
 $gray-900: $black;
 
-$gray-100: mix($white, $gray-900, 98%);
-$gray-200: mix($white, $gray-900, 80%);
-$gray-300: mix($white, $gray-900, 70%);
-$gray-400: mix($white, $gray-900, 60%);
-$gray-500: mix($white, $gray-900, 50%);
-$gray-600: mix($white, $gray-900, 40%);
-$gray-700: mix($white, $gray-900, 30%);
-$gray-800: mix($white, $gray-900, 20%);
+$gray-100: mix($white, $gray, 95%);
+$gray-200: mix($white, $gray, 80%);
+$gray-300: mix($white, $gray, 70%);
+$gray-400: mix($white, $gray, 60%);
+$gray-500: mix($white, $gray, 50%);
+$gray-600: mix($white, $gray, 40%);
+$gray-700: mix($white, $gray, 20%);
+$gray-800: mix($white, $gray, 10%);
 
 $primary: $cyan;
 $secondary: $red;
@@ -55,12 +55,12 @@ $box-shadow-inset: inset 0 1px 2px rgba($black, 0.075);
   lg: 992px,
   xl: 1200px,
   xxl: 1400px,
-); */
+  ); */
 
 // $padding-x: 3rem;
-$container-padding-x: 3rem;
+$container-padding-x: 2.5rem;
 
-$font-size-base: 0.9rem;
+$font-size-base: 0.938rem;
 
 $container-max-widths: (
   sm: 540px,
@@ -72,7 +72,33 @@ $container-max-widths: (
 
 $headings-line-height: 1;
 
-// $font-size-base: 0.9rem;
+$font-size-base: 0.9rem;
+
+$h1-font-size: $font-size-base * 3;
+$h2-font-size: $font-size-base * 2.5;
+$h3-font-size: $font-size-base * 2;
+$h4-font-size: $font-size-base * 1.75;
+$h5-font-size: $font-size-base * 1.5;
+$h6-font-size: $font-size-base;
+
+/* h1 {
+  font-size: $h1-font-size;
+}
+h2 {
+  font-size: $h2-font-size;
+}
+h3 {
+  font-size: $h3-font-size;
+}
+h4 {
+  font-size: $h4-font-size;
+}
+h5 {
+  font-size: $h5-font-size;
+}
+h6 {
+  font-size: $h6-font-size;
+} */
 
 .badge-cute {
   transform: translateX(-23px) rotate(10deg) translateY(-5px);
@@ -84,7 +110,7 @@ $headings-line-height: 1;
 
 .glass {
   backdrop-filter: blur(15px);
-  background-color: rgba($gray-100, 0);
+  background-color: rgba($white, 0.1);
 }
 
 .hero__column-img::before {
@@ -102,10 +128,3 @@ $headings-line-height: 1;
     background-color: rgba($dark, 0);
   }
 }
-
-$h1-font-size: $font-size-base * 2.5;
-$h2-font-size: $font-size-base * 2;
-$h3-font-size: $font-size-base * 1.75;
-$h4-font-size: $font-size-base * 1.5;
-$h5-font-size: $font-size-base * 1.25;
-$h6-font-size: $font-size-base;

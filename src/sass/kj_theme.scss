@@ -7,8 +7,19 @@
   --bs-primary: $green;
   .btn-primary {
     --bs-btn-bg: var(--bs-green);
-    --bs-btn-border-color: $green;
+    --bs-btn-border-color: #{rgba($white, 0.25)};
+    --bs-btn-hover-bg: #{darken(mix($gray-600, $green, 0.5), 5%)};
+    --bs-btn-hover-border-color: #{rgba($white, 0.25)};
+    --bs-btn-active-bg: #{darken(mix($gray-600, $green, 0.5), 10%)};
+    --bs-btn-active-border-color: #{rgba($white, 0.5)};
+    --bs-btn-focus-border-color: #{rgba($white, 0.5)};
+    --bs-btn-focus-box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.2);
   }
+  --bs-primary: $green;
   --bs-primary-rgb: #{to-rgb($green)};
   --bs-body-color-rgb: #{to-rgb($white)};
+  .dropdown-menu {
+    --bs-dropdown-bg: #{mix($yellow, $yellow)};
+    --bs-dropdown-link-active-bg: #{$yellow-600};
+  }
 }

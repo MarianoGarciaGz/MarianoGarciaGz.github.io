@@ -1,23 +1,25 @@
 ---
+import './Header.scss'
 export interface Props {
   fixed?: boolean
 }
 
 const { fixed = false } = Astro.props
+import DropdownTheme from '@src/components/organisms/DropdownTheme/DropdownTheme.astro'
 ---
 
 <header class={`header w-100 glass ${fixed ? 'position-fixed' : 'sticky-top'}`}>
   <div class='container-lg'>
     <nav class='navbar navbar-expand-md'>
       <a
-        class='navbar-brand'
+        class='header__logo navbar-brand'
         href='/'
         style='font-family: Bebas Neue !important;'>
         @marianogarciagz
       </a>
 
       <button
-        class='navbar-toggler'
+        class='header__navbar-toggler navbar-toggler shadow-none border-0'
         type='button'
         data-bs-toggle='collapse'
         data-bs-target='#navbarNav'
@@ -30,15 +32,15 @@ const { fixed = false } = Astro.props
       <div
         class='collapse navbar-collapse'
         id='navbarNav'>
-        <ul class='navbar-nav me-auto'>
-          <li class='nav-item'>
+        <ul class='navbar-nav me-auto border-0 shadow-none'>
+          <li class='nav-item mx-auto'>
             <a
               class='nav-link'
               href='/#projects'
               >Proyectos</a
             >
           </li>
-          <li class='nav-item'>
+          <li class='nav-item mx-auto'>
             <a
               class='nav-link'
               href='/contact'
@@ -56,7 +58,7 @@ const { fixed = false } = Astro.props
           </a>
 
           <button
-            class='header__btn--theme btn btn-sm btn-light px-4 dropdown-toggle d-flex align-items-center border-0 rounded-pill shadow-sm'
+            class='header__btn--theme btn-theme btn btn-sm btn-light px-4 dropdown-toggle d-flex align-items-center border-0 rounded-pill shadow-sm d-none d-md-flex z-3'
             id='bd-theme'
             type='button'
             aria-expanded='false'
@@ -69,51 +71,7 @@ const { fixed = false } = Astro.props
               >Toggle theme</span
             >
           </button>
-
-          <ul
-            class='dropdown-menu dropdown-menu-end rounded-4 border-0 p-0'
-            aria-labelledby='bd-theme-text'>
-            <li>
-              <button
-                type='button'
-                class='dropdown-item d-flex align-items-center rounded-top-4 py-2'
-                data-bs-theme-value='light'
-                aria-pressed='false'>
-                <i class='bi bi-sun-fill me-3'></i>
-                Light
-              </button>
-            </li>
-            <li>
-              <button
-                type='button'
-                class='dropdown-item d-flex align-items-center py-2'
-                data-bs-theme-value='dark'
-                aria-pressed='true'>
-                <i class='bi bi-moon-stars-fill me-3'></i>
-                Dark
-              </button>
-            </li>
-            <li>
-              <button
-                type='button'
-                class='dropdown-item d-flex align-items-center py-2'
-                data-bs-theme-value='killjoy'
-                aria-pressed='false'>
-                <i class='bi bi-battery-charging me-3'></i>
-                Killjoy
-              </button>
-            </li>
-            <li>
-              <button
-                type='button'
-                class='dropdown-item d-flex align-items-center rounded-bottom-4 py-2'
-                data-bs-theme-value='auto'
-                aria-pressed='false'>
-                <i class='bi bi-circle-half me-3'></i>
-                Auto
-              </button>
-            </li>
-          </ul>
+          <DropdownTheme />
         </div>
       </div>
     </nav>

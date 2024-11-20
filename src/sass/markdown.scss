@@ -5,16 +5,16 @@
   h4,
   h5,
   h6 {
-    margin-bottom: 1.25rem;
+    margin: 1rem 0px 1rem 0px;
   }
   img {
     width: 100%;
-    margin-bottom: 2rem;
-    -webkit-border-radius: 1rem;
-    -moz-border-radius: 1rem;
-    -ms-border-radius: 1rem;
-    -o-border-radius: 1rem;
-    border-radius: 1rem;
+    margin: 1rem 0rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    border-radius: 0.5rem;
   }
   table,
   th,
@@ -27,5 +27,65 @@
   }
   hr {
     margin: 3rem 0;
+  }
+  p {
+    font-size: 1.1em;
+    margin: 0rem 0rem 1rem 0rem;
+  }
+  h1 {
+    font-size: $h1-font-size;
+  }
+  h2 {
+    font-size: $h2-font-size;
+  }
+  h3 {
+    font-size: $h3-font-size;
+  }
+  h4 {
+    font-size: $h4-font-size;
+  }
+  h5 {
+    font-size: $h5-font-size;
+  }
+  h6 {
+    font-size: $h6-font-size;
+  }
+  ul {
+    background-color: $gray-100;
+    padding: 1rem 1rem 1rem 1rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    li {
+      margin: 0rem 0rem 1rem 0rem;
+      &:before {
+        display: inline;
+        content: '🔵';
+      }
+
+      p {
+        display: inline;
+      }
+    }
+  }
+  ol {
+    background-color: $gray-100;
+    padding: 1rem 1rem 1rem 2rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+  }
+}
+
+[data-bs-theme='dark'] {
+  .markdown {
+    ul {
+      background-color: $gray-800;
+    }
+    ol {
+      background-color: $gray-800;
+    }
   }
 }

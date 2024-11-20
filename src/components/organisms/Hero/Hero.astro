@@ -4,17 +4,17 @@ import { contact, social } from '@src/config/settings.json'
 ---
 
 <div class='pattern-wavy'></div>
-<div class='pattern-gradient'></div>
+<div class='pattern-gradient d-none d-lg-block'></div>
 <section class='hero align-content-center mb-5'>
   <div class='container-lg'>
     <div
-      class='row align-items-center justify-content-center justify-content-lg-between pt-5 g-0'>
+      class='row align-items-center justify-content-center justify-content-lg-between g-0'>
       <div class='hero__column-text col-12 col-lg-7'>
         <div class=''>
           <h1 class='hero__h1 display-1 lh-1 mb-4 hyp-none'>
             marianogarciagz:<br />
             <strong class='hero__strong text-primary'>
-              Desarrollador fullstack</strong
+              Desarrollador full-stack</strong
             >
           </h1>
           <p class='hero__p lead'>
@@ -25,7 +25,7 @@ import { contact, social } from '@src/config/settings.json'
           </p>
           <div class='d-inline d-md-flex align-items-center gap-1'>
             <a
-              class='hero__btn btn btn-warning btn-lg px-4 me-md-2 mt-1'
+              class='hero__btn btn btn-warning btn-lg px-4 me-md-2 mt-1 shadow-sm'
               href='/assets/CV-ISIC-GARCIA-GUZMAN-MARIANO-ISMAEL.pdf'
               download='CV_Mariano_Garcia.pdf'
               aria-label='Descargar mi CV en formato PDF'>
@@ -34,7 +34,7 @@ import { contact, social } from '@src/config/settings.json'
             <a
               target='_blank'
               rel='noopener noreferrer'
-              class='hero__btn btn btn-info text-white btn-lg px-4 me-md-2 mt-1'
+              class='hero__btn btn btn-info text-white btn-lg px-4 me-md-2 mt-1 shadow-sm'
               href={`mailto:${contact.email}`}
               aria-label='Enviar correo electrónico a Mariano García'>
               <i class='bi bi-envelope'></i>
@@ -43,14 +43,14 @@ import { contact, social } from '@src/config/settings.json'
             <a
               target='_blank'
               rel='noopener noreferrer'
-              class='hero__btn hero__btn--linkedin text-white btn btn-lg px-4 me-md-2'
+              class='hero__btn hero__btn--linkedin text-white btn btn-lg px-4 me-md-2 mt-1 shadow-sm'
               href={social.linkedin}>
               <i class='bi bi-linkedin'></i>
             </a>
             <a
               target='_blank'
               rel='noopener noreferrer'
-              class='hero__btn btn btn-lg btn-dark px-4 text-white'
+              class='hero__btn btn btn-lg btn-dark px-4 text-white mt-1 shadow-sm'
               href={social.github}>
               <i class='bi bi-github'></i>
             </a>

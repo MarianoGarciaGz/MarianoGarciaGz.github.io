@@ -1,3 +1,7 @@
+---
+import DropdownTheme from '@src/components/organisms/DropdownTheme/DropdownTheme.astro'
+---
+
 <div
   class='dropdown position-fixed bottom-0 end-0 mb-4 me-4 bd-mode-toggle z-3 bg-body rounded-4 shadow-sm d-flex d-md-none'>
   <button
@@ -20,74 +24,5 @@
       >Toggle theme</span
     >
   </button>
-  <ul
-    class='dropdown-menu dropdown-menu-end rounded-4 border-0 p-0 mb-1'
-    aria-labelledby='bd-theme-text'>
-    <li>
-      <button
-        type='button'
-        class='dropdown-item d-flex align-items-center rounded-top-4 py-2'
-        data-bs-theme-value='light'
-        aria-pressed='false'>
-        <i class='bi bi-sun-fill me-3'></i>
-        Light
-        <svg
-          class='bi ms-auto d-none'
-          width='1em'
-          height='1em'>
-          <use href='#check2'></use>
-        </svg>
-      </button>
-    </li>
-    <li>
-      <button
-        type='button'
-        class='dropdown-item d-flex align-items-center py-2'
-        data-bs-theme-value='dark'
-        aria-pressed='true'>
-        <i class='bi bi-moon-stars-fill me-3'></i>
-        Dark
-        <svg
-          class='bi ms-auto d-none'
-          width='1em'
-          height='1em'>
-          <use href='#check2'></use>
-        </svg>
-      </button>
-    </li>
-    <li>
-      <button
-        type='button'
-        class='dropdown-item d-flex align-items-center py-2'
-        data-bs-theme-value='auto'
-        aria-pressed='false'>
-        <i class='bi bi-circle-half me-3'></i>
-        Auto
-        <svg
-          class='bi ms-auto d-none'
-          width='1em'
-          height='1em'>
-          <use href='#check2'></use>
-        </svg>
-      </button>
-    </li>
-    <!-- Nuevo botón para el tema Killjoy -->
-    <li>
-      <button
-        type='button'
-        class='dropdown-item d-flex align-items-center rounded-bottom-4 py-2'
-        data-bs-theme-value='killjoy'
-        aria-pressed='false'>
-        <i class='bi bi-emoji-smile-fill me-3'></i>
-        <!-- Cambia el icono aquí si lo deseas -->
-        Killjoy
-        <svg
-          class='bi ms-auto d-none'
-          width='1em'
-          height='1em'>
-          <use href='#check2'></use>
-        </svg>
-      </button>
-    </li>
-  </ul>
+  <DropdownTheme />
 </div>
