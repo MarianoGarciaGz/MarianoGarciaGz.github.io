@@ -23,18 +23,37 @@ import { contact, social } from '@src/config/settings.json'
               >puedo programarlo</strong
             >.
           </p>
-          <div class='d-inline d-md-flex align-items-center gap-1'>
-            <a
-              class='hero__btn btn btn-warning btn-lg px-4 me-md-2 mt-1 shadow-sm'
-              href='/assets/CV-ISIC-GARCIA-GUZMAN-MARIANO-ISMAEL.pdf'
-              download='CV_Mariano_Garcia.pdf'
-              aria-label='Descargar mi CV en formato PDF'>
-              Descargar CV
-            </a>
+          <div class='d-inline d-sm-flex align-items-center gap-2'>
+            <button
+              type='button'
+              class='hero__btn btn btn-secondary text-white btn-lg px-4 mt-2 shadow-sm dropdown-toggle'
+              data-bs-toggle='dropdown'
+              aria-expanded='false'>
+              <i class='bi bi-download'></i> CV
+            </button>
+            <ul class='dropdown-menu p-0 rounded-3 border-0 mt-1'>
+              <li>
+                <a
+                  class='dropdown-item rounded-top-3 py-2'
+                  href='/assets/CV_Mariano_Garcia_ES.pdf'
+                  download='CV_Mariano_Garcia_ES.pdf'>
+                  Español 🇲🇽
+                </a>
+              </li>
+              <li>
+                <a
+                  class='dropdown-item rounded-bottom-3 py-2'
+                  href='/assets/CV_Mariano_Garcia_EN.pdf'
+                  download='CV_Mariano_Garcia_EN.pdf'>
+                  English 🇺🇸
+                </a>
+              </li>
+            </ul>
+
             <a
               target='_blank'
               rel='noopener noreferrer'
-              class='hero__btn btn btn-info text-white btn-lg px-4 me-md-2 mt-1 shadow-sm'
+              class='hero__btn btn btn-info text-white btn-lg px-4 mt-2 shadow-sm'
               href={`mailto:${contact.email}`}
               aria-label='Enviar correo electrónico a Mariano García'>
               <i class='bi bi-envelope'></i>
@@ -43,14 +62,14 @@ import { contact, social } from '@src/config/settings.json'
             <a
               target='_blank'
               rel='noopener noreferrer'
-              class='hero__btn hero__btn--linkedin text-white btn btn-lg px-4 me-md-2 mt-1 shadow-sm'
+              class='hero__btn hero__btn--linkedin text-white btn btn-lg px-4 mt-2 shadow-sm'
               href={social.linkedin}>
               <i class='bi bi-linkedin'></i>
             </a>
             <a
               target='_blank'
               rel='noopener noreferrer'
-              class='hero__btn btn btn-lg btn-dark px-4 text-white mt-1 shadow-sm'
+              class='hero__btn btn btn-lg btn-dark px-4 text-white mt-2 shadow-sm'
               href={social.github}>
               <i class='bi bi-github'></i>
             </a>

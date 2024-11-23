@@ -35,7 +35,7 @@ $gray-700: mix($white, $gray, 20%);
 $gray-800: mix($white, $gray, 10%);
 
 $primary: $cyan;
-$secondary: $red;
+$secondary: $indigo;
 $success: $green;
 $info: $cyan;
 $warning: $yellow;
@@ -127,4 +127,13 @@ h6 {
     backdrop-filter: blur(3px);
     background-color: rgba($dark, 0);
   }
+}
+
+.btn {
+  border-style: none !important;
+}
+
+.btn-secondary {
+  color: $white !important;
+  background-image: linear-gradient(75deg, $indigo 0%, $blue 300%);
 }
