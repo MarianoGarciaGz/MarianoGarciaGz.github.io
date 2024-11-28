@@ -4,14 +4,15 @@ import FooterSocial from '@src/components/atoms/FooterSocial/FooterSocial.astro'
 import { info, social } from '@src/config/settings.json'
 ---
 
+<div class='pattern-gradient d-none d-lg-block'></div>
 <div class='divider-md'></div>
 <section class='contact'>
   <div class='container-sm'>
     <div class='row justify-content-center'>
       <div class='col-12 col-md-8 col-lg-7 col-xl-6 col-xxl-5'>
         <div
-          class='contact__card card border-1 p-5 shadow-lg rounded-5 bg-transparent'
-          style='backdrop-filter: blur(5px);'>
+          class='contact__card card border-0 p-5 shadow rounded-5 bg-transparent'
+          style='backdrop-filter: blur(50px);'>
           <a
             class=''
             href={info.url}>
@@ -33,7 +34,7 @@ import { info, social } from '@src/config/settings.json'
                 Object.entries(social).map(([key, href]) => (
                   <li class='Footer-li'>
                     <FooterSocial
-                      class='btn btn-outline-primary text-decoration-none fs-6 w-100'
+                      class='btn btn-outline-primary text-decoration-none border-1 border border-primary fs-6 w-100'
                       href={href}
                       block='Footer'
                       logo={key}

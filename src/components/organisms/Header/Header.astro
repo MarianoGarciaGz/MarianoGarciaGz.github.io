@@ -8,7 +8,7 @@ const { fixed = false } = Astro.props
 import DropdownTheme from '@src/components/organisms/DropdownTheme/DropdownTheme.astro'
 ---
 
-<header class={`header w-100 glass ${fixed ? 'position-fixed' : 'sticky-top'}`}>
+<header class={`header w-100 glass z-3 ${fixed ? 'position-fixed' : 'sticky-top'}`}>
   <div class='container-lg'>
     <nav class='navbar navbar-expand-md'>
       <a

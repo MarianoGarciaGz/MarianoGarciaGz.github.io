@@ -1,6 +1,7 @@
 ---
 import './Hero.scss'
 import { contact, social } from '@src/config/settings.json'
+import HeroButtons from '@src/components/molecules/HeroButtons/HeroButtons.astro'
 ---
 
 <div class='pattern-wavy'></div>
@@ -10,72 +11,21 @@ import { contact, social } from '@src/config/settings.json'
     <div
       class='row align-items-center justify-content-center justify-content-lg-between g-0'>
       <div class='hero__column-text col-12 col-lg-7'>
-        <div class=''>
-          <h1 class='hero__h1 display-1 lh-1 mb-4 hyp-none'>
-            marianogarciagz:<br />
-            <strong class='hero__strong text-primary'>
-              Desarrollador full-stack</strong
-            >
-          </h1>
-          <p class='hero__p lead'>
-            Soy un programador de Morelia, Michoacán. El código no muerde... a
-            menos que lo pidas. Si puedes imaginarlo, <strong class='fw-bold'
-              >puedo programarlo</strong
-            >.
-          </p>
-          <div class='d-inline d-sm-flex align-items-center gap-2'>
-            <button
-              type='button'
-              class='hero__btn btn btn-secondary text-white btn-lg px-4 mt-2 shadow-sm dropdown-toggle'
-              data-bs-toggle='dropdown'
-              aria-expanded='false'>
-              <i class='bi bi-download'></i> CV
-            </button>
-            <ul class='dropdown-menu p-0 rounded-3 border-0 mt-1'>
-              <li>
-                <a
-                  class='dropdown-item rounded-top-3 py-2'
-                  href='/assets/CV_Mariano_Garcia_ES.pdf'
-                  download='CV_Mariano_Garcia_ES.pdf'>
-                  Español 🇲🇽
-                </a>
-              </li>
-              <li>
-                <a
-                  class='dropdown-item rounded-bottom-3 py-2'
-                  href='/assets/CV_Mariano_Garcia_EN.pdf'
-                  download='CV_Mariano_Garcia_EN.pdf'>
-                  English 🇺🇸
-                </a>
-              </li>
-            </ul>
-
-            <a
-              target='_blank'
-              rel='noopener noreferrer'
-              class='hero__btn btn btn-info text-white btn-lg px-4 mt-2 shadow-sm'
-              href={`mailto:${contact.email}`}
-              aria-label='Enviar correo electrónico a Mariano García'>
-              <i class='bi bi-envelope'></i>
-            </a>
-
-            <a
-              target='_blank'
-              rel='noopener noreferrer'
-              class='hero__btn hero__btn--linkedin text-white btn btn-lg px-4 mt-2 shadow-sm'
-              href={social.linkedin}>
-              <i class='bi bi-linkedin'></i>
-            </a>
-            <a
-              target='_blank'
-              rel='noopener noreferrer'
-              class='hero__btn btn btn-lg btn-dark px-4 text-white mt-2 shadow-sm'
-              href={social.github}>
-              <i class='bi bi-github'></i>
-            </a>
-          </div>
-        </div>
+        <h1 class='hero__h1 display-1 lh-1 mb-4 hyp-none'>
+          marianogarciagz:<br />
+          <strong class='hero__strong text-primary'>
+            Desarrollador full-stack</strong
+          >
+        </h1>
+        <p class='hero__p lead'>
+          Soy un programador de Morelia, Michoacán. El código no muerde... a
+          menos que lo pidas. Si puedes imaginarlo, <strong class='fw-bold'
+            >puedo programarlo</strong
+          >.
+        </p>
+        <HeroButtons />
       </div>
+
       <div class='hero__column-img col-7 col-sm-6 col-md-4 col-lg-4 my-5'>
         <img
           src='./assets/images/mariano-photo.png'

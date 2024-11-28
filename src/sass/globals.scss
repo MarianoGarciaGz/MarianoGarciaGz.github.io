@@ -7,6 +7,14 @@
 @import '@src/sass/base';
 @import '@src/sass/markdown';
 
+
+.btn-secondary {
+  color: $white !important;
+  
+  &:hover{
+  }
+}
+
 // Source mixin
 // Bootstrap
 @import 'bootstrap/scss/functions';
@@ -32,3 +40,4 @@
 
 @import '@src/sass/_variables-dark';
 @import '@src/sass/kj_theme';
+

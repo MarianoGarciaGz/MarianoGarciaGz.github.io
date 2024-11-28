@@ -51,8 +51,9 @@
     font-size: $h6-font-size;
   }
   ul {
+    font-size: 1em;
     background-color: $gray-100;
-    padding: 1rem 1rem 1rem 1rem;
+    padding: .3rem 1rem .3rem 1rem;
     -webkit-border-radius: 0.5rem;
     -moz-border-radius: 0.5rem;
     -ms-border-radius: 0.5rem;
@@ -70,8 +71,9 @@
     }
   }
   ol {
+    font-size: 1em;
     background-color: $gray-100;
-    padding: 1rem 1rem 1rem 2rem;
+    padding: .3rem 1rem .3rem 2rem;
     -webkit-border-radius: 0.5rem;
     -moz-border-radius: 0.5rem;
     -ms-border-radius: 0.5rem;
