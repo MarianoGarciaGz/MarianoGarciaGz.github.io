@@ -50,6 +50,60 @@ const { title, description, date, image, author, category, keywords }: Props =
       </div>
     </div>
     <Footer />
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Seleccionamos todos los bloques code generados por Markdown
+        const codeElements = document.querySelectorAll('pre code');
+      
+        codeElements.forEach(code => {
+          const pre = code.parentNode; 
+          // Verificamos que pre no sea nulo y que tenga un parentNode
+          if (!pre || !pre.parentNode) {
+            return; // Si no existe el padre, salimos
+          }
+      
+          // Creamos el contenedor principal
+          const wrapper = document.createElement('div');
+          wrapper.classList.add('code-block');
+      
+          // Creamos el botón
+          const button = document.createElement('button');
+          button.classList.add('copy-btn', 'btn', 'btn-outline-primary', 'border-1', 'border-primary');
+          // Aquí colocamos el ícono en lugar del texto
+          button.innerHTML = '<i class="bi bi-copy"></i>';
+      
+          // Insertamos el wrapper antes del <pre>
+          pre.parentNode.insertBefore(wrapper, pre);
+      
+          // Movemos el <pre> dentro del wrapper
+          // Ahora, como pre es de tipo Node, no deberíamos tener problemas,
+          // pero si TypeScript se queja, podemos comprobar su tipo:
+          wrapper.appendChild(pre);
+      
+          // Asignamos el evento de click al botón
+          button.addEventListener('click', async () => {
+            // Convertimos code a HTMLElement para acceder a innerText
+            const codeElement = code as HTMLElement; 
+            const textToCopy = codeElement.innerText || codeElement.textContent || '';
+            try {
+              await navigator.clipboard.writeText(textToCopy.trim());
+              // Cambiamos el ícono temporalmente para indicar que se copió
+              button.innerHTML = '<i class="bi bi-check2"></i>';
+              setTimeout(() => {
+                // Volvemos al ícono original
+                button.innerHTML = '<i class="bi bi-copy"></i>';
+              }, 2000);
+            } catch (err) {
+              console.error('Error al copiar: ', err);
+            }
+          });
+      
+          wrapper.appendChild(button);
+        });
+      });
+      </script>
+      
+      
     <Scripts />
   </body>
 </html>

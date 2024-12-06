@@ -3,7 +3,7 @@ title: "Cómo Configurar un Clúster de Alta Disponibilidad (HA) en Linux con Pa
 description: "Guía detallada paso a paso para configurar un clúster de alta disponibilidad en Linux utilizando Pacemaker, Corosync e iSCSI, asegurando continuidad de servicio para máquinas virtuales y almacenamiento compartido."
 date: "2024-12-06"
 image: '/assets/images/post/cluster-de-alta-disponibilidad-con-pacemaker-corosync/banner.webp'
-author: "Mariano García Guzmán"
+author: "Mariano García"
 category: "Infraestructura de Servicios"
 keywords: ["alta disponibilidad", "Pacemaker", "Corosync", "iSCSI", "clúster", "Linux", "Ubuntu", "Virt-Manager", "KVM", "QEMU"]
 excerpt: "Aprende cómo configurar un clúster de alta disponibilidad (HA) en Linux con herramientas como Pacemaker, Corosync e iSCSI. Esta guía asegura continuidad del servicio incluso en caso de fallos en uno de los nodos."

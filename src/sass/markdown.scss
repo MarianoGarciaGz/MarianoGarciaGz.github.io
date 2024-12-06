@@ -90,16 +90,17 @@
 }
 
 pre {
-  border-style: dashed;
+  border-style: double;
   border-color: $dark;
   border-width: 2px;
   background-color: $dark !important;
-  padding: 2rem;
-  -webkit-border-radius: 1rem;
-  -moz-border-radius: 1rem;
-  -ms-border-radius: 1rem;
-  -o-border-radius: 1rem;
-  border-radius: 1rem;
+  padding: 1.5rem;
+  scrollbar-color: $primary $dark;
+  -webkit-border-radius: .2rem;
+  -moz-border-radius: .2rem;
+  -ms-border-radius: .2rem;
+  -o-border-radius: .2rem;
+  border-radius: .2rem;
 }
 
 [data-bs-theme='dark'] {
@@ -112,15 +113,23 @@ pre {
     }
   }
   pre {
-    border-style: dashed;
-    border-color: $gray-600;
-    border-width: 2px;
-    background-color: $dark !important;
-    padding: 2rem;
-    -webkit-border-radius: 1rem;
-    -moz-border-radius: 1rem;
-    -ms-border-radius: 1rem;
-    -o-border-radius: 1rem;
-    border-radius: 1rem;
+    border-color: $gray-800;
   }
+}
+
+.code-block {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.copy-btn {
+  cursor: pointer;
+  font-size: .7rem;
+  position: absolute;
+  top: .5rem;
+  right: .5rem;
+}
+
+.code-block pre {
+  margin: 0; 
 }
