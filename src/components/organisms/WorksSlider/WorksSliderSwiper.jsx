@@ -64,7 +64,7 @@ const ContainerCards = () => {
                                 <img src="/assets/images/projects/MarianoGarciaGz.png" className="d-block mx-md-auto img-fluid rounded-5" alt="Bootstrap Themes" loading="lazy" />
                             </div>
                             <div className="col-md-7 col-xl-6">
-                                <h2 className="display-5 lh-1 mb-3 text-center text-md-start">Proyectos finalizados</h2>
+                                <h2 className="display-5 lh-1 mb-3 text-center text-md-start">Proyectos</h2>
                                 <p className="text-center text-md-start">Explora en este carousel algunos de mis trabajos realizados. Tengo la experiencia para desarrollar la página y aplicación que tengas en mente.</p>
                             </div>
                         </div>

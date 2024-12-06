@@ -50,20 +50,24 @@
   h6 {
     font-size: $h6-font-size;
   }
-  ul {
+ ul {
     font-size: 1em;
     background-color: $gray-100;
-    padding: .3rem 1rem .3rem 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 2rem;
+    // padding: .3rem 1rem .3rem 1rem;
     -webkit-border-radius: 0.5rem;
     -moz-border-radius: 0.5rem;
     -ms-border-radius: 0.5rem;
     -o-border-radius: 0.5rem;
     li {
-      margin: 0rem 0rem 1rem 0rem;
-      &:before {
+      list-style-type:disc;
+      margin: 1rem 0rem 1rem 0rem;
+/*       &:before {
         display: inline;
-        content: '🔵';
-      }
+        content: '🔵 ';
+      } */
 
       p {
         display: inline;
@@ -73,12 +77,29 @@
   ol {
     font-size: 1em;
     background-color: $gray-100;
-    padding: .3rem 1rem .3rem 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 2rem;
+
+    // padding: .3rem 1rem .3rem 2rem;
     -webkit-border-radius: 0.5rem;
     -moz-border-radius: 0.5rem;
     -ms-border-radius: 0.5rem;
     -o-border-radius: 0.5rem;
-  }
+  } 
+}
+
+pre {
+  border-style: dashed;
+  border-color: $dark;
+  border-width: 2px;
+  background-color: $dark !important;
+  padding: 2rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  border-radius: 1rem;
 }
 
 [data-bs-theme='dark'] {
@@ -89,5 +110,17 @@
     ol {
       background-color: $gray-800;
     }
+  }
+  pre {
+    border-style: dashed;
+    border-color: $gray-600;
+    border-width: 2px;
+    background-color: $dark !important;
+    padding: 2rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    border-radius: 1rem;
   }
 }

@@ -4,16 +4,6 @@ html {
   scrollbar-color: $primary var(--bs-body-bg);
 }
 
-pre {
-  background-color: $dark !important;
-  padding: 2rem;
-  -webkit-border-radius: 1rem;
-  -moz-border-radius: 1rem;
-  -ms-border-radius: 1rem;
-  -o-border-radius: 1rem;
-  border-radius: 1rem;
-}
-
 .card {
   backdrop-filter: blur(15px);
   background-color: rgba($dark, 0);
