@@ -1,109 +1,121 @@
 {
-  "projects": [
-    {
-      "name": "Cosaur",
-      "link": "https://www.cosaur.com",
-      "description": "Desarrollo completo del sitio web para Cosaur, una agencia especializada en creación de páginas web, con un diseño moderno, buenas prácticas de SEO y un blog integrado. El sitio fue desplegado en AWS Amplify y desarrollado con HTML, SCSS, JavaScript y Astro.",
-      "startDate": "2023-09-12",
-      "endDate": "2023-11-01",
-      "technologies": ["HTML", "CSS", "JavaScript", "React"],
-      "image": "",
-      "client": "Cosaur",
-      "role": "Full-Stack development",
-      "color": "#20ca50"
-    },
-    {
-      "name": "Clinica de belleza Lili",
-      "link": "",
-      "description": "Aplicación web para gestionar citas en la Clínica de Belleza Lili, con un panel de administración para operaciones CRUD y envío automático de confirmaciones por correo electrónico. Desarrollada con HTML, CSS, JavaScript, React y MongoDB.",
-      "startDate": "2023-01-15",
-      "endDate": "2023-03-30",
-      "technologies": ["HTML", "CSS", "JavaScript", "React"],
-      "image": "",
-      "client": "Clinica de belleza Lili",
-      "role": "Full-Stack development",
-      "color": "#F0753C"
-    },
-    {
-      "name": "Seguridad Mafer",
-      "link": "http://www.seguridadmafer.com.mx/",
-      "description": "Desarrollo de landing page para Seguridad Mafer, página con buenas practicas de SEO para mejor posicionamiento en los buscadores.",
-      "startDate": "2023-01-15",
-      "endDate": "2023-03-30",
-      "technologies": ["HTML", "CSS", "JavaScript", "React"],
-      "image": "https://example.com/images/seguridad-mafer.jpeg",
-      "client": "Seguridad Mafer",
-      "role": "Full-Stack development",
-      "color": "#393D60"
-    },
-    {
-      "name": "Invitación Panindícuaro",
-      "link": "https://cspanindicuaro.github.io/",
-      "description": "Desarrollo de una página web para la invitación del segundo informe de gobierno del municipio de Panindicuaro.",
-      "startDate": "2022-05-10",
-      "endDate": "2022-08-25",
-      "technologies": ["HTML", "CSS", "JavaScript"],
-      "image": "https://cspanindicuaro.github.io/",
-      "client": "Municipio de Panindicuaro",
-      "role": "Back-End Developer",
-      "color": "#AD2439"
-    }
-  ],
+    "projects": [
+        {
+            "name": "Cosaur",
+            "link": "https://cosaur.com",
+            "description": "Desarrollo completo del sitio web para Cosaur, una agencia especializada en creación de páginas web, con un diseño moderno, buenas prácticas de SEO y un blog integrado. El sitio fue desplegado en AWS Amplify y desarrollado con HTML, SCSS, JavaScript y Astro.",
+            "startDate": "2023-09-12",
+            "endDate": "2023-11-01",
+            "technologies": ["HTML", "CSS", "JavaScript", "React"],
+            "image": "",
+            "client": "Cosaur",
+            "role": "Full-Stack development",
+            "color": "#20ca50"
+        },
+        {
+            "name": "Clinica de belleza Lili",
+            "link": "",
+            "description": "Aplicación web para gestionar citas en la Clínica de Belleza Lili, con un panel de administración para operaciones CRUD y envío automático de confirmaciones por correo electrónico. Desarrollada con HTML, CSS, JavaScript, React y MongoDB.",
+            "startDate": "2023-01-15",
+            "endDate": "2023-03-30",
+            "technologies": ["HTML", "CSS", "JavaScript", "React"],
+            "image": "",
+            "client": "Clinica de belleza Lili",
+            "role": "Full-Stack development",
+            "color": "#F0753C"
+        },
+        {
+            "name": "Dowdy Programmer",
+            "link": "https://dowdyprogrammer.com",
+            "description": "Diseñé y desarrollé un sitio web moderno, responsivo y optimizado para SEO para Dowdy Programmer. El proyecto incluye un portafolio personal con descargas de música y páginas dinámicas para canciones individuales. Utilicé Astro para un rendimiento rápido, React para interactividad y AWS Amplify para una implementación eficiente.",
+            "startDate": "2024-12-15",
+            "endDate": "2025-01-10",
+            "technologies": ["HTML", "SCSS", "JavaScript", "React", "Astro", "AWS Amplify"],
+            "image": "",
+            "client": "Dowdy Programmer",
+            "role": "Full-Stack development",
+            "color": "#3be477"
+        },
+        {
+            "name": "Seguridad Mafer",
+            "link": "http://www.seguridadmafer.com.mx/",
+            "description": "Desarrollo de landing page para Seguridad Mafer, página con buenas practicas de SEO para mejor posicionamiento en los buscadores.",
+            "startDate": "2023-01-15",
+            "endDate": "2023-03-30",
+            "technologies": ["HTML", "CSS", "JavaScript", "React"],
+            "image": "https://example.com/images/seguridad-mafer.jpeg",
+            "client": "Seguridad Mafer",
+            "role": "Full-Stack development",
+            "color": "#393D60"
+        },
+        {
+            "name": "Invitación Panindícuaro",
+            "link": "https://cspanindicuaro.github.io/",
+            "description": "Desarrollo de una página web para la invitación del segundo informe de gobierno del municipio de Panindicuaro.",
+            "startDate": "2022-05-10",
+            "endDate": "2022-08-25",
+            "technologies": ["HTML", "CSS", "JavaScript"],
+            "image": "https://cspanindicuaro.github.io/",
+            "client": "Municipio de Panindicuaro",
+            "role": "Back-End Developer",
+            "color": "#AD2439"
+        }
+    ],
 
-  "planes": [
-    {
-      "nombre": "Básico",
-      "caracteristicas": {
-        "Dominio": true,
-        "Certificado SSL": true,
-        "Responsivo": true,
-        "Secciones principales": true,
-        "Secciones personalizadas": false,
-        "Galería de imágenes": true,
-        "Redes sociales": true,
-        "Chat de WhatsApp": true,
-        "Experiencia de usuario": true,
-        "Optimización de SEO": true,
-        "Compatibilidad con navegadores": true,
-        "Atención 24/7": true,
-        "Revisiones": 2
-      }
-    },
-    {
-      "nombre": "Completo",
-      "caracteristicas": {
-        "Dominio": true,
-        "Certificado SSL": true,
-        "Responsivo": true,
-        "Secciones principales": true,
-        "Secciones personalizadas": true,
-        "Galería de imágenes": true,
-        "Redes sociales": true,
-        "Chat de WhatsApp": true,
-        "Experiencia de usuario": true,
-        "Optimización de SEO": true,
-        "Compatibilidad con navegadores": true,
-        "Atención 24/7": true,
-        "Revisiones": 3
-      }
-    },
-    {
-      "nombre": "Personalizado",
-      "caracteristicas": {
-        "Dominio": "A demanda",
-        "Certificado SSL": "A demanda",
-        "Responsivo": "A demanda",
-        "Secciones principales": "A demanda",
-        "Secciones personalizadas": "A demanda",
-        "Galería de imágenes": "A demanda",
-        "Redes sociales": "A demanda",
-        "Chat de WhatsApp": "A demanda",
-        "Experiencia de usuario": "A demanda",
-        "Optimización de SEO": "A demanda",
-        "Compatibilidad con navegadores": "A demanda",
-        "Atención 24/7": "A demanda",
-        "Revisiones": "> 3"
-      }
-    }
-  ]
+    "planes": [
+        {
+            "nombre": "Básico",
+            "caracteristicas": {
+                "Dominio": true,
+                "Certificado SSL": true,
+                "Responsivo": true,
+                "Secciones principales": true,
+                "Secciones personalizadas": false,
+                "Galería de imágenes": true,
+                "Redes sociales": true,
+                "Chat de WhatsApp": true,
+                "Experiencia de usuario": true,
+                "Optimización de SEO": true,
+                "Compatibilidad con navegadores": true,
+                "Atención 24/7": true,
+                "Revisiones": 2
+            }
+        },
+        {
+            "nombre": "Completo",
+            "caracteristicas": {
+                "Dominio": true,
+                "Certificado SSL": true,
+                "Responsivo": true,
+                "Secciones principales": true,
+                "Secciones personalizadas": true,
+                "Galería de imágenes": true,
+                "Redes sociales": true,
+                "Chat de WhatsApp": true,
+                "Experiencia de usuario": true,
+                "Optimización de SEO": true,
+                "Compatibilidad con navegadores": true,
+                "Atención 24/7": true,
+                "Revisiones": 3
+            }
+        },
+        {
+            "nombre": "Personalizado",
+            "caracteristicas": {
+                "Dominio": "A demanda",
+                "Certificado SSL": "A demanda",
+                "Responsivo": "A demanda",
+                "Secciones principales": "A demanda",
+                "Secciones personalizadas": "A demanda",
+                "Galería de imágenes": "A demanda",
+                "Redes sociales": "A demanda",
+                "Chat de WhatsApp": "A demanda",
+                "Experiencia de usuario": "A demanda",
+                "Optimización de SEO": "A demanda",
+                "Compatibilidad con navegadores": "A demanda",
+                "Atención 24/7": "A demanda",
+                "Revisiones": "> 3"
+            }
+        }
+    ]
 }
