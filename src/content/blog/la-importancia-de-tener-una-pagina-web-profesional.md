@@ -1,37 +1,38 @@
 ---
 title: 'La Importancia de Tener una Página Web Profesional'
+url: 'la-importancia-de-tener-una-pagina-web-profesional'
 description: 'Descubre la importancia de tener una página web profesional. Puntos clave de porqué deberías tener tu propia página web.'
 date: '2024-04-15'
 image: '/assets/images/post/importancia-de-tener-una-pagina-web-profesional/tienda.jpg'
 author: 'Mariano García'
 category: 'diseño web'
 keywords:
-  [
-    'Diseño web',
-    'Desarrollo web',
-    'Marketing digital',
-    'SEO',
-    'Optimización web',
-    'Estrategia digital',
-    'Presencia en línea',
-    'Transformación digital',
-    'Credibilidad en línea',
-    'Herramientas de marketing',
-    'Visibilidad en motores de búsqueda',
-    'Experiencia del usuario (UX)',
-    'Diseño UX/UI',
-    'Tecnología web',
-    'Innovación digital',
-    'Estrategia de contenido',
-    'Web profesional',
-    'Negocios digitales',
-    'Diseño responsive',
-    'Mejora de la conversión',
-    'Branding digital',
-    'Optimización para móviles',
-    'Análisis web',
-    'Competitividad en línea',
-  ]
+    [
+        'Diseño web',
+        'Desarrollo web',
+        'Marketing digital',
+        'SEO',
+        'Optimización web',
+        'Estrategia digital',
+        'Presencia en línea',
+        'Transformación digital',
+        'Credibilidad en línea',
+        'Herramientas de marketing',
+        'Visibilidad en motores de búsqueda',
+        'Experiencia del usuario (UX)',
+        'Diseño UX/UI',
+        'Tecnología web',
+        'Innovación digital',
+        'Estrategia de contenido',
+        'Web profesional',
+        'Negocios digitales',
+        'Diseño responsive',
+        'Mejora de la conversión',
+        'Branding digital',
+        'Optimización para móviles',
+        'Análisis web',
+        'Competitividad en línea'
+    ]
 excerpt: 'Explora por qué tener una página web profesional es esencial para destacar en el mundo digital y cómo puede beneficiar a tu negocio.'
 status: 'published'
 ---

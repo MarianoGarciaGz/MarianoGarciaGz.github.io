@@ -1,11 +1,13 @@
 ---
 title: 'Configuración de Docker Swarm con Alta Disponibilidad para WordPress'
+url: 'configuracion-de-Docker-Swarm-con-alta-disponibilidad-para-WordPress'
 description: 'Aprende a configurar un clúster Docker Swarm con alta disponibilidad para WordPress. Paso a paso con ejemplos y respaldo.'
 date: '2024-12-04'
-image: '/assets/images/post/configuración-de-Docker-Swarm-con-alta-disponibilidad-para-WordPress/banner.webp'
+image: '/assets/images/post/configuracion-de-Docker-Swarm-con-alta-disponibilidad-para-WordPress/banner.webp'
 author: 'Mariano Ismael García Guzmán'
 category: 'DevOps'
-keywords: ['Docker', 'Swarm', 'Alta Disponibilidad', 'WordPress', 'Cluster', 'DevOps']
+keywords:
+    ['Docker', 'Swarm', 'Alta Disponibilidad', 'WordPress', 'Cluster', 'DevOps']
 excerpt: 'Descubre cómo implementar un clúster Docker Swarm con alta disponibilidad para desplegar WordPress con tres réplicas y respaldo de datos.'
 status: 'published'
 ---
@@ -28,9 +30,9 @@ status: 'published'
 
 ### Requisitos Previos
 
-- **Tres servidores** con sistema operativo Linux (Ubuntu 20.04 recomendado).
-- Acceso con privilegios de **sudo** en cada nodo.
-- **Conectividad de red** entre los nodos.
+-   **Tres servidores** con sistema operativo Linux (Ubuntu 20.04 recomendado).
+-   Acceso con privilegios de **sudo** en cada nodo.
+-   **Conectividad de red** entre los nodos.
 
 ### Pasos de Instalación
 
@@ -39,7 +41,7 @@ status: 'published'
 ```bash
 sudo apt update
 sudo apt upgrade -y
-````
+```
 
 #### b. Instalar Docker en Cada Nodo
 
@@ -77,7 +79,7 @@ sudo docker swarm init --advertise-addr <IP_DEL_NODO1>
 
 Anota el comando `docker swarm join` que se muestra; lo necesitarás para agregar los otros nodos.
 
-![Comando Swarm Join](/assets/images/post/configuración-de-Docker-Swarm-con-alta-disponibilidad-para-WordPress/Pasted_image_20241204175325.png)
+![Comando Swarm Join](/assets/images/post/configuracion-de-Docker-Swarm-con-alta-disponibilidad-para-WordPress/Pasted_image_20241204175325.png)
 
 ##### ii. Agregar Nodos Workers al Swarm
 
@@ -87,7 +89,7 @@ En **nodo2** y **nodo3**, ejecuta:
 sudo docker swarm join --token <TOKEN_DEL_SWARM> <IP_DEL_NODO1>:2377
 ```
 
-![Nodos Workers Agregados](/assets/images/post/configuración-de-Docker-Swarm-con-alta-disponibilidad-para-WordPress/Pasted_image_20241204175639.png)
+![Nodos Workers Agregados](/assets/images/post/configuracion-de-Docker-Swarm-con-alta-disponibilidad-para-WordPress/Pasted_image_20241204175639.png)
 
 #### e. Verificar el Estado del Swarm
 
@@ -99,7 +101,7 @@ sudo docker node ls
 
 Deberías ver algo como esto:
 
-![Estado del Swarm](/assets/images/post/configuración-de-Docker-Swarm-con-alta-disponibilidad-para-WordPress/Pasted_image_20241204175716.png)
+![Estado del Swarm](/assets/images/post/configuracion-de-Docker-Swarm-con-alta-disponibilidad-para-WordPress/Pasted_image_20241204175716.png)
 
 ---
 
@@ -217,13 +219,12 @@ sudo docker service create \
 
 A continuación, se presenta un diagrama simplificado de la arquitectura del clúster:
 
-- **Nodos:** Nodo1 (Manager), Nodo2 y Nodo3 (Workers).
-- **Red Overlay:** `my-overlay` que conecta todos los servicios.
-- **Servicios:** MySQL y WordPress distribuidos en los nodos.
-- **Acceso de Usuarios:** A través del puerto 80, balanceado entre las réplicas de WordPress.
+-   **Nodos:** Nodo1 (Manager), Nodo2 y Nodo3 (Workers).
+-   **Red Overlay:** `my-overlay` que conecta todos los servicios.
+-   **Servicios:** MySQL y WordPress distribuidos en los nodos.
+-   **Acceso de Usuarios:** A través del puerto 80, balanceado entre las réplicas de WordPress.
 
-![Respaldos](/assets/images/post/configuración-de-Docker-Swarm-con-alta-disponibilidad-para-WordPress/diagrama_red.png)
-
+![Respaldos](/assets/images/post/configuracion-de-Docker-Swarm-con-alta-disponibilidad-para-WordPress/diagrama_red.png)
 
 ---
 
@@ -239,7 +240,7 @@ http://<IP_DE_CUALQUIER_NODO>
 
 Deberías ver algo como esto:
 
-![Página de WordPress](/assets/images/post/configuración-de-Docker-Swarm-con-alta-disponibilidad-para-WordPress/Pasted_image_20241204181230.png)
+![Página de WordPress](/assets/images/post/configuracion-de-Docker-Swarm-con-alta-disponibilidad-para-WordPress/Pasted_image_20241204181230.png)
 
 ### b. Verificar la Distribución de las Réplicas
 
@@ -249,7 +250,7 @@ En el nodo manager:
 sudo docker service ps wordpress
 ```
 
-![Distribución de Réplicas](/assets/images/post/configuración-de-Docker-Swarm-con-alta-disponibilidad-para-WordPress/Pasted_image_20241204181430.png)
+![Distribución de Réplicas](/assets/images/post/configuracion-de-Docker-Swarm-con-alta-disponibilidad-para-WordPress/Pasted_image_20241204181430.png)
 
 ### c. Simular un Fallo
 
@@ -261,13 +262,13 @@ sudo systemctl stop docker
 
 Verifica que las réplicas se redistribuyen:
 
-![Fallo en Nodo3](/assets/images/post/configuración-de-Docker-Swarm-con-alta-disponibilidad-para-WordPress/Pasted_image_20241204182901.png)
+![Fallo en Nodo3](/assets/images/post/configuracion-de-Docker-Swarm-con-alta-disponibilidad-para-WordPress/Pasted_image_20241204182901.png)
 
 Los otros nodos siguen operativos:
 
-![Nodo1](/assets/images/post/configuración-de-Docker-Swarm-con-alta-disponibilidad-para-WordPress/Pasted_image_20241204183008.png)
+![Nodo1](/assets/images/post/configuracion-de-Docker-Swarm-con-alta-disponibilidad-para-WordPress/Pasted_image_20241204183008.png)
 
-![Nodo2](/assets/images/post/configuración-de-Docker-Swarm-con-alta-disponibilidad-para-WordPress/Pasted_image_20241204182954.png)
+![Nodo2](/assets/images/post/configuracion-de-Docker-Swarm-con-alta-disponibilidad-para-WordPress/Pasted_image_20241204182954.png)
 
 ---
 
@@ -293,7 +294,7 @@ sudo docker run --rm \
   ubuntu tar cvf /backup/wp-data-backup.tar /data
 ```
 
-![Respaldos](/assets/images/post/configuración-de-Docker-Swarm-con-alta-disponibilidad-para-WordPress/Pasted_image_20241204192944.png)
+![Respaldos](/assets/images/post/configuracion-de-Docker-Swarm-con-alta-disponibilidad-para-WordPress/Pasted_image_20241204192944.png)
 
 ### b. Restaurar Volúmenes
 
@@ -324,14 +325,14 @@ vf /backup/wp-data-backup.tar -C /
 
 ### Ventajas
 
-- Alta disponibilidad (HA).
-- Escalabilidad sencilla.
-- Balanceo de carga integrado.
-- Gestión centralizada.
+-   Alta disponibilidad (HA).
+-   Escalabilidad sencilla.
+-   Balanceo de carga integrado.
+-   Gestión centralizada.
 
 ### Desventajas
 
-- Configuración inicial compleja.
-- Dependencia del nodo manager.
-- Persistencia de datos limitada sin almacenamiento distribuido.
-- Configuraciones adicionales necesarias para redes avanzadas.
+-   Configuración inicial compleja.
+-   Dependencia del nodo manager.
+-   Persistencia de datos limitada sin almacenamiento distribuido.
+-   Configuraciones adicionales necesarias para redes avanzadas.

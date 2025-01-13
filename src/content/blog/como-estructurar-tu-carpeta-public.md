@@ -1,32 +1,33 @@
 ---
 title: 'Cómo estructurar la carpeta "public"'
+url: 'como-estructurar-tu-carpeta-public'
 description: 'Una guía para organizar la carpeta "public" en proyectos web, incluyendo estructura recomendada, pautas de nombrado y consideraciones adicionales.'
 date: '2024-09-09T20:00:00-06:00'
 image: '/assets/images/post/como-estructurar-tu-carpeta-public/banner.webp'
 author: 'Mariano García'
 category: 'Desarrollo Web'
 keywords:
-  [
-    'Estructura de carpetas',
-    'Recursos estáticos',
-    'Optimización web',
-    'Desarrollo web',
-    'Organización de archivos',
-    'Gestión de recursos',
-    'Buenas prácticas web',
-    'Estrategia de archivos',
-    'Performance web',
-    'Diseño de archivos',
-    'Mantenimiento web',
-    'Arquitectura de proyectos',
-    'Archivos estáticos',
-    'Optimización de imágenes',
-    'Gestión de contenido',
-    'Arquitectura de carpetas',
-    'Estructuración de proyectos',
-    'Carga de recursos',
-    'Eficiencia en desarrollo',
-  ]
+    [
+        'Estructura de carpetas',
+        'Recursos estáticos',
+        'Optimización web',
+        'Desarrollo web',
+        'Organización de archivos',
+        'Gestión de recursos',
+        'Buenas prácticas web',
+        'Estrategia de archivos',
+        'Performance web',
+        'Diseño de archivos',
+        'Mantenimiento web',
+        'Arquitectura de proyectos',
+        'Archivos estáticos',
+        'Optimización de imágenes',
+        'Gestión de contenido',
+        'Arquitectura de carpetas',
+        'Estructuración de proyectos',
+        'Carga de recursos',
+        'Eficiencia en desarrollo'
+    ]
 excerpt: 'Aprende a estructurar la carpeta "public" de manera eficiente con esta guía que cubre la organización de archivos, pautas de nombrado y consideraciones para el rendimiento.'
 status: 'published'
 ---
@@ -56,31 +57,31 @@ public/
 
 ### 2. Explicación de cada subcarpeta
 
-- **`/assets/`**: Para recursos estáticos generales, subdividida en:
+-   **`/assets/`**: Para recursos estáticos generales, subdividida en:
 
-  - **`images/`**: Imágenes estáticas como logotipos, fondos, banners, etc.
-  - **`icons/`**: Iconos que se usen en la página.
-  - **`fonts/`**: Tipografías personalizadas.
-  - **`videos/`**: Videos estáticos que se cargan directamente.
+    -   **`images/`**: Imágenes estáticas como logotipos, fondos, banners, etc.
+    -   **`icons/`**: Iconos que se usen en la página.
+    -   **`fonts/`**: Tipografías personalizadas.
+    -   **`videos/`**: Videos estáticos que se cargan directamente.
 
-- **`css/`**: Archivos CSS, como `styles.css`.
+-   **`css/`**: Archivos CSS, como `styles.css`.
 
-- **`js/`**: Contiene archivos JavaScript, como scripts personalizados.
+-   **`js/`**: Contiene archivos JavaScript, como scripts personalizados.
 
-- **`media/`**: Archivos multimedia adicionales, como GIFs o audios.
+-   **`media/`**: Archivos multimedia adicionales, como GIFs o audios.
 
-- **`uploads/`**: Para archivos subidos por usuarios, como imágenes de perfil.
+-   **`uploads/`**: Para archivos subidos por usuarios, como imágenes de perfil.
 
 ### 3. Pautas para nombrar archivos
 
-- **Nombres descriptivos**: Usa nombres de archivos en minúsculas, separados por guiones (`-`). Ejemplo: `logo-main.png`.
-- **Estructura de versiones**: Considera incluir un número de versión o fecha en el nombre del archivo.
+-   **Nombres descriptivos**: Usa nombres de archivos en minúsculas, separados por guiones (`-`). Ejemplo: `logo-main.png`.
+-   **Estructura de versiones**: Considera incluir un número de versión o fecha en el nombre del archivo.
 
 ### 4. Consideraciones adicionales
 
-- **Cacheo**: Usa nombres únicos o con hash (e.g., `style.abc123.css`) para evitar problemas de caché.
-- **Compresión**: Considera comprimir imágenes para mejorar la velocidad de carga.
-- **Optimización**: Usa herramientas para optimizar tus imágenes y minimizar tus archivos CSS/JS.
+-   **Cacheo**: Usa nombres únicos o con hash (e.g., `style.abc123.css`) para evitar problemas de caché.
+-   **Compresión**: Considera comprimir imágenes para mejorar la velocidad de carga.
+-   **Optimización**: Usa herramientas para optimizar tus imágenes y minimizar tus archivos CSS/JS.
 
 ### 5. Ejemplo final
 

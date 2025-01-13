@@ -1,31 +1,32 @@
 ---
 title: 'La Evolución del Diseño Web | Evolución del internet'
+url: 'la-evolucion-del-diseño-web'
 description: 'Explora la evolución del diseño web desde sus inicios en los años 90 hasta las innovaciones actuales. Este artículo te lleva a través de las principales transformaciones y tendencias en el diseño web, incluyendo el impacto de CSS, Flash, el diseño responsivo, y tecnologías modernas como Material Design y frameworks como React y Vue.js.'
 date: '2024-08-07'
 image: '/assets/images/post/la-evolución-del-diseño-web/banner.png'
 author: 'Mariano García'
 category: 'Diseño web'
 keywords:
-  [
-    'Historia del diseño web',
-    'Evolución del diseño web',
-    'Diseño web',
-    'Tecnologías web',
-    'CSS',
-    'HTML',
-    'Flash',
-    'Diseño responsivo',
-    'UX',
-    'UI',
-    'Material Design',
-    'Tendencias web',
-    'Innovación web',
-    'Desarrollo web',
-    'Interfaces modernas',
-    'Experiencia del usuario',
-    'Desarrollo front-end',
-    'Tecnologías modernas',
-  ]
+    [
+        'Historia del diseño web',
+        'Evolución del diseño web',
+        'Diseño web',
+        'Tecnologías web',
+        'CSS',
+        'HTML',
+        'Flash',
+        'Diseño responsivo',
+        'UX',
+        'UI',
+        'Material Design',
+        'Tendencias web',
+        'Innovación web',
+        'Desarrollo web',
+        'Interfaces modernas',
+        'Experiencia del usuario',
+        'Desarrollo front-end',
+        'Tecnologías modernas'
+    ]
 excerpt: 'Descubre cómo ha evolucionado el diseño web. Aprende sobre los cambios clave en la tecnología y las tendencias que han moldeado el diseño web moderno.'
 status: 'published'
 ---
@@ -52,16 +53,16 @@ El HTML (HyperText Markup Language) era el principal lenguaje utilizado. No hab�
 ```html
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Página Web de los 90</title>
-  </head>
-  <body
-    bgcolor="#FFFFFF"
-    text="#000000">
-    <h1>¡Hola Mundo!</h1>
-    <p>Bienvenido a mi página web.</p>
-    <a href="https://www.mipagina.com">Visita mi sitio</a>
-  </body>
+    <head>
+        <title>Página Web de los 90</title>
+    </head>
+    <body
+        bgcolor="#FFFFFF"
+        text="#000000">
+        <h1>¡Hola Mundo!</h1>
+        <p>Bienvenido a mi página web.</p>
+        <a href="https://www.mipagina.com">Visita mi sitio</a>
+    </body>
 </html>
 ```
 
@@ -78,33 +79,33 @@ Con la llegada de CSS (Cascading Style Sheets), los diseñadores web obtuvieron 
 ```html
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Página con CSS</title>
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="styles.css" />
-  </head>
-  <body>
-    <h1>¡Bienvenido a mi página con CSS!</h1>
-    <p>Este es un ejemplo de cómo CSS cambió el diseño web.</p>
-  </body>
+    <head>
+        <title>Página con CSS</title>
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="styles.css" />
+    </head>
+    <body>
+        <h1>¡Bienvenido a mi página con CSS!</h1>
+        <p>Este es un ejemplo de cómo CSS cambió el diseño web.</p>
+    </body>
 </html>
 ```
 
 ```css
 body {
-  background-color: #f0f0f0;
-  color: #333;
-  font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    font-family: Arial, sans-serif;
 }
 
 h1 {
-  color: #0073e6;
+    color: #0073e6;
 }
 
 p {
-  font-size: 18px;
+    font-size: 18px;
 }
 ```
 

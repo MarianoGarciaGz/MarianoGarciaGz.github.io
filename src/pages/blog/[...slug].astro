@@ -3,14 +3,14 @@ import { type CollectionEntry, getCollection } from 'astro:content'
 import PostLayout from '@src/components/layouts/PostLayout/PostLayout.astro'
 
 export async function getStaticPaths() {
-  // Obtén todos los posts de la colección 'blog'
-  const posts = await getCollection('blog')
+    // Obtén todos los posts de la colección 'blog'
+    const posts = await getCollection('blog')
 
-  // Devuelve un array de rutas con el slug de cada post
-  return posts.map((post) => ({
-    params: { slug: post.slug },
-    props: post,
-  }))
+    // Devuelve un array de rutas con el slug de cada post
+    return posts.map((post) => ({
+        params: { slug: post.slug },
+        props: post
+    }))
 }
 
 // Define el tipo de las propiedades que esperas
@@ -24,15 +24,15 @@ const { Content } = await post.render()
 ---
 
 <PostLayout
-  title={post.data.title}
-  description={post.data.description}
-  date={post.data.date}
-  image={post.data.image}
-  author={post.data.author}
-  category={post.data.category}
-  tags={post.data.tags}
-  keywords={post.data.keywords}
-  excerpt={post.data.excerpt}
-  status={post.data.status}>
-  <Content />
+    title={post.data.title}
+    description={post.data.description}
+    date={post.data.date}
+    image={post.data.image}
+    author={post.data.author}
+    category={post.data.category}
+    tags={post.data.tags}
+    keywords={post.data.keywords}
+    excerpt={post.data.excerpt}
+    status={post.data.status}>
+    <Content />
 </PostLayout>
