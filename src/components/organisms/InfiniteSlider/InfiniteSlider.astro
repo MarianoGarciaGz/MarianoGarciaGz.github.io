@@ -1,0 +1,126 @@
+---
+import { Image } from 'astro:assets'
+import './InfiniteSlider.scss'
+
+import fl from '@src/assets/img/icons/fl.png'
+import js from '@src/assets/img/icons/js.png'
+import css from '@src/assets/img/icons/css.png'
+import git from '@src/assets/img/icons/git.png'
+import html from '@src/assets/img/icons/html.png'
+import scss from '@src/assets/img/icons/scss.png'
+import figma from '@src/assets/img/icons/figma.png'
+import react from '@src/assets/img/icons/react.png'
+import vegas from '@src/assets/img/icons/vegas.png'
+import bs from '@src/assets/img/icons/bootstrap.png'
+import python from '@src/assets/img/icons/python.svg'
+import photoshop from '@src/assets/img/icons/photoshop.png'
+import postgres from '@src/assets/img/icons/postgres.avif'
+
+const techData = [
+    { title: 'html', img: html, content: ['SEO', 'Semantic'] },
+    {
+        title: 'css',
+        img: css,
+        content: ['Dark mode', 'Media queries', 'BEM methodology']
+    },
+    {
+        title: 'JavaScript',
+        img: js,
+        content: ['Buenas prácticas', 'ES6 Features', 'Async/Await']
+    },
+    {
+        title: 'Scss',
+        img: scss,
+        content: ['Dark mode', 'Suit CSS methodology', 'BEM methodology']
+    },
+    {
+        title: 'React',
+        img: react,
+        content: ['Atomic Design', 'State Management (Redux, Context)', 'React Hooks']
+    },
+    {
+        title: 'Python',
+        img: python,
+        content: ['Data Analysis', 'Web Development con Django', 'Automation']
+    },
+    {
+        title: 'Bootstrap',
+        img: bs,
+        content: ['Responsive Design', 'Component Library Usage']
+    },
+    {
+        title: 'Git',
+        img: git,
+        content: ['Version Control', 'Branching Strategies', 'Collaborative Workflows']
+    },
+    {
+        title: 'Photoshop',
+        img: photoshop,
+        content: ['Photo Editing', 'Graphic Design', 'Digital Art']
+    },
+    {
+        title: 'Figma',
+        img: figma,
+        content: ['UI/UX Design', 'Collaborative Design', 'Prototyping']
+    },
+    {
+        title: 'Fl Studio',
+        img: fl,
+        content: ['Music production', 'Audio editing', 'Sound designs']
+    },
+    {
+        title: 'Vegas Pro',
+        img: vegas,
+        content: ['Video Editing', 'Motion Graphics', 'Special Effects']
+    },
+    {
+        title: 'PostgreSQL',
+        img: postgres,
+        content: ['Video Editing', 'Motion Graphics', 'Special Effects']
+    }
+]
+---
+
+<div class='slider py-1'>
+    <div class='slide-track'>
+        <!-- Primer bloque de slides -->
+        {
+            techData.map((tech, index) => (
+                <div class='slide px-1'>
+                    <div class='slide-card card h-100 text-center border-0 p-3 bg-primary bg-opacity-10 rounded-5'>
+                        <Image
+                            src={tech.img}
+                            alt={tech.title}
+                            class='slide-card__img card-img-top w-100 p-2'
+                            height={100}
+                            quality={50}
+                        />
+                        <div class='slide-card__body card-body p-0'>
+                            <h3 class='slide-card__title mt-3'>{tech.title}</h3>
+                        </div>
+                    </div>
+                </div>
+            ))
+        }
+
+        <!-- Segundo bloque (repetición) para el efecto infinito -->
+        {
+            techData.map((tech, index) => (
+                <div class='slide px-1'>
+                    <div class='slide-card card h-100 text-center border-0 p-3 bg-primary bg-opacity-10 rounded-5'>
+                        <Image
+                            src={tech.img}
+                            alt={tech.title}
+                            class='slide-card__img card-img-top w-100 p-2'
+                            height={100}
+                            quality={50}
+                        />
+                        <div class='slide-card__body card-body p-0'>
+                            <p class='slide-card__title mt-3 h3'>{tech.title}</p>
+                        </div>
+                    </div>
+                </div>
+            ))
+        }
+    </div>
+</div>

@@ -1,0 +1,82 @@
+---
+import { Image } from 'astro:assets'
+import './InfiniteSliderReverse.scss'
+
+import aws from '@src/assets/img/icons/AWS.png'
+import astro from '@src/assets/img/icons/astro.png'
+import docker from '@src/assets/img/icons/docker.png'
+import tailwind from '@src/assets/img/icons/tailwind.png'
+import tensorflow from '@src/assets/img/icons/tensorflow.png'
+import ts from '@src/assets/img/icons/typescript.png'
+import linux from '@src/assets/img/icons/linux.png'
+import r from '@src/assets/img/icons/R.png'
+import mysql from '@src/assets/img/icons/mysql.png'
+import node from '@src/assets/img/icons/node.png'
+import xen from '@src/assets/img/icons/xen.png'
+import proxmox from '@src/assets/img/icons/proxmox.png'
+import mongodb from '@src/assets/img/icons/mongoDB.png'
+
+const techData = [
+    { title: 'AWS', img: aws, content: ['Cloud Computing', 'Storage Solutions', 'EC2 Instances'] },
+    { title: 'Astro', img: astro, content: ['Static Site Generation', 'Frontend Framework'] },
+    { title: 'Docker', img: docker, content: ['Containerization', 'DevOps', 'Application Deployment'] },
+    { title: 'Tailwind CSS', img: tailwind, content: ['Utility-First CSS', 'Responsive Design', 'Custom Themes'] },
+    { title: 'TensorFlow', img: tensorflow, content: ['Machine Learning', 'Neural Networks', 'AI Development'] },
+    { title: 'TypeScript', img: ts, content: ['Type Safety', 'Object-Oriented Programming', 'Static Typing'] },
+    { title: 'Linux', img: linux, content: ['Server Management', 'Command Line', 'Shell Scripting'] },
+    { title: 'R', img: r, content: ['Data Analysis', 'Statistical Computing', 'Data Visualization'] },
+    { title: 'MySQL', img: mysql, content: ['Database Management', 'SQL Queries', 'Data Storage'] },
+    { title: 'Node.js', img: node, content: ['Backend Development', 'REST APIs', 'Event-Driven Programming'] },
+    { title: 'Xen', img: xen, content: ['Virtualization', 'Cloud Solutions', 'Hypervisor'] },
+    {
+        title: 'Proxmox',
+        img: proxmox,
+        content: ['Virtualization Management', 'Cluster Management', 'Container Solutions']
+    },
+    { title: 'MongoDB', img: mongodb, content: ['NoSQL Database', 'Document Storage', 'Scalability'] }
+]
+---
+
+<div class='slider py-1'>
+    <div class='slide-track-reverse'>
+        <!-- Primer bloque de slides -->
+        {
+            techData.map((tech, index) => (
+                <div class='slide px-1'>
+                    <div class='slide-card card h-100 text-center border-0 p-3 bg-primary bg-opacity-10 rounded-5'>
+                        <Image
+                            src={tech.img}
+                            alt={tech.title}
+                            class='slide-card__img card-img-top w-100 p-2'
+                            height={100}
+                            quality={50}
+                        />
+                        <div class='slide-card__body card-body p-0'>
+                            <h3 class='slide-card__title mt-3'>{tech.title}</h3>
+                        </div>
+                    </div>
+                </div>
+            ))
+        }
+
+        <!-- Segundo bloque (repetición) para el efecto infinito -->
+        {
+            techData.map((tech, index) => (
+                <div class='slide px-1'>
+                    <div class='slide-card card h-100 text-center border-0 p-3 bg-primary bg-opacity-10 rounded-5'>
+                        <Image
+                            src={tech.img}
+                            alt={tech.title}
+                            class='slide-card__img card-img-top w-100 p-2'
+                            height={100}
+                            quality={50}
+                        />
+                        <div class='slide-card__body card-body p-0'>
+                            <p class='slide-card__title mt-3 h3'>{tech.title}</p>
+                        </div>
+                    </div>
+                </div>
+            ))
+        }
+    </div>
+</div>
