@@ -4,9 +4,9 @@ import FormattedDate from '@src/components/FormattedDate.astro'
 
 // Obtén los posts de forma asíncrona
 const posts = (await getCollection('blog')).sort((a, b) => {
-  const dateA = new Date(a.data.date).getTime()
-  const dateB = new Date(b.data.date).getTime()
-  return dateB - dateA
+    const dateA = new Date(a.data.date).getTime()
+    const dateB = new Date(b.data.date).getTime()
+    return dateB - dateA
 })
 
 const recentPosts = posts.slice(0, 3)
@@ -14,46 +14,51 @@ import { info } from '@src/config/settings.json'
 ---
 
 <div
-  class='position-sticky z-0'
-  style='top: 5rem;'>
-  <div>
-    <h2 class='fst-italic fs-5'>Publicaciones recientes</h2>
-    <ul class='list-unstyled'>
-      {
-        recentPosts.map((post) => (
-          <li>
-            <article>
-              <a
-                class='d-flex flex-lg gap-3 align-items-start align-items-lg-center py-3 text-body text-decoration-none border-top'
-                href={`/blog/${post.slug}/`}>
-                <img
-                  class='bd-placeholder-img rounded-3'
-                  style='aspect-ratio: 16/9; object-fit: cover; max-width: 40%;'
-                  src={post.data.image}
-                  height='96'
-                  alt=''
-                  loading='lazy'
-                />
-                <div class=''>
-                  <h3
-                    class='mb-0'
-                    style='font-size:1.2em;'>
-                    {post.data.title}
-                  </h3>
-                  <small
-                    class='text-body-secondary'
-                    style='font-size: .6rem;'>
-                    <FormattedDate date={post.data.date} />
-                  </small>
-                </div>
-              </a>
-            </article>
-          </li>
-        ))
-      }
-    </ul>
-    <div class='text-center fw-bold'>
-      <p class=''>{info.name}</p>
+    class='position-sticky z-0'
+    style='top: 5rem;'>
+    <div>
+        <h2 class='fst-italic fs-5'>Publicaciones recientes</h2>
+        <ul class='list-unstyled'>
+            {
+                recentPosts.map((post) => (
+                    <li>
+                        <article>
+                            <a
+                                class='d-flex flex-lg gap-3 align-items-start align-items-lg-center py-3 text-body text-decoration-none border-top'
+                                href={`/blog/${post.slug}/`}>
+                                <img
+                                    class='bd-placeholder-img rounded-3'
+                                    style='aspect-ratio: 16/9; object-fit: cover; max-width: 40%;'
+                                    src={post.data.image}
+                                    height='96'
+                                    alt=''
+                                    loading='lazy'
+                                />
+                                <div class=''>
+                                    <h3
+                                        class='mb-0'
+                                        style='font-size:1.2em;'>
+                                        {post.data.title}
+                                    </h3>
+                                    <small
+                                        class='text-body-secondary'
+                                        style='font-size: .6rem;'>
+                                        <FormattedDate date={post.data.date} />
+                                    </small>
+                                </div>
+                            </a>
+                        </article>
+                    </li>
+                ))
+            }
+        </ul>
+        <div class='text-center fw-bold'>
+            <a
+                class='btn btn-primary w-100 mx-auto rounded-pill shadow-sm mb-3'
+                href='/blog'
+                >Ver todas las publicaciones</a
+            >
+            <p class=''>{info.name}</p>
+        </div>
     </div>
-  </div>
 </div>

@@ -3,8 +3,23 @@ import './Carousel.css'
 import WorksSliderSwiper from './WorksSliderSwiper'
 ---
 
-<section
-  class='projects overflow-hidden py-5'
-  id='projects'>
-  <WorksSliderSwiper client:load />
+<section>
+    <div class='container text-center'>
+        <h2 class='text-center display-5'>Proyectos</h2>
+        <p class='text-center lead'>
+            Explora algunos de los proyectos realizados y contáctame para crear tu próxima página web.
+        </p>
+        <a
+            href='mailto:marianogarciagz@gmail.com?subject=Consulta%20sobre%20desarrollo%20web&body=Hola%2C%20estoy%20interesado%20en%20crear%20una%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20saber%20m%C3%A1s%20sobre%20tus%20servicios.'
+            class='btn btn-primary btn-lg text-center'>
+            <i class='bi bi-envelope-fill me-1'></i>
+            Mandar correo
+        </a>
+        <div class='divider-sm'></div>
+    </div>
+    <div
+        class='projects overflow-hidden py-5'
+        id='projects'>
+        <WorksSliderSwiper client:load />
+    </div>
 </section>
