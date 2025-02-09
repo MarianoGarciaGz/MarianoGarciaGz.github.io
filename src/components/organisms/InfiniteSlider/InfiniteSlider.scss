@@ -52,6 +52,9 @@
 .slide-card {
     cursor: pointer;
     transition: 0.33s ease-in-out all;
+    backdrop-filter: blur(10px) saturate(120%);
+    -webkit-backdrop-filter: blur(10px) saturate(120%);
+    background-color: rgba(255, 255, 255, 0.01);
     &:hover {
         scale: 1.05;
         & .slide-card__img {
@@ -60,7 +63,7 @@
         }
     }
     &__img {
-        filter: brightness(0.9) opacity(0.8);
+        filter: brightness(1) opacity(1);
         transition: 0.5s ease-in-out all;
         transform: scale(1) translateY(0px);
         object-fit: contain;
