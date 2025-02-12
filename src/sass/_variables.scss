@@ -108,10 +108,6 @@ h6 {
   -o-transform: translateX(-23px) rotate(10deg) translateY(-5px);
 }
 
-.glass {
-  backdrop-filter: blur(15px);
-  background-color: rgba($white, 0.1);
-}
 
 .hero__column-img::before {
   backdrop-filter: blur(3px);
@@ -119,10 +115,6 @@ h6 {
 }
 
 [data-bs-theme='dark'] {
-  .glass {
-    backdrop-filter: blur(15px);
-    background-color: rgba($dark, 0);
-  }
   .hero__column-img::before {
     backdrop-filter: blur(3px);
     background-color: rgba($dark, 0);

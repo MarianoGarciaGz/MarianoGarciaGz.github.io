@@ -1,5 +1,8 @@
 .header {
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   &__logo {
     font-size: 1.4rem;
   }
+
 }

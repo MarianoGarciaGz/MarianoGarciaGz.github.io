@@ -12,11 +12,21 @@
     }
   }
   &__img {
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
     -webkit-transform: scaleX(-1);
     -moz-transform: scaleX(-1);
     -ms-transform: scaleX(-1);
     -o-transform: scaleX(-1);
     transform: scaleX(-1);
+    transition: all .7s ease;
+    &:hover{
+      -webkit-transform: scaleX(-1) scale(1.06);
+      -moz-transform: scaleX(-1) scale(1.06);
+      -ms-transform: scaleX(-1) scale(1.06);
+      -o-transform: scaleX(-1) scale(1.06);
+      transform: scaleX(-1) scale(1.06);
+    }
   }
 }
 
@@ -33,7 +43,6 @@
   width: calc(100%);
   height: calc(100%);
   z-index: -1;
-  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.1);
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
