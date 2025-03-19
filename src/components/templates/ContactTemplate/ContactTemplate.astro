@@ -7,47 +7,56 @@ import { info, social } from '@src/config/settings.json'
 <div class='pattern-gradient d-none d-lg-block'></div>
 <div class='divider-md'></div>
 <section class='contact'>
-  <div class='container-sm'>
-    <div class='row justify-content-center'>
-      <div class='col-12 col-md-8 col-lg-7 col-xl-6 col-xxl-5'>
-        <div
-          class='contact__card card border-0 p-5 shadow rounded-5 bg-transparent'
-          style='backdrop-filter: blur(50px);'>
-          <a
-            class=''
-            href={info.url}>
-            <img
-              class='contact__qr mx-auto w-100 rounded-5 p-5'
-              src='/assets/images/qr/home.png'
-              alt='qrcode'
-              style='background:white;'
-            />
-          </a>
-          <a
-            class='text-body text-decoration-none text-center fw-bold mt-2'
-            href={info.url}>
-            www.{info.url.slice(8)}
-          </a>
-          <div class='contact-card__social-container card-body p-0 pt-5'>
-            <ul class='list-unstyled row gy-2 lh-sm text-center'>
-              {
-                Object.entries(social).map(([key, href]) => (
-                  <li class='Footer-li'>
-                    <FooterSocial
-                      class='btn btn-outline-primary text-decoration-none border-1 border border-primary fs-6 w-100'
-                      href={href}
-                      block='Footer'
-                      logo={key}
-                      title={key.charAt(0).toUpperCase() + key.slice(1)}
-                    />
-                  </li>
-                ))
-              }
-            </ul>
-          </div>
+    <div class='container-sm'>
+        <div class='row justify-content-center'>
+            <div class='col-12 col-md-8 col-lg-7 col-xl-6 col-xxl-5'>
+                <div
+                    class='contact__card card border-0 p-5 shadow rounded-5 bg-transparent'
+                    style='backdrop-filter: blur(50px);'>
+                    <a
+                        class=''
+                        href={info.url}>
+                        <img
+                            class='contact__qr mx-auto w-100 rounded-5 p-5'
+                            src='/assets/images/qr/home.png'
+                            alt='qrcode'
+                            style='background:white;'
+                        />
+                    </a>
+                    <a
+                        class='text-body text-decoration-none text-center fw-bold mt-2'
+                        href={info.url}>
+                        www.{info.url.slice(8)}
+                    </a>
+                    <div class='contact-card__social-container card-body p-0 pt-5'>
+                        <ul class='list-unstyled row gy-2 lh-sm text-center'>
+                            <li class='Footer-li'>
+                                <a
+                                    class='btn btn-outline-primary text-decoration-none border-1 border border-primary fs-6 w-100'
+                                    href='/'
+                                    ><i class='bi bi-globe2 me-2'></i>Mi sitio web</a
+                                >
+                            </li>
+                            {
+                                Object.entries(social).map(([key, href]) => (
+                                    <li
+                                        class='
+                                        Footer-li'>
+                                        <FooterSocial
+                                            class='btn btn-outline-primary text-decoration-none border-1 border border-primary fs-6 w-100'
+                                            href={href}
+                                            block='Footer'
+                                            logo={key}
+                                            title={key.charAt(0).toUpperCase() + key.slice(1)}
+                                        />
+                                    </li>
+                                ))
+                            }
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
-  <div class='divider-sm'></div>
+    <div class='divider-sm'></div>
 </section>
