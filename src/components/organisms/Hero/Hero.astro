@@ -2,41 +2,41 @@
 import './Hero.scss'
 import { contact, social } from '@src/config/settings.json'
 import HeroButtons from '@src/components/molecules/HeroButtons/HeroButtons.astro'
+import { Image } from 'astro:assets'
+import img from '@src/assets/images/mariano-photo.png'
 ---
 
 <div class='pattern-wavy'></div>
 <div class='pattern-gradient d-none d-lg-block'></div>
 <section class='hero align-content-center mb-5'>
-  <div class='container-lg'>
-    <div
-      class='row align-items-center justify-content-center justify-content-lg-between g-0'>
-      <div class='hero__column-text col-12 col-lg-7'>
-        <h1 class='hero__h1 display-1 lh-1 mb-4 hyp-none'>
-          marianogarciagz:<br />
-          <strong class='hero__strong text-primary'>
-            Desarrollador full-stack</strong
-          >
-        </h1>
-        <p class='hero__p lead'>
-          Soy un programador de Morelia, Michoacán. El código no muerde... a
-          menos que lo pidas. Si puedes imaginarlo, <strong class='fw-bold'
-            >puedo programarlo</strong
-          >.
-        </p>
-        <HeroButtons />
-      </div>
+    <div class='container-lg'>
+        <div class='row align-items-center justify-content-center justify-content-lg-between g-0'>
+            <div class='hero__column-text col-12 col-lg-7'>
+                <h1 class='hero__h1 display-1 lh-1 mb-4 hyp-none'>
+                    marianogarciagz:<br />
+                    <strong class='hero__strong text-primary'> Desarrollador full-stack</strong>
+                </h1>
+                <p class='hero__p lead'>
+                    Soy un programador de Morelia, Michoacán. El código no muerde... a menos que lo pidas. Si puedes
+                    imaginarlo, <strong class='fw-bold'>puedo programarlo</strong>.
+                </p>
+                <HeroButtons />
+            </div>
 
-      <div class='hero__column-img col-7 col-sm-6 col-md-4 col-lg-4 my-5'>
-        <img
-          src='./assets/images/mariano-photo.png'
-          class='hero__img w-100'
-          alt='Mariano Ismael García Guzmán photography'
-          loading='eager'
-        />
-        <!-- <p class='hero__column-message badge bg-success mb-0'>
+            <div class='hero__column-img col-7 col-sm-6 col-md-4 col-lg-4 my-5'>
+                <Image
+                    width={500}
+                    height={500}
+                    quality={80}
+                    src={img}
+                    class='hero__img w-100'
+                    alt='Mariano Ismael García Guzmán photography'
+                    loading='eager'
+                />
+                <!-- <p class='hero__column-message badge bg-success mb-0'>
           Disponible para trabajar
         </p> -->
-      </div>
+            </div>
+        </div>
     </div>
-  </div>
 </section>
