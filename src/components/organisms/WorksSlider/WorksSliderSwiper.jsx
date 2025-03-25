@@ -61,7 +61,7 @@ const ContainerCards = () => {
                     <div className='container-lg'>
                         <div className="row flex-row-reverse flex-wrap-reverse align-items-center g-5 py-5 text-white justify-content-center justify-content-md-between">
                             <div className="col-10 col-sm-8 col-md-5">
-                                <img src="/assets/images/projects/MarianoGarciaGz.png" className="d-block mx-md-auto img-fluid rounded-5" alt="Bootstrap Themes" loading="lazy" />
+                                <img src="/assets/images/projects/MarianoGarciaGz.webp" className="d-block mx-md-auto img-fluid rounded-5" alt="Projects" loading="lazy" />
                             </div>
                             <div className="col-md-7 col-xl-6">
                                 <h2 className="display-5 lh-1 mb-3 text-center text-md-start">Proyectos</h2>
@@ -76,7 +76,7 @@ const ContainerCards = () => {
                             <div className="row flex-row-reverse flex-wrap-reverse align-items-center g-5 py-5 text-white justify-content-center justify-content-md-between">
                                 <div className="col-10 col-sm-8 col-md-5">
                                     <img
-                                        src={`/assets/images/projects/${formatProjectName(project.name)}.jpeg`}
+                                        src={`/assets/images/projects/${formatProjectName(project.name)}.webp`}
                                         className="project__img d-block mx-md-auto img-fluid rounded-5"
                                         alt={project.name}
                                         loading="lazy"
