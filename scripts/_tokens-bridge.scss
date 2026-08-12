@@ -1,0 +1,36 @@
+// Puente de compilación: expone las variables Sass reales del sitio
+// (fuente de verdad: src/sass/_variables.scss) como custom properties CSS
+// resueltas — incluye funciones como mix(), que un parser de texto no puede
+// evaluar. Consumido por scripts/export-brand-tokens.mjs — no editar a mano.
+@import '../src/sass/variables';
+
+:root {
+  --sync-red: #{$red};
+  --sync-indigo: #{$indigo};
+  --sync-purple: #{$purple};
+  --sync-pink: #{$pink};
+  --sync-yellow: #{$yellow};
+  --sync-orange: #{$orange};
+  --sync-green: #{$green};
+  --sync-blue: #{$blue};
+  --sync-teal: #{$teal};
+  --sync-cyan: #{$cyan};
+  --sync-white: #{$white};
+  --sync-gray: #{$gray};
+  --sync-black: #{$black};
+
+  --sync-gray-100: #{$gray-100};
+  --sync-gray-600: #{$gray-600};
+  --sync-gray-800: #{$gray-800};
+
+  --sync-primary: #{$primary};
+  --sync-secondary: #{$secondary};
+  --sync-success: #{$success};
+  --sync-info: #{$info};
+  --sync-warning: #{$warning};
+  --sync-danger: #{$danger};
+
+  --sync-font-family-sans-serif: #{$font-family-sans-serif};
+  --sync-font-family-monospace: #{$font-family-monospace};
+  --sync-headings-font-family: #{$headings-font-family};
+}

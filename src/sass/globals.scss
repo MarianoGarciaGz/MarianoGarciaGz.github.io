@@ -7,11 +7,10 @@
 @import '@src/sass/base';
 @import '@src/sass/markdown';
 
-
 .btn-secondary {
   color: $white !important;
-  
-  &:hover{
+
+  &:hover {
   }
 }
 
@@ -40,4 +39,4 @@
 
 @import '@src/sass/_variables-dark';
 @import '@src/sass/kj_theme';
-
+@import '@src/sass/_buttons';

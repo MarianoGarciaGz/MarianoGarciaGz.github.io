@@ -8,5 +8,10 @@ export default defineConfig({
   output: 'static',
   format: 'directory',
   trailingSlash: 'never',
-  integrations: [react(), sitemap({})],
+  integrations: [
+    react(),
+    sitemap({
+      filter: (page) => !page.includes('/dev/'),
+    }),
+  ],
 })

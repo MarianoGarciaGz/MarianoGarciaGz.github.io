@@ -1,0 +1,65 @@
+// Button — sombra neumórfica sobre .btn de Bootstrap.
+// Puramente aditivo: NO toca font-family, border, border-radius, padding,
+// color ni transition — esos siguen siendo los que ya define Bootstrap/el
+// sitio (ver _variables.scss). Lo único que agrega es box-shadow y el
+// levantamiento de 2px en :hover.
+
+.btn {
+  transition:
+    color 0.15s ease-in-out,
+    background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out,
+    box-shadow 150ms ease-out,
+    transform 150ms ease-out;
+  box-shadow:
+    0 3px 8px -2px rgba(0, 0, 0, 0.5),
+    inset 0 -2px 3px -1px rgba(0, 0, 0, 0.2),
+    inset 0 2px 3px -1px rgba(255, 255, 255, 0.25),
+    inset 0 0 4px 1px rgba(255, 255, 255, 0.25);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 5px 12px -2px rgba(0, 0, 0, 0.6),
+    inset 0 -2px 3px -1px rgba(0, 0, 0, 0.2),
+    inset 0 2px 3px -1px rgba(255, 255, 255, 0.3),
+    inset 0 0 4px 1px rgba(255, 255, 255, 0.3);
+}
+
+.btn:active,
+.btn:focus:active {
+  transform: translateY(0);
+  box-shadow:
+    0 4px 10px -4px rgba(0, 0, 0, 0.4),
+    inset 0 6px 12px -2px rgba(0, 0, 0, 0.3),
+    inset 0 0 6px 1px rgba(255, 255, 255, 0.2);
+}
+
+// Outline: mismo relieve en reposo; en :hover queda igual al sólido
+[class*='btn-outline-'] {
+  box-shadow:
+    inset 0 -2px 3px -1px rgba(0, 0, 0, 0.2),
+    inset 0 2px 3px -1px rgba(255, 255, 255, 0.25),
+    inset 0 0 4px 1px rgba(255, 255, 255, 0.25);
+}
+
+[class*='btn-outline-']:hover {
+  box-shadow:
+    0 5px 12px -2px rgba(0, 0, 0, 0.6),
+    inset 0 -2px 3px -1px rgba(0, 0, 0, 0.2),
+    inset 0 2px 3px -1px rgba(255, 255, 255, 0.3),
+    inset 0 0 4px 1px rgba(255, 255, 255, 0.3);
+}
+
+[class*='btn-outline-']:active {
+  transform: translateY(0);
+  box-shadow:
+    inset 0 6px 12px -2px rgba(0, 0, 0, 0.4),
+    inset 0 0 6px 1px rgba(255, 255, 255, 0.2);
+}
+
+.btn:disabled,
+.btn.disabled {
+  box-shadow: none;
+}

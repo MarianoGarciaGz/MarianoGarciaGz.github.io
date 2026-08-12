@@ -1,0 +1,58 @@
+---
+// Página de prueba, solo para desarrollo local — NO es contenido público.
+// Verifica visualmente los componentes de marca (src/sass/_buttons.scss, etc.)
+// contra el Bootstrap + variables de marca reales del sitio.
+import MainLayout from '@src/components/layouts/MainLayout/MainLayout.astro'
+
+const pageData = {
+  path: '/dev/ui',
+  title: 'UI Components — dev preview',
+  description: 'No indexar',
+  url: '',
+  image: '',
+  keywords: [],
+  author: '',
+}
+---
+
+<MainLayout pageData={pageData}>
+  <div class="container py-5">
+    <h1 class="mb-2">UI Components — Button</h1>
+    <p class="text-muted mb-5">
+      Bootstrap real del sitio (colores/tipografía/radius de marca) +
+      <code>src/sass/_buttons.scss</code> encima. Solo debería notarse el box-shadow.
+    </p>
+
+    <h2 class="h5 text-uppercase text-muted mb-3">Variantes sólidas</h2>
+    <div class="d-flex flex-wrap gap-3 mb-5">
+      <button type="button" class="btn btn-primary">Primary</button>
+      <button type="button" class="btn btn-secondary">Secondary</button>
+      <button type="button" class="btn btn-info">Info</button>
+      <button type="button" class="btn btn-success">Success</button>
+      <button type="button" class="btn btn-warning">Warning</button>
+      <button type="button" class="btn btn-danger">Danger</button>
+      <button type="button" class="btn btn-dark">Dark</button>
+      <button type="button" class="btn btn-light">Light</button>
+    </div>
+
+    <h2 class="h5 text-uppercase text-muted mb-3">Outline</h2>
+    <div class="d-flex flex-wrap gap-3 mb-5">
+      <button type="button" class="btn btn-outline-primary">Outline primary</button>
+      <button type="button" class="btn btn-outline-secondary">Outline secondary</button>
+      <button type="button" class="btn btn-outline-dark">Outline dark</button>
+    </div>
+
+    <h2 class="h5 text-uppercase text-muted mb-3">Uso real (HeroButtons)</h2>
+    <div class="d-flex flex-wrap gap-3 mb-5">
+      <button type="button" class="btn btn-primary text-white btn-lg px-4">
+        <i class="bi bi-download"></i> CV
+      </button>
+      <a href="#" class="btn btn-info text-white btn-lg px-4" aria-label="Email">
+        <i class="bi bi-envelope"></i>
+      </a>
+      <a href="#" class="btn btn-lg btn-dark px-4 text-white">
+        <i class="bi bi-github"></i>
+      </a>
+    </div>
+  </div>
+</MainLayout>
